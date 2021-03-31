@@ -1,0 +1,45 @@
+/* Global */
+#main {
+    height: 5000px;
+}
+
+a {
+    color: white;
+}
+
+/* SideDiv */
+#sideBar {
+    padding-top: 3rem;
+    background-color: #363131;
+    height: 1500px;
+    color: white;
+}
+
+#sideHead {
+    height: 170px;
+    width: 145px;
+    border-radius: 70%;
+    margin-bottom: 2rem;
+}
+
+#sideBar a {
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#copyright {
+    margin-top: 10rem;
+}
+
+/* Home View */
+#home {
+    margin: 0;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    /* background-position: center; */
+    background-image: url(/img/beach.jpeg);
+    height: 1500px;
+
+}
