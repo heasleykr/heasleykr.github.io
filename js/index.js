@@ -1,15 +1,46 @@
 // Global variables
+var showIcon = `<i class="fas fa-bars"></i>`;
+var hideIcon = `<i class="fas fa-angle-double-right"></i>`;
+var visible = true;
       //cache DOM
       var UI = {};
 
+//Function to dynamically display Home page content
+function homeLoad(){
 
-//Function to dynamically display resume to screen
+    //content to be displayed
+    var home = `
+    <div>
+        <h1>Katelynn Heasley</h1>
+        <h3>I'm a software engineer specializing in front-end</h3>
+    </div>
+    `;
+
+    //add html to DOM object
+    UI.$main.innerHTML = home;
+    console.log("Home Page");
+}
+
+//Function to dynamically display About page content
+function aboutLoad(){
+
+    //content to be displayed
+    var about = `
+    <div>
+        <h2>TODO:</h2>
+        <h4>Insert Biographicall information here. Career paragraph and more.</h4>
+    </div>
+    `;
+
+    //add html to DOM object
+    UI.$main.innerHTML = about;
+    console.log("About Page");
+}
+
+//Function to dynamically display Resume page content
 function resumeLoad(){
-    //grab DOM elements
-    //  var main = UI.$main.val();
-     
 
-    //dynamically make HTML elements
+    //content to be displayed
     var resume =`
         <div>
             <div id="leftSide">
@@ -168,28 +199,150 @@ function resumeLoad(){
     UI.$main.innerHTML = `
         <div>${resume}</div>
     `;
-    // UI.$main.innerHTML = resume;
-    console.log("Resume btn working!!");
-    console.log(resume);
+    console.log("Resume Page");
+
 }
 
+//Function to dynamically display Portfolio page content
+function folioLoad(){
 
+    //content to be displayed
+    var folio = `
+        <div>
+            <h2>Portfolio</h2>
+            <h3>GitHub:  https://github.com/heasleykr</h3>
+            <hr>
+            <div>
+                <h3>ParkingLots</h3>
+                <h4>March 2021</h4>
+                <h4>URL: [https://github.com/heasleykr/ParkingLots]</h4>
+                <p>Built web application using the Django Framework, which utilizes APIs like CrispyForms, Jinja, Pillow, Bootstrap, and FontAwesome.</p>
+                <p>Employed Object Oriented Programming techniques to allow users to buy, sell, and rent parking spaces.</p>
+                <p>Designed and built logos and marketing content using Adobe Photoshop.</p>
+            </div>
+            <div>
+                <h3>OrganicBeans</h3>
+                <h4>January 2021</h4>
+                <h4>URL: [https://github.com/heasleykr/OrganicBeansRedux]</h4>
+                <p>Web application build with React Framework for educational purposes with San Diego Global Knowledge University</p>
+                <p>Built and designed all front-end elements with original code, HTML/CSS/JS.</p>
+                <p>Utilizes Redux for state management in addition to AXIOS for web server connection for data storage.</p>
+            </div>
+            <div>
+                <h3>Property Rental</h3>
+                <h4>November 2020</h4>
+                <h4>URL: [https://github.com/heasleykr/Property-Rental-Web-Application]</h4>
+                <p>Web application build with Microsoft’s ASP .Net Core framework for educational purposes with San Diego Global Knowledge University</p>
+                <p>Built and designed all front-end elements with original code, HTML/CSS/JS.</p>
+                <p>Utilizes the Model-View-Controller architectural style and built backend alongside other students for the purposes of learning the ASP .Net Core framework.</p>
+            </div>
+            <div>
+                <h3>The Fashion Pet</h3>
+                <h4>September 2020</h4>
+                <h4>URL: [https://github.com/heasleykr/theFashionPet]</h4>
+                <p>Statically built website using HTML, CSS, & Javascript techniques.</p>
+                <p>Emphasized styling of content without API usage.</p>
+                <p>Used conventional CSS containers and techniques for layouts</p>
+            </div>
+        </div>
+    `;
 
+    //add html to DOM object
+    UI.$main.innerHTML = folio;
+    console.log("Portfolio Page");
+}
+
+//Function to dynamically display Contact page content
+function contactLoad(){
+
+    //content to be displayed
+    var contact = `
+    <div>
+        <h2>TODO:</h2>
+        <h4>Insert Contact information here. Career paragraph and more.</h4>
+        <p>Do we need this page or can it be something else?</p>
+    </div>
+    `;
+
+    //add html to DOM object
+    UI.$main.innerHTML = contact;
+    console.log("Contact Page");
+}
+
+// Function to show/hide side navigational panel
+function showDetails(){
+
+    console.log("btn clicked!");
+
+    // Show details
+    if(!visible){
+        // Show side bar
+        UI.$side.removeClass('hide');
+
+        //Hide top bar
+        UI.$top.addClass('hide');
+
+        // change boolean
+        visible = true;
+    }
+    //Hide Details
+    else{ 
+        //Hide side bar
+        UI.$side.addClass('hide');
+
+        //Show top bar
+        UI.$top.removeClass('hide');
+
+        // change boolean
+        visible = false;
+    }
+}
+
+/************************  TODO: *************************
+ * 
+ *  1. Add slidding functionality to each page (MyCalendar)
+ *        - buttons change on click
+ *        - Main left Tab can be closed
+ * 
+ *  2. Add all CSS stylings
+ * 
+ *  3. Sizing for all devices
+ * 
+ *  4. Add 'inspect page'/console tidbits for programmers
+*/
 
 
 function init(){
-    console.log("Katelynn Heasley's Website, welcome!");
+
+    console.log("Welcome to Katelynn Heasley's website!");
 
     // UI DOM Object
     UI = {
-        // get html elements
-        $main: $('#mainLoad'),
+        $main: document.getElementById('mainLoad'),
+        $side: document.getElementById('sideBar'),
+        $top: document.getElementById('topBar'),
+        $btnShow: document.getElementById('btnShow'),
+        $btnHide: document.getElementById('btnHide'),
+        $homeBtn: document.getElementById('homeBtn'),
+        $aboutBtn: document.getElementById('aboutBtn'),
+        $resBtn: document.getElementById('resumeBtn'),
+        $folioBtn: document.getElementById('folioBtn'),
+        $contactBtn: document.getElementById('contactBtn'),
     };
 
-    //catch click events on links
-    // $("#resumeBtn").click(resumeLoad);
+    //load main content
+    homeLoad();
 
-    $('#resumeBtn').on('click', resumeLoad);
+    //catch click events on side nav panel
+    UI.$homeBtn.onclick = homeLoad;
+    UI.$aboutBtn.onclick = aboutLoad;
+    UI.$resBtn.onclick = resumeLoad;
+    UI.$folioBtn.onclick = folioLoad;
+    UI.$contactBtn.onclick = contactLoad;
+    UI.$btnHide.onclick = showDetails;
+
+    //catch click events on top nav
+    UI.$btnShow.onclick = showDetails; 
 }
 
 

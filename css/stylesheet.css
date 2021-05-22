@@ -7,6 +7,15 @@ a {
     color: white;
 }
 
+/* class to visually hide content on screen */
+.hide {
+    /* This will not keep the space for the element when hidden */
+    display: none;
+
+    /* This will keep space in layout */
+    /* visibility: hidden; */
+}
+
 /* SideDiv */
 #sideBar {
     padding-top: 3rem;
