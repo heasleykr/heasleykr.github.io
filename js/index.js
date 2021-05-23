@@ -272,15 +272,14 @@ function contactLoad(){
 // Function to show/hide side navigational panel
 function showDetails(){
 
-    console.log("btn clicked!");
 
     // Show details
     if(!visible){
         // Show side bar
-        UI.$side.removeClass('hide');
+        UI.$side.classList.remove('hide');
 
         //Hide top bar
-        UI.$top.addClass('hide');
+        UI.$top.classList.add('hide');
 
         // change boolean
         visible = true;
@@ -288,10 +287,10 @@ function showDetails(){
     //Hide Details
     else{ 
         //Hide side bar
-        UI.$side.addClass('hide');
+        UI.$side.classList.add('hide');
 
         //Show top bar
-        UI.$top.removeClass('hide');
+        UI.$top.classList.remove('hide');
 
         // change boolean
         visible = false;
