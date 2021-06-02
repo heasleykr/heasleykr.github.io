@@ -21,7 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katelynn Heasley</title>
 </head>
-<body id="main" class="container-fluid">
+<body id="main">
     <!-- Top Diplay -->
     <nav id="topBar" class="navbar navbar-light bg-light hide">
         <div class="container-fluid">
@@ -33,41 +33,59 @@
         </div>
     </nav>
     <!-- Wrapper -->
-    <div class="d-flex">
-        <!-- SideBar -->
-        <div id="sideBar" class="sideBar">
-            <div class="d-flex flex-column align-items-center">
-                <a type="button" id="btnHide"><i class="fas fa-angle-double-right"></i></a>
-                <img id="sideHead" class="img-fluid" src="img/tempHeadshot.png" alt="headshot">
-                <h3>Katelynn Heasley</h3>
-                <!-- Icons -->
-                <div class="d-flex flex-row justify-content-around">
-                    <p><a href="https://github.com/heasleykr"><i class="fab fa-github"></i></a></p>
-                    <p><a href="https://www.linkedin.com/in/katelynn-heasley-13933435/"><i class="fab fa-linkedin-in"></i></a></p>
-                    <p><a href="mailto:heasleykr@gmail.com"><i class="fas fa-envelope"></i></a></p>
-
-                </div>
-                <div class="d-flex flex-column align-items-start">
-                    <ul>
-                        <!-- js input btns -->
-                        <li><a type="button" id="homeBtn">Home</a></li>
-                        <li><a type="button" id="aboutBtn">About</a></li>
-                        <li><a type="button" id="resumeBtn">Resume</a></li>
-                        <li><a type="button" id="folioBtn">Portfolio</a></li>
-                        <li><a type="button" id="contactBtn">Contact</a></li>
-                    </ul>
+    <div class="d-flex justify-content-center">
+        <div id="homeView" class="container-fluid d-flex justify-content-center">
+            <!-- SideBar -->
+            <div id="sideBar" class="sideBar">
+                <div class="d-flex flex-column align-items-center">
+                    <a type="button" id="btnHide"><i class="fas fa-angle-double-right"></i></a>
+                    <h3 id="sideNameFirst" class="d-flex justify-content-center">Katelynn</h3>
+                    <h3 id="sideNameLast" class="d-flex justify-content-center">Heasley</h3>
+                    <!-- Icons -->
+                    <div class="d-flex flex-row justify-content-around">
+                        <p><a href="https://github.com/heasleykr"><i class="fab fa-github"></i></a></p>
+                        <p><a href="https://www.linkedin.com/in/katelynn-heasley-13933435/"><i class="fab fa-linkedin-in"></i></a></p>
+                        <p><a href="mailto:heasleykr@gmail.com"><i class="fas fa-envelope"></i></a></p>
+                    </div>
+                    <hr/>
+                    <div class="d-flex flex-column align-items-start">
+                        <ul>
+                            <!-- js input btns -->
+                            <li><a type="button" id="homeBtn">Home</a></li>
+                            <li><a type="button" id="aboutBtn">About</a></li>
+                            <li><a type="button" id="resumeBtn">Resume</a></li>
+                            <li><a type="button" id="folioBtn">Portfolio</a></li>
+                            <li><a type="button" id="contactBtn">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
-            <p id="copyright">Copyright reserved &copy; 2021 Katelynn Heasley</p>
-        </div>
-        <!-- Right Div -->
-        <div id="mainLoad">
+            <!-- Right Div -->
+            <div id="mainLoad">
+            </div>
         </div>
     </div>
-    <footer>
-        <!-- TODO: Design footer section -->
-    </footer>
+    <div id="fwrapper">
+        <footer>
+            <!-- <div id="grid1" class="d-flex justify-content-center">
+                <a class="navbar-brand" href="#">
+                    <img id="footerLogo" src="/img/footer.png" alt="footer logo">
+                </a>
+            </div> -->
+            <div id="grid2" class="d-flex justify-content-center">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-pinterest-square"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <div id="grid3" class="d-flex justify-content-center">
+                <p id="link"><a href="{% url 'listings' %}">Contact</a></p>
+                | <p id="register"><a href="{% url 'signup' %}">Resume</a></p>
+            </div>
+            <div id="grid4" class="d-flex justify-content-start">
+                <p id="copyright">Copyright reserved &copy; 2021 Katelynn Heasley</p>
+            </div>
+        </footer>
+    </div>
 
     <!-- JS/JQuery Files -->
     <script

@@ -1,6 +1,11 @@
 /* Global */
 #main {
-    height: 5000px;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url(/img/pinks/mountains.jpg);
+    height: 1500px;
 }
 
 a {
@@ -19,24 +24,39 @@ a {
 /* SideDiv */
 #sideBar {
     padding-top: 3rem;
-    background-color: #363131;
     height: 1500px;
     color: white;
-}
-
-#sideHead {
-    height: 170px;
-    width: 145px;
-    border-radius: 70%;
-    margin-bottom: 2rem;
+    text-transform: uppercase;
 }
 
 #sideBar a {
     padding: 1.5rem;
     font-size: 1.2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
 }
+
+#sideBar ul {
+    list-style-type: none;
+}
+
+#sideBar li {
+    width: 11rem;
+    height: 4rem;
+    background-color: #6b2643;
+    margin-top: .7rem;
+    margin-bottom: .7rem;
+}
+
+#sideBar li:hover {
+    width: 11rem;
+    height: 4rem;
+    background-color: black;
+    margin-top: .7rem;
+    margin-bottom: .7rem;
+}
+
+/* #sideName {
+    padding-left: 3rem;
+} */
 
 #copyright {
     margin-top: 10rem;
@@ -45,14 +65,33 @@ a {
 
 
 /* Home View */
-#home {
-    margin: 0;
-    background-repeat: no-repeat;
+#homeView {
+    /* margin: 0;
+    background-repeat: no-repeat; */
     /* background-attachment: fixed; */
     /* background-position: center; */
-    background-image: url(/img/beach.jpeg);
+    /* background-image: url(/img/beachwood.png);*/
     height: 1500px;
+    margin-top: 5rem;
 
+}
+
+#mainLoad {
+    background-color: white;
+    margin-left: 2rem;
+}
+
+/* Index View */
+#indexName {
+    color: #6b2643;
+}
+
+#headShot {
+    height: 170px;
+    width: 145px;
+    border-radius: 70%;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
 }
 
 /* Resume View */
@@ -60,4 +99,47 @@ a {
     background-color: #18996e;
     color: white;
 
+}
+
+/* Footer */
+#fwrapper {
+    height: 30rem;
+    /* background-image: url(/img/footer.png);
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: bottom; */
+}
+
+#grid1 {
+    margin-top: 2rem;
+}
+
+#grid2 {
+    color: brown;
+    margin-right: 1rem;
+}
+
+#grid2 i {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+#grid3 {
+    color: brown;
+    margin-right: 2.7rem;
+}
+
+#grid3 a {
+    color: brown;
+    font-family: 'Raleway', sans-serif;
+    margin: 2rem;
+
+}
+
+#grid4 {
+    margin-top: 17rem;
+    margin-left: 5rem;
+    color: brown;
+    font-family: 'Raleway', sans-serif;
 }
