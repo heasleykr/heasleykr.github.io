@@ -10,20 +10,25 @@ function homeLoad(){
 
     //content to be displayed
     var home = `
-    <div class="container-fluid d-flex flex-column align-items-center">
-        <img id="headShot" class="img-fluid img-thumbnail" src="../img/tempHeadshot.png" alt="headshot">
-        <div class="d-flex flex-row">
-            <h1>Hi, I'm </h1>
-            <h1 class="ps-2" id="indexName">Katelynn Heasley!</h1>
+    <div class="container-fluid">
+        <div class="d-flex flex-column align-items-center">
+            <img id="headShot" class="img-fluid img-thumbnail" src="../img/tempHeadshot.png" alt="headshot">
+            <div class="d-flex flex-row">
+                <h1>Hi, I'm </h1>
+                <h1 class="ps-2" id="indexName">Katelynn Heasley!</h1>
+            </div>
+            <div class="pt-2">
+                <h3>Junior Web Designer and Web Developer</h3>
+            </div>
+            <hr>
+            <div>
+                <p class="ps-2">I am a driven individual seeking junior-level employment within a creative team environment that attains to develop, design, and bring innovative devices and services through the use of cutting-edge software development. With over 9 years of working in healthcare, music, and the United States Marine Corps, I am committed to quality work and to joining a team that is on the forefront of technology innovation. Please contact me for any inquries, interest, or opportunites you may have.
+                        -Katelynn </p>
+            </div>
         </div>
-        <h3>Junior Web Designer and Web Developer</h3>
         <hr>
-        <div>
-            <p class="ps-2">I am a driven individual seeking junior-level employment within a creative team environment that attains to develop, design, and bring innovative devices and services through the use of cutting-edge software development. With over 9 years of working in healthcare, music, and the United States Marine Corps, I am committed to quality work and to joining a team that is on the forefront of technology innovation. Please contact me for any inquries, interest, or opportunites you may have.
-                    -Katelynn </p>
-        </div>
-        <div>
-            <h4>email: heasleykr@gmail.com</h4>
+        <div id="indexContact" class="d-flex flex-row justify-content-evenly">
+            <h4>Email: heasleykr@gmail.com</h4>
             <h4>Phone: 619-317-4334</h4>
         </div>
     </div>

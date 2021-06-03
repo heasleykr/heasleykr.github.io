@@ -5,11 +5,11 @@
     background-attachment: fixed;
     background-position: center;
     background-image: url(/img/pinks/mountains.jpg);
-    height: 1500px;
+    /* height: 1500px; */
 }
 
 a {
-    color: white;
+    color: #6b2643;
 }
 
 /* class to visually hide content on screen */
@@ -23,9 +23,9 @@ a {
 
 /* SideDiv */
 #sideBar {
-    padding-top: 3rem;
-    height: 1500px;
-    color: white;
+    padding-top: .5rem;
+    /* height: 1500px; */
+    color: #6b2643;
     text-transform: uppercase;
 }
 
@@ -34,13 +34,20 @@ a {
     font-size: 1.2rem;
 }
 
+#sideBar a:hover {
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    color: white;
+}
+
 #sideBar ul {
     list-style-type: none;
+    color: white;
 }
 
 #sideBar li {
     width: 11rem;
-    height: 4rem;
+    height: 4.5rem;
     background-color: #6b2643;
     margin-top: .7rem;
     margin-bottom: .7rem;
@@ -48,15 +55,26 @@ a {
 
 #sideBar li:hover {
     width: 11rem;
-    height: 4rem;
+    height: 4.5rem;
     background-color: black;
     margin-top: .7rem;
     margin-bottom: .7rem;
 }
 
-/* #sideName {
-    padding-left: 3rem;
-} */
+#sideName {
+    border: 2px solid white;
+    padding-top: 1rem;
+}
+
+#sideNameFirst {
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+#sideNameLast {
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
 
 #copyright {
     margin-top: 10rem;
@@ -71,7 +89,7 @@ a {
     /* background-attachment: fixed; */
     /* background-position: center; */
     /* background-image: url(/img/beachwood.png);*/
-    height: 1500px;
+    /* height: 1500px; */
     margin-top: 5rem;
 
 }
@@ -92,6 +110,16 @@ a {
     border-radius: 70%;
     margin-bottom: 2rem;
     margin-top: 3rem;
+}
+
+#indexContact h4 {
+    font-family: 'Bebas Neue', cursive;
+    color: #6b2643;
+    /* background-color: #6b2643; */
+    border: 2px solid #6b2643;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding: .5rem;
 }
 
 /* Resume View */
