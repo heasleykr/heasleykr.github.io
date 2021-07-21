@@ -12,7 +12,7 @@ function homeLoad(){
     var home = `
     <div class="container-fluid">
         <div class="d-flex flex-column align-items-center">
-            <img id="headShot" class="img-fluid img-thumbnail" src="../img/tempHeadshot.png" alt="headshot">
+            <img id="headShot" class="img-fluid img-thumbnail" src="../img/headshot.JPG" alt="headshot">
             <div class="d-flex flex-row">
                 <h1>Hi, I'm </h1>
                 <h1 class="ps-2" id="indexName">Katelynn Heasley!</h1>
@@ -22,8 +22,8 @@ function homeLoad(){
             </div>
             <hr>
             <div>
-                <p class="ps-2">I am a driven individual seeking junior-level employment within a creative team environment that attains to develop, design, and bring innovative devices and services through the use of cutting-edge software development. With over 9 years of working in healthcare, music, and the United States Marine Corps, I am committed to quality work and to joining a team that is on the forefront of technology innovation. Please contact me for any inquries, interest, or opportunites you may have.
-                        -Katelynn </p>
+                <p class="ps-2">I am a driven individual seeking junior-level employment within a creative team environment that attains to develop, design, and bring innovative devices and services through the use of cutting-edge software development. With over 9 years of working in healthcare, music, and the United States Marine Corps, I am committed to quality work and to joining a team that is on the forefront of technology innovation. Please contact me for any inquries, interest, or opportunites you may have.</p>
+                <p class="d-flex flex-row-reverse pe-5"> - Katelynn</p>
             </div>
         </div>
         <hr>
@@ -60,9 +60,12 @@ function resumeLoad(){
 
     //content to be displayed
     var resume =`
-        <div>
-            <div id="leftSide">
-                <h1>Katelynn R Heasley</h1>
+        <div class="d-flex p-3">
+            <div id="leftSide" class="p-3">
+                <div class="d-flex">
+                    <h1 class="firstName pe-2">KATELYNN</h1>
+                    <h1 class="lastName">Heasley</h1>
+                </div>
                 <h2>Web Designer</h2>
                 <button><a href="/img/KHeasley_Resume.pdf">Download Resume<i class="fas fa-arrow-circle-down"></i></a></button>
                 <div>
@@ -106,7 +109,7 @@ function resumeLoad(){
                 <div></div>
             </div>
             <hr>
-            <div id="rightSide">
+            <div id="rightSide" class="p-3">
                 <div>
                     <p>I am a driven and creative individual who is currently completing both a second bachelors in Computer Science and a Full-Stack Coding Program to fully immerse myself in learning the art of software development. Two years ago, I made the decision to make a career change into software development from the classical music industry. Since then, I am working to educate myself to become the best developer I can. I seek junior-level employment within a creative team environment that attains to develop, design, and bring innovative devices and services through the use of cutting-edge software development. With over 9 years of working in healthcare, music, and the United States Marine Corps, I am committed to quality work and to joining a team that is on the forefront of technology innovation. Please contact me for any inquries, interest, or opportunites you may have.
                         -Katelynn </p>
@@ -115,68 +118,100 @@ function resumeLoad(){
                
                 <div>
                     <hr>
-                    <h4>CERTIFICATION:</h4>
+                    <h4>Certification:</h4>
                     <hr>
-                    <p>PSM I: The Professional Scrum Master Level I (PSM I)</p>
-                    <p>January 2021</p>
+                    <div class="d-flex justify-content-evenly">
+                        <p>January 2021</p>
+                        <p>PSM I: The Professional Scrum Master Level I (PSM I)</p>
+                    </div>
                 </div>
                 
                 <div>
                     <hr>
-                    <h2>Experience</h2>
+                    <h4>Experience</h4>
                     <hr>
-                    <div>
-                        <h3>Patient Registrar, Department of Sharp Staffing Resource Network</h3>
-                        <h3>July 2020 – Current</h3>
-                        <h3>Sharp Healthcare</h3>
-                        <p>Assisted department with registration, including insurance verification, benefits verification,referrals and collected patient liability.</p>
-                        <p>Assisted department with insurance notifications and patient rights per guidelines to include emergency, urgent and elective medical care.</p>
+                    <div class="d-flex justify-content-start">
+                        <div>
+                            <p>July 2020 – Current</p>
+                        </div>
+                        <div>
+                            <p class="fw-bold">Patient Registrar, Department of Sharp Staffing Resource Network</p>
+                            
+                            <p class="fw-light">Sharp Healthcare</p>
+
+                            <p>Assisted department with registration, including insurance verification, benefits verification,referrals and collected patient liability.</p>
+                            <p>Assisted department with insurance notifications and patient rights per guidelines to include emergency, urgent and elective medical care.</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Patient Registrar, Department of Patient Access</h3>
-                        <h3>July 2017 – August 2019</h3>
-                        <h3>UC San Diego Health</h3>
-                        <p>Assisted department with registration, including insurance verification, benefits verification, referrals and collected patient liability.</p>
-                        <p>Assisted department with insurance notifications and patient rights per guidelines to include emergency, urgent and elective medical care.</p>
+                    <div class="d-flex justify-content-start">
+                        <div>
+                            <p>July 2017 – August 2019</p>
+                        </div>
+                        <div>
+                            <p class="fw-bold">Patient Registrar, Department of Patient Access</p>
+                            
+                            <p>UC San Diego Health<p>
+
+                            <p>Assisted department with registration, including insurance verification, benefits verification, referrals and collected patient liability.</p>
+                            <p>Assisted department with insurance notifications and patient rights per guidelines to include emergency, urgent and elective medical care.</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Public Affairs Coordinator, United States Marine Corps Band</h3>
-                        <h3>November 2012 - November 2016</h3>
-                        <h3>Third Marine Aircraft Wing</h3>
-                        <p>Maintained community relations and marketed performance events across social media and local community platforms resulting in a 15% increase in performance opportunities and audience support.</p>
-                        <p>Facilitated and designed public outreach tables during performance events that resulted in personal contact and communication with over 50,000 people.</p>
+                    <div class="d-flex justify-content-start">
+                        <div>
+                            <p>November 2012 - November 2016</p>
+                        </div>
+                        <div>
+                            <p class="fw-bold">Public Affairs Coordinator, United States Marine Corps Band</p>
+                            
+                            <p>Third Marine Aircraft Wing</p>
+
+                            <p>Maintained community relations and marketed performance events across social media and local community platforms resulting in a 15% increase in performance opportunities and audience support.</p>
+                            <p>Facilitated and designed public outreach tables during performance events that resulted in personal contact and communication with over 50,000 people.</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Musician/Percussionist, United States Marine Corps Band</h3>
-                        <h3>November 2012 - November 2016</h3>
-                        <h3>Third Marine Aircraft Wing</h3>
-                        <p>Maintained and upheld the history and traditions of the United States Marine Corps through weekly performances for both military and civilian audiences across the United States in multiple ensembles to include marching bands, rock bands, jazz ensembles, and symphonic bands that amounted to over 500 musical performances.</p>
-                        <p>Wrote and composed military marching cadences for the ensemble which was performance for an audience with over tens of thousands in attendance.</p>
-                        <p>Provided over 50 hours of musical instruction and guidance to 8 percussion employees in preparation for community performances.</p>
+                    <div class="d-flex justify-content-start">
+                        <div>
+                            <p>November 2012 - November 2016</p>
+                        </div>
+                        <div>
+                            <p class="fw-bold">Musician/Percussionist, United States Marine Corps Band</p>
+                            
+                            <p>Third Marine Aircraft Wing</p>
+
+                            <p>Maintained and upheld the history and traditions of the United States Marine Corps through weekly performances for both military and civilian audiences across the United States in multiple ensembles to include marching bands, rock bands, jazz ensembles, and symphonic bands that amounted to over 500 musical performances.</p>
+                            <p>Wrote and composed military marching cadences for the ensemble which was performance for an audience with over tens of thousands in attendance.</p>
+                            <p>Provided over 50 hours of musical instruction and guidance to 8 percussion employees in preparation for community performances.</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3>Patient Services Assistant, University of Michigan Health System</h3>
-                        <h3>August 2010 - August 2012</h3>
-                        <h3>Department of Urology & Department of General Surgery</h3>
-                        <p>Verified patient eligibility, distributed new patient registration packets, ensured accuracy of forms resulting in an increase in organizational operations for the patient care team.</p>
-                        <p>Scheduled new and return clinic visits, diagnostic services, and ambulatory procedures for patients according to physician associate guidelines.</p>
-                        <p>Accepted payment for medical services according to cash acceptance guidelines and performed daily reconciliation with zero balance discrepancies.</p>
+                    <div class="d-flex justify-content-start">
+                        <div>
+                            <p>August 2010 - August 2012</p>
+                        </div>
+                        <div>
+                            <p class="fw-bold">Patient Services Assistant, University of Michigan Health System</p>
+                            
+                            <p>Department of Urology & Department of General Surgery</p>
+                            
+                            <p>Verified patient eligibility, distributed new patient registration packets, ensured accuracy of forms resulting in an increase in organizational operations for the patient care team.</p>
+                            <p>Scheduled new and return clinic visits, diagnostic services, and ambulatory procedures for patients according to physician associate guidelines.</p>
+                            <p>Accepted payment for medical services according to cash acceptance guidelines and performed daily reconciliation with zero balance discrepancies.</p>
+                        </div>
                     </div>
                 </div>
 
                 <div>
                     <hr>
-                    <h2>Education</h2>
+                    <h4>Education</h4>
                     <hr>
                     <div>
-                        <h4>CURRENT ENROLLMENTS:</h4>
+                        <h4>Current Enrollments:</h4>
                         <p>SECOND BACHELORS /</p>
                         <p>BS, Computer Science  /</p>
                         <p>San Diego Miramar College </p>
                         <p>Expected Comp: May 2022</p>
                     </div>
                     <div>
-                        <h4>COMPLETED: </h4>
+                        <h4>Completed: </h4>
                         <div>
                             <p>FULL-STACK CODING PROGRAM/</p>
                             <p>San Diego Global Knowledge University</p>
@@ -192,7 +227,7 @@ function resumeLoad(){
                 <hr>
                
                 <div>
-                    <h2>Key Classes Completed towards BS Computer Science</h2>
+                    <h4>Key classes completed towards BS Computer Science</h4>
                     <div>
                         <p>Introduction to Java</p>
                         <p>Intermediate Java Programming</p>
@@ -204,7 +239,7 @@ function resumeLoad(){
                 <hr>
                 <div>
                     <hr>
-                    <h2>Recommendations</h2>
+                    <h4>Recommendations</h4>
                     <hr>
                     <img src="/img/inzunza.pdf" alt="">
                     <img src="/img/mejia.pdf" alt="">

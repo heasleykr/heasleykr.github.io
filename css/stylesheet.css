@@ -66,12 +66,14 @@ a {
     padding-top: 1rem;
 }
 
-#sideNameFirst {
+#sideNameFirst,
+.firstName {
     color: white;
     font-family: 'Rajdhani', sans-serif;
 }
 
-#sideNameLast {
+#sideNameLast,
+.lastName {
     font-family: 'Bebas Neue', cursive;
     color: white;
 }
@@ -124,14 +126,20 @@ a {
 
 /* Resume View */
 #leftSide {
-    background-color: #18996e;
+    background-color: #6b2643;
     color: white;
 
 }
 
+#rightSide {
+    color: #6b2643;
+    font-size: .8rem;
+}
+
 /* Footer */
 #fwrapper {
-    height: 30rem;
+    height: 10rem;
+    margin-top: 6rem;
     /* background-image: url(/img/footer.png);
     background-color: #000000;
     background-repeat: no-repeat;
@@ -144,7 +152,7 @@ a {
 }
 
 #grid2 {
-    color: brown;
+    color: #6b2643;
     margin-right: 1rem;
 }
 
@@ -154,20 +162,20 @@ a {
 }
 
 #grid3 {
-    color: brown;
+    color: #6b2643;
     margin-right: 2.7rem;
 }
 
 #grid3 a {
-    color: brown;
+    color: #6b2643;
     font-family: 'Raleway', sans-serif;
     margin: 2rem;
 
 }
 
 #grid4 {
-    margin-top: 17rem;
+    margin-top: 6rem;
     margin-left: 5rem;
-    color: brown;
+    color: #6b2643;
     font-family: 'Raleway', sans-serif;
 }
