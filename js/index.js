@@ -115,14 +115,22 @@ function resumeLoad(){
                         -Katelynn </p>
                 </div>
 
-               
                 <div>
                     <hr>
                     <h4>Certification:</h4>
                     <hr>
-                    <div class="d-flex justify-content-evenly">
-                        <p>January 2021</p>
-                        <p>PSM I: The Professional Scrum Master Level I (PSM I)</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-2">
+                                <p class="ps-3">January 2021</p>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex justify-content-start">
+                                    <p class="me-2 fw-bold">PSM I: </p>
+                                    <p>The Professional Scrum Master Level I (PSM I)</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
@@ -130,71 +138,160 @@ function resumeLoad(){
                     <hr>
                     <h4>Experience</h4>
                     <hr>
-                    <div class="d-flex justify-content-start">
-                        <div>
-                            <p>July 2020 – Current</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-2">
+                                <p class="ps-3">July 2020 –</p>
+                            </div>
+                            <div class="col">
+                                <p class="fw-bold">Patient Registrar, Department of Sharp Staffing Resource Network</p>
+                            </div>
                         </div>
-                        <div>
-                            <p class="fw-bold">Patient Registrar, Department of Sharp Staffing Resource Network</p>
-                            
-                            <p class="fw-light">Sharp Healthcare</p>
-
-                            <p>Assisted department with registration, including insurance verification, benefits verification,referrals and collected patient liability.</p>
-                            <p>Assisted department with insurance notifications and patient rights per guidelines to include emergency, urgent and elective medical care.</p>
+                        <div class="row">
+                            <div class="col-2">
+                                <p class="ps-3">Current</p>
+                            </div>
+                            <div class="col">
+                                <p class="fw-light">Sharp Healthcare</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-start">
-                        <div>
-                            <p>July 2017 – August 2019</p>
+                        <div class="row mb-5">
+                            <div class="col-2"></div>
+                            <div class="col">
+                                <div class="d-flex">
+                                    <i class="fas fa-circle pt-2"></i>
+                                    <p>Assisted department with registration, including insurance verification, benefits verification,referrals and collected patient liability.</p>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="fas fa-circle pt-2"></i>
+                                    <p>Assisted department with insurance notifications and patient rights per guidelines to include emergency, urgent and elective medical care.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <p class="fw-bold">Patient Registrar, Department of Patient Access</p>
-                            
-                            <p>UC San Diego Health<p>
-
-                            <p>Assisted department with registration, including insurance verification, benefits verification, referrals and collected patient liability.</p>
-                            <p>Assisted department with insurance notifications and patient rights per guidelines to include emergency, urgent and elective medical care.</p>
+                    
+                        <div class="row">
+                            <div class="col-2">
+                                <p class="ps-3">July 2017 –</p>
+                            </div>
+                            <div class="col">
+                                <p class="fw-bold">Patient Registrar, Department of Patient Access</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-start">
-                        <div>
-                            <p>November 2012 - November 2016</p>
+                        <div class="row">
+                            <div class="col-2">
+                                <p class="ps-3">August 2019</p>
+                            </div>
+                            <div class="col">
+                                <p>UC San Diego Health<p>
+                            </div>
                         </div>
-                        <div>
-                            <p class="fw-bold">Public Affairs Coordinator, United States Marine Corps Band</p>
-                            
-                            <p>Third Marine Aircraft Wing</p>
-
-                            <p>Maintained community relations and marketed performance events across social media and local community platforms resulting in a 15% increase in performance opportunities and audience support.</p>
-                            <p>Facilitated and designed public outreach tables during performance events that resulted in personal contact and communication with over 50,000 people.</p>
+                        <div class="row mb-5">
+                            <div class="col-2"></div>
+                            <div class="col">
+                                <div class="d-flex">
+                                    <i class="fas fa-circle pt-2"></i>
+                                    <p>Assisted department with registration, including insurance verification, benefits verification, referrals and collected patient liability.</p>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="fas fa-circle pt-2"></i>
+                                    <p>Assisted department with insurance notifications and patient rights per guidelines to include emergency, urgent and elective medical care.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-start">
-                        <div>
-                            <p>November 2012 - November 2016</p>
+                        <div class="row">
+                            <div class="col-2">
+                                <p class="ps-3">November 2012 -</p>
+                            </div>
+                            <div class="col">
+                                <p class="fw-bold">Public Affairs Coordinator, United States Marine Corps Band</p>
+                            </div>
                         </div>
-                        <div>
-                            <p class="fw-bold">Musician/Percussionist, United States Marine Corps Band</p>
-                            
-                            <p>Third Marine Aircraft Wing</p>
-
-                            <p>Maintained and upheld the history and traditions of the United States Marine Corps through weekly performances for both military and civilian audiences across the United States in multiple ensembles to include marching bands, rock bands, jazz ensembles, and symphonic bands that amounted to over 500 musical performances.</p>
-                            <p>Wrote and composed military marching cadences for the ensemble which was performance for an audience with over tens of thousands in attendance.</p>
-                            <p>Provided over 50 hours of musical instruction and guidance to 8 percussion employees in preparation for community performances.</p>
+                        <div class="row">
+                            <div class="col-2">
+                                <p class="ps-3">November 2016</p>
+                            </div>
+                            <div class="col">
+                                <p>Third Marine Aircraft Wing</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="d-flex justify-content-start">
-                        <div>
-                            <p>August 2010 - August 2012</p>
+                        <div class="row mb-5">
+                            <div class="col-2"></div>
+                            <div class="col">
+                                <div class="d-flex">
+                                    <i class="fas fa-circle pt-2"></i>
+                                    <p>Maintained community relations and marketed performance events across social media and local community platforms resulting in a 15% increase in performance opportunities and audience support.</p>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="fas fa-circle pt-2"></i>
+                                    <p>Facilitated and designed public outreach tables during performance events that resulted in personal contact and communication with over 50,000 people.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <p class="fw-bold">Patient Services Assistant, University of Michigan Health System</p>
-                            
-                            <p>Department of Urology & Department of General Surgery</p>
-                            
-                            <p>Verified patient eligibility, distributed new patient registration packets, ensured accuracy of forms resulting in an increase in organizational operations for the patient care team.</p>
-                            <p>Scheduled new and return clinic visits, diagnostic services, and ambulatory procedures for patients according to physician associate guidelines.</p>
-                            <p>Accepted payment for medical services according to cash acceptance guidelines and performed daily reconciliation with zero balance discrepancies.</p>
+                        <div class="row">
+                            <div class="col-2">
+                                <p class="ps-3">November 2012 -</p>
+                            </div>
+                            <div class="col">
+                                <p class="fw-bold">Musician/Percussionist, United States Marine Corps Band</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+                                <p class="ps-3">November 2016</p>
+                            </div>
+                            <div class="col">
+                                <p>Third Marine Aircraft Wing</p>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-2"></div>
+                            <div class="col">
+                                <div class="d-flex">
+                                    <i class="fas fa-circle pt-2"></i>
+                                    <p>Maintained and upheld the history and traditions of the United States Marine Corps through weekly performances for both military and civilian audiences across the United States in multiple ensembles to include marching bands, rock bands, jazz ensembles, and symphonic bands that amounted to over 500 musical performances.</p>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="fas fa-circle pt-2"></i>
+                                    <p>Wrote and composed military marching cadences for the ensemble which was performance for an audience with over tens of thousands in attendance.</p>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="fas fa-circle pt-2"></i>
+                                    <p>Provided over 50 hours of musical instruction and guidance to 8 percussion employees in preparation for community performances.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+                                <p class="ps-3">August 2010 -</p>
+                            </div>
+                            <div class="col">
+                                <p class="fw-bold">Patient Services Assistant, University of Michigan Health System</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+                                <p class="ps-3">August 2012</p>
+                            </div>
+                            <div class="col">
+                                <p>Department of Urology & Department of General Surgery</p>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-2"></div>
+                            <div class="col">
+                                <div class="d-flex">
+                                    <i class="fas fa-circle pt-2"></i>
+                                    <p>Verified patient eligibility, distributed new patient registration packets, ensured accuracy of forms resulting in an increase in organizational operations for the patient care team.</p>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="fas fa-circle pt-2"></i>
+                                    <p>Scheduled new and return clinic visits, diagnostic services, and ambulatory procedures for patients according to physician associate guidelines.</p>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="fas fa-circle pt-2"></i>
+                                    <p>Accepted payment for medical services according to cash acceptance guidelines and performed daily reconciliation with zero balance discrepancies.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -203,37 +300,92 @@ function resumeLoad(){
                     <hr>
                     <h4>Education</h4>
                     <hr>
-                    <div>
-                        <h4>Current Enrollments:</h4>
-                        <p>SECOND BACHELORS /</p>
-                        <p>BS, Computer Science  /</p>
-                        <p>San Diego Miramar College </p>
-                        <p>Expected Comp: May 2022</p>
-                    </div>
-                    <div>
-                        <h4>Completed: </h4>
-                        <div>
-                            <p>FULL-STACK CODING PROGRAM/</p>
-                            <p>San Diego Global Knowledge University</p>
-                            <p>March 2021</p>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <h4>Current Enrollments:</h4>
+                            </div>
                         </div>
-                        <div>
-                            <p>BACHELOR OF ARTS, MUSIC PERFORMANCE /</p>
-                            <p>UNIVERSITY OF MICHIGAN</p>
-                            <p>May 2011</p>
+                        <div class="row">
+                            <div class="col-4">
+                                <p class="ps-3">Expected Comp: May 2022</p>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex justify-content-start">
+                                    <p class="me-2 fw-bold">SECOND BACHELORS:</p>
+                                    <p>B.S. in Computer Science, San Diego Miramar College</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <h4>Completed: </h4>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <p class="ps-3">March 2021</p>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex justify-content-start">
+                                    <p class="me-2 fw-bold">FULL-STACK CODING PROGRAM:</p>
+                                    <p>San Diego Global Knowledge University</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <p class="ps-3">May 2011</p>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex justify-content-start">
+                                    <p class="me-2 fw-bold">BACHELORS:</p>
+                                    <p>B.A. in Music Performance, University of Michigan</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <hr>
                
                 <div>
-                    <h4>Key classes completed towards BS Computer Science</h4>
-                    <div>
-                        <p>Introduction to Java</p>
-                        <p>Intermediate Java Programming</p>
-                        <p>Computer Org and Assembly Lang</p>
-                        <p>Introduction to C/C++</p>
-                        <p>Calculus/Analytic Geometry II</p>
+                    <hr>
+                    <h4>Key classes completed towards B.S. in Computer Science</h4>
+                    <hr>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-4 ps-3">
+                                <div class="d-flex">
+                                    <i class="fas fa-circle pt-2"></i>
+                                    <p>Introduction to Java</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex">
+                                    <i class="fas fa-circle pt-2"></i>
+                                    <p>Intermediate Java Programming</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex">
+                                    <i class="fas fa-circle pt-2"></i>
+                                    <p>Computer Org and Assembly Lang</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 ps-3">
+                                <div class="d-flex">
+                                    <i class="fas fa-circle pt-2"></i>
+                                    <p>Introduction to C/C++</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex">
+                                    <i class="fas fa-circle pt-2"></i>
+                                    <p>Calculus/Analytic Geometry II</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <hr>
