@@ -44,9 +44,14 @@ function aboutLoad(){
 
     //content to be displayed
     var about = `
-    <div>
-        <h2>TODO:</h2>
-        <h4>Insert Biographicall information here. Career paragraph and more.</h4>
+    <div class="card bg-dark text-white border-0">
+        <img src="../img/headshot2.jpg" class="card-img" alt="headshot2">
+        <div id="aboutCard" class="card-img-overlay">
+            <h2>TODO:</h2>
+            <h4>Insert Biographicall information here. Career paragraph and more.</h4>
+            <p>I am a driven and creative individual who is currently completing both a second bachelors in Computer Science and a Full-Stack Coding Program to fully immerse myself in learning the art of software development. Two years ago, I made the decision to make a career change into software development from the classical music industry. Since then, I am working to educate myself to become the best developer I can. I seek junior-level employment within a creative team environment that attains to develop, design, and bring innovative devices and services through the use of cutting-edge software development. With over 9 years of working in healthcare, music, and the United States Marine Corps, I am committed to quality work and to joining a team that is on the forefront of technology innovation. Please contact me for any inquries, interest, or opportunites you may have.
+                            -Katelynn </p>
+        </div>
     </div>
     `;
 
@@ -61,59 +66,75 @@ function resumeLoad(){
     //content to be displayed
     var resume =`
         <div class="d-flex p-3">
-            <div id="leftSide" class="p-3">
-                <div class="d-flex">
-                    <h1 class="firstName pe-2">KATELYNN</h1>
-                    <h1 class="lastName">Heasley</h1>
-                </div>
-                <h2>Web Designer</h2>
-                <button><a href="/img/KHeasley_Resume.pdf">Download Resume<i class="fas fa-arrow-circle-down"></i></a></button>
-                <div>
-                    <h2>Personal Information</h2>
-
-                    <h3>Phone</h3>
-                    <p>(619) 317-4334</p>
-
-                    <h3>Email</h3>
-                    <p>heasleykr@gmail.com</p>
-
-                    <h3>WWW</h3>
-                    <p>www.katelynnheasley.com</p>
-
-                    <h3>Address</h3>
-                    <p>4454 Dawson Ave Apt 6</p>
-                    <p>San Diego, CA 92115</p>
-                    
-                    <h3>LinkedIn</h3>
-                    <p>https://www.linkedin.com/in/katelynn-heasley-13933435/</p>
+            <div id="leftSide">
+                <div class="p-3">
+                    <div class="d-flex">
+                        <h1 class="firstName pe-2">KATELYNN</h1>
+                        <h1 class="lastName">Heasley</h1>
+                    </div>
+                    <p class="d-flex justify-content-center">Web Designer</p>
+                    <div class="d-flex justify-content-center">
+                        <button id="downloadBtn"class="btn btn-success shadow rounded-pill"><a href="/img/KHeasley_Resume.pdf"><i class="fas fa-arrow-circle-down me-2"></i>Download</a>
+                        </button>
+                    </div>
                 </div>
                 <div>
-                    <h2>Hard Skills</h2>
-                        <div>
-                            <h4>Coding Language Exposure:</h4>
-                            <p>Java, C#, C++, Python, Javascript, Html, CSS, Assembly, SQL</p>
-                        </div>
-                        <div>
-                            <h4>Framework Exposure:</h4>
-                            <p>React, Django, Flask, ASP.Net Core/Entity Framework</p>
-                        </div>
-                        <div>
-                            <h4>Virtual Environment Exposure:</h4>
-                            <p>Amazon AWS EC2 Instances</p>
-                        </div>
-                        <div>
-                            <h4>Development Environment Exposure:</h4>
-                            <p>Visual Studio Code IDE, JetBrains IntelliJ IDE, NetBeans IDE, Dr. Java JDK</p>
+                    <h3 class="leftHeaders ps-3 d-flex">Personal Info</h3>
+                    <div class="p-3">
+                        <p class="p_info fw-bold">Phone</p>
+                        <p>(619) 317-4334</p>
+
+                        <p class="p_info fw-bold">Email</p>
+                        <p>heasleykr@gmail.com</p>
+
+                        <p class="p_info fw-bold">WWW</p>
+                        <p>www.katelynnheasley.com</p>
+
+                        <p class="p_info fw-bold">LinkedIn</p>
+                        <p>linkedin.com/in/katelynn-heasley-13933435/</p>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <h3 class="leftHeaders ps-3">Hard Skills</h3>
+                        <div class="p-3">
+                            <div class="card mb-3 border-0">
+                                <div class="card-header h_title">
+                                    <p class="card-title">Coding Language Exposure:</p>
+                                </div>
+                                <div class="card-body h_body">
+                                    <p class="card-text">Java, C#, C++, Python, Javascript, Html, CSS, Assembly, SQL</p>
+                                </div>
+                            </div>
+                            <div class="card mb-3 border-0">
+                                <div class="card-header h_title">
+                                    <p class="card-title">Framework Exposure:</p>
+                                </div>
+                                <div class="card-body h_body">
+                                    <p class="card-text">React, Django, Flask, ASP.Net Core/Entity Framework</p>
+                                </div>
+                            </div>
+                            <div class="card mb-3 border-0">
+                                <div class="card-header h_title">
+                                    <p class="card-title">Virtual Environment Exposure:</p>
+                                </div>
+                                <div class="card-body h_body">
+                                    <p class="card-text">Amazon AWS EC2 Instances</p>
+                                </div>
+                            </div>
+                            <div class="card mb-3 border-0">
+                                <div class="card-header h_title">
+                                    <p class="card-title">Development Environment Exposure:</p>
+                                </div>
+                                <div class="card-body h_body">
+                                    <p class="card-text">Visual Studio Code IDE, JetBrains IntelliJ IDE, NetBeans IDE, Dr. Java JDK</p>
+                                </div>
+                            </div>
                         </div>
                 </div>
-                <div></div>
+  
             </div>
             <hr>
             <div id="rightSide" class="p-3">
-                <div>
-                    <p>I am a driven and creative individual who is currently completing both a second bachelors in Computer Science and a Full-Stack Coding Program to fully immerse myself in learning the art of software development. Two years ago, I made the decision to make a career change into software development from the classical music industry. Since then, I am working to educate myself to become the best developer I can. I seek junior-level employment within a creative team environment that attains to develop, design, and bring innovative devices and services through the use of cutting-edge software development. With over 9 years of working in healthcare, music, and the United States Marine Corps, I am committed to quality work and to joining a team that is on the forefront of technology innovation. Please contact me for any inquries, interest, or opportunites you may have.
-                        -Katelynn </p>
-                </div>
 
                 <div>
                     <hr>
@@ -152,7 +173,7 @@ function resumeLoad(){
                                 <p class="ps-3">Current</p>
                             </div>
                             <div class="col">
-                                <p class="fw-light">Sharp Healthcare</p>
+                                <p class="fw-light fst-italic">Sharp Healthcare</p>
                             </div>
                         </div>
                         <div class="row mb-5">
@@ -182,7 +203,7 @@ function resumeLoad(){
                                 <p class="ps-3">August 2019</p>
                             </div>
                             <div class="col">
-                                <p>UC San Diego Health<p>
+                                <p class="fst-italic">UC San Diego Health<p>
                             </div>
                         </div>
                         <div class="row mb-5">
@@ -211,7 +232,7 @@ function resumeLoad(){
                                 <p class="ps-3">November 2016</p>
                             </div>
                             <div class="col">
-                                <p>Third Marine Aircraft Wing</p>
+                                <p class="fst-italic">Third Marine Aircraft Wing</p>
                             </div>
                         </div>
                         <div class="row mb-5">
@@ -240,7 +261,7 @@ function resumeLoad(){
                                 <p class="ps-3">November 2016</p>
                             </div>
                             <div class="col">
-                                <p>Third Marine Aircraft Wing</p>
+                                <p class="fst-italic">Third Marine Aircraft Wing</p>
                             </div>
                         </div>
                         <div class="row mb-5">
@@ -273,7 +294,7 @@ function resumeLoad(){
                                 <p class="ps-3">August 2012</p>
                             </div>
                             <div class="col">
-                                <p>Department of Urology & Department of General Surgery</p>
+                                <p class="fst-italic">Department of Urology & Department of General Surgery</p>
                             </div>
                         </div>
                         <div class="row mb-5">

@@ -124,10 +124,59 @@ a {
     padding: .5rem;
 }
 
+/* About View */
+#aboutCard {
+    background-color: rgba(25, 25, 25, .50);
+}
+
 /* Resume View */
 #leftSide {
     background-color: #6b2643;
     color: white;
+
+}
+
+#downloadBtn a {
+    text-decoration: none;
+    color: white;
+    border-radius: 90%;
+}
+
+#downloadBtn a:link {
+    text-decoration: none;
+    color: white;
+}
+
+#downloadBtn i {
+    color: white;
+    /* font-size: 2rem; */
+}
+
+#downloadBtn a:hover,
+#downloadBtn i:hover {
+    color: #6b2643;
+}
+
+.p_info {
+    margin-bottom: -0.2rem;
+}
+
+.h_title {
+    color: white;
+    background-color: #3f1627;
+}
+
+.h_body {
+    color: #6b2643;
+}
+
+.h2_info {
+    color: #3f1627;
+    margin-bottom: 1rem;
+}
+
+.leftHeaders {
+    background-color: #3f1627;
 
 }
 
