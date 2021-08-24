@@ -97,6 +97,7 @@ a {
 }
 
 #mainLoad {
+    height: 100%;
     background-color: white;
     margin-left: 2rem;
 }
@@ -126,8 +127,43 @@ a {
 
 /* About View */
 #aboutCard {
-    background-color: rgba(25, 25, 25, .50);
+    width: 100%;
+    height: auto;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+    background-image: linear-gradient(to right, rgba(44, 42, 42, 1), rgba(14, 13, 13, .4)), url(/img/headshot2_tiny.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, top right;
+    color: white;
 }
+
+.about_border {
+    border: 1.5rem solid white;
+}
+
+.about_row1 {
+    margin-top: 10rem;
+}
+
+#about_head {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    border-bottom: 2rem solid #6b2643;
+    padding-bottom: 10rem;
+}
+
+.vertical_l {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+
+}
+
+.vertical_r {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+
+}
+
 
 /* Resume View */
 #leftSide {
@@ -183,6 +219,12 @@ a {
 #rightSide {
     color: #6b2643;
     font-size: .8rem;
+}
+
+#resume_head {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: #6b2643;
 }
 
 #rightSide i {

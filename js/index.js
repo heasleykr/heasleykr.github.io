@@ -44,13 +44,21 @@ function aboutLoad(){
 
     //content to be displayed
     var about = `
-    <div class="card bg-dark text-white border-0">
-        <img src="../img/headshot2.jpg" class="card-img" alt="headshot2">
-        <div id="aboutCard" class="card-img-overlay">
-            <h2>TODO:</h2>
-            <h4>Insert Biographicall information here. Career paragraph and more.</h4>
-            <p>I am a driven and creative individual who is currently completing both a second bachelors in Computer Science and a Full-Stack Coding Program to fully immerse myself in learning the art of software development. Two years ago, I made the decision to make a career change into software development from the classical music industry. Since then, I am working to educate myself to become the best developer I can. I seek junior-level employment within a creative team environment that attains to develop, design, and bring innovative devices and services through the use of cutting-edge software development. With over 9 years of working in healthcare, music, and the United States Marine Corps, I am committed to quality work and to joining a team that is on the forefront of technology innovation. Please contact me for any inquries, interest, or opportunites you may have.
-                            -Katelynn </p>
+    <div id="aboutCard">
+        <div class="p-3 about_border">
+            <div class="row py-5 about_row1">
+                <div class="col vertical_l text-uppercase"><p>Katelynn Heasley</p></div>
+                <div class="col-6 pb-5"><h2 id="about_head">About</h2></div> 
+                <div class="col vertical_r text-uppercase"><p>Web Designer</p></div>
+            </div>
+            <div class="row py-5">
+                <div class="col"></div>
+                <div class="col-6">
+                    <p>I am a driven and creative individual who is currently completing both a second bachelors in Computer Science and a Full-Stack Coding Program to fully immerse myself in learning the art of software development. Two years ago, I made the decision to make a career change into software development from the classical music industry. Since then, I am working to educate myself to become the best developer I can. I seek junior-level employment within a creative team environment that attains to develop, design, and bring innovative devices and services through the use of cutting-edge software development. With over 9 years of working in healthcare, music, and the United States Marine Corps, I am committed to quality work and to joining a team that is on the forefront of technology innovation. Please contact me for any inquries, interest, or opportunites you may have.
+                                    -Katelynn </p>
+                </div>
+                <div class="col"></div>
+            </div>
         </div>
     </div>
     `;
@@ -135,7 +143,7 @@ function resumeLoad(){
             </div>
             <hr>
             <div id="rightSide" class="p-3">
-
+                <div class="d-flex justify-content-center"><h2 id="resume_head">Resume</h2></div>
                 <div>
                     <hr>
                     <h4>Certification:</h4>
