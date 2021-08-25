@@ -14,7 +14,7 @@
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display&family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ultra&family=Kaushan+Script&family=Playfair+Display&family=Rajdhani:wght@300&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/stylesheet.css">
@@ -26,18 +26,44 @@
     <title>Katelynn Heasley</title>
 </head>
 <body id="main">
-    <!-- Top Diplay -->
-    <nav id="topBar" class="navbar navbar-light bg-light hide">
+    <!-- Top Display -->
+    <!-- <nav id="topBar" class="navbar navbar-light bg-light hide">
         <div class="container-fluid">
-            <!-- <a class="navbar-brand" href="#"> -->
+            <a href="#"><h3>Katelynn Heasley</h3></a>
+            <a href="#"><p>about</p></a>
+            <a href="#"><p>resume</p></a>
+            <a href="#"><p>portfolio</p></a>
+            <a href="#"><p>contact</p></a>
             <a type="button" id="btnShow"><i class="fas fa-bars"></i></a>
-            <img src="./img/headshot.JPG" alt="" width="30" height="24" class="d-inline-block align-text-top">
-            Katelynn Heasley
-            </a>
+            
         </div>
-    </nav>
+    </nav> -->
+    <ul id="topBar" class="nav justify-content-around hide border-bottom shadow pt-3">
+        <div class="justify-content-start">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" type="button" id="homeNav">Katelynn Heasley</a>
+            </li>
+        </div>
+        <div class="d-flex flex-row justify-content-end">
+            <li class="nav-item">
+            <a class="nav-link active" type="button" id="aboutNav">about</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" type="button" id="resumeNav">resume</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link active" type="button" id="folioNav">portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" type="button" id="contactNav">contact</a>
+            </li>
+            <li class="nav-item align-items-center">
+                <a type="button" id="btnShow"><i class="fas fa-bars"></i></a>
+            </li>
+        </div>
+      </ul>
     <!-- Wrapper -->
-    <div class="d-flex justify-content-center">
+    <div class="d-flex justify-content-center container-fluid">
         <div id="homeView" class="me-5 container-fluid d-flex justify-content-center">
             <!-- SideBar -->
             <div id="sideBar" class="sideBar">
@@ -73,12 +99,7 @@
         </div>
     </div>
     <div id="fwrapper">
-        <footer>
-            <!-- <div id="grid1" class="d-flex justify-content-center">
-                <a class="navbar-brand" href="#">
-                    <img id="footerLogo" src="/img/footer.png" alt="footer logo">
-                </a>
-            </div> -->
+        <footer id="trial">
             <div id="grid2" class="d-flex justify-content-center">
                 <i class="fab fa-twitter"></i>
                 <i class="fab fa-pinterest-square"></i>

@@ -4,7 +4,9 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-image: url(/img/pinks/mountains.jpg);
+    /* background-image: url(/img/pinks/mountains.jpg); */
+    /* background-color: black; */
+    background-color: white;
     /* height: 1500px; */
 }
 
@@ -19,6 +21,19 @@ a {
 
     /* This will keep space in layout */
     /* visibility: hidden; */
+}
+
+/* NavBar */
+#topBar {
+    height: 6rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+}
+
+#btnShow {
+    color: #6b2643;
+    margin-top: .6rem;
+    margin-left: .7rem;
 }
 
 /* SideDiv */
@@ -37,7 +52,7 @@ a {
 #sideBar a:hover {
     padding: 1.5rem;
     font-size: 1.2rem;
-    color: white;
+    color: black;
 }
 
 #sideBar ul {
@@ -62,20 +77,21 @@ a {
 }
 
 #sideName {
-    border: 2px solid white;
+    /* border: 2px solid white; */
+    border: 2px solid #6b2643;
     padding-top: 1rem;
 }
 
-#sideNameFirst,
-.firstName {
+#sideNameFirst {
     color: white;
+    color: #6b2643;
     font-family: 'Rajdhani', sans-serif;
 }
 
-#sideNameLast,
-.lastName {
+#sideNameLast {
     font-family: 'Bebas Neue', cursive;
     color: white;
+    color: #6b2643;
 }
 
 #copyright {
@@ -86,8 +102,9 @@ a {
 
 /* Home View */
 #homeView {
-    /* margin: 0;
-    background-repeat: no-repeat; */
+    margin: 0;
+    /* background-repeat: no-repeat; */
+
     /* background-attachment: fixed; */
     /* background-position: center; */
     /* background-image: url(/img/beachwood.png);*/
@@ -103,27 +120,55 @@ a {
 }
 
 /* Index View */
+#homePage {
+    width: 65rem;
+    height: 55rem;
+    background-image: url(/img/codebg.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+}
+
 #indexName {
-    color: #6b2643;
+    /* color: #6b2643; */
+    /* color: black; */
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    margin-bottom: 5rem;
+    background: linear-gradient(to right, rgba(78, 196, 131, 0.8), rgba(7, 174, 216, 0.8), rgba(168, 46, 152, 0.8));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-#headShot {
-    height: 170px;
-    width: 145px;
-    border-radius: 70%;
-    margin-bottom: 2rem;
-    margin-top: 3rem;
+.homeFocus {
+    font-family: 'Ultra', serif;
+    font-size: 1.5rem;
+    /* color: white; */
+    /* background: linear-gradient(to right, rgba(78, 168, 196, 0.8), rgba(168, 46, 152, 0.8));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
 }
 
-#indexContact h4 {
+.homeSub {
+    font-family: 'Playfair Display', serif;
+    /* color: white; */
+    /* background: linear-gradient(to right, rgba(207, 40, 40, 0.5), rgba(14, 13, 13, 0.4));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    color: black;
+}
+
+/* Contact info removed */
+/* #indexContact h4 {
     font-family: 'Bebas Neue', cursive;
     color: #6b2643;
     /* background-color: #6b2643; */
-    border: 2px solid #6b2643;
+/* border: 2px solid #6b2643;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    padding: .5rem;
-}
+    padding: .5rem; */
+
 
 /* About View */
 #aboutCard {
@@ -170,6 +215,16 @@ a {
     background-color: #6b2643;
     color: white;
 
+}
+
+.firstName {
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.lastName {
+    font-family: 'Bebas Neue', cursive;
+    color: white;
 }
 
 #downloadBtn a {
@@ -233,22 +288,25 @@ a {
 }
 
 /* Footer */
-#fwrapper {
+/* #fwrapper {
     height: 10rem;
-    margin-top: 6rem;
+    padding-top: 10rem;
     /* background-image: url(/img/footer.png);
     background-color: #000000;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: bottom; */
-}
+    background-position: bottom; 
+    background-color: black;
+}*/
 
-#grid1 {
-    margin-top: 2rem;
+#trial {
+    padding-top: 10rem;
+    background-color: black;
+    color: white;
 }
 
 #grid2 {
-    color: #6b2643;
+    /* color: #6b2643; */
     margin-right: 1rem;
 }
 
@@ -258,20 +316,19 @@ a {
 }
 
 #grid3 {
-    color: #6b2643;
+    /* color: #6b2643; */
     margin-right: 2.7rem;
 }
 
 #grid3 a {
-    color: #6b2643;
+    /* color: #6b2643; */
     font-family: 'Raleway', sans-serif;
     margin: 2rem;
-
 }
 
 #grid4 {
-    margin-top: 6rem;
+    padding-top: 3rem;
     margin-left: 5rem;
-    color: #6b2643;
+    /* color: #6b2643; */
     font-family: 'Raleway', sans-serif;
 }

@@ -10,26 +10,25 @@ function homeLoad(){
 
     //content to be displayed
     var home = `
-    <div class="container-fluid">
-        <div class="d-flex flex-column align-items-center">
-            <img id="headShot" class="img-fluid img-thumbnail" src="../img/headshot.JPG" alt="headshot">
-            <div class="d-flex flex-row">
-                <h1>Hi, I'm </h1>
-                <h1 class="ps-2" id="indexName">Katelynn Heasley!</h1>
-            </div>
-            <div class="pt-2">
-                <h3>Junior Web Designer and Web Developer</h3>
-            </div>
-            <hr>
-            <div>
-                <p class="ps-2">I am a driven individual seeking junior-level employment within a creative team environment that attains to develop, design, and bring innovative devices and services through the use of cutting-edge software development. With over 9 years of working in healthcare, music, and the United States Marine Corps, I am committed to quality work and to joining a team that is on the forefront of technology innovation. Please contact me for any inquries, interest, or opportunites you may have.</p>
-                <p class="d-flex flex-row-reverse pe-5"> - Katelynn</p>
+    <div id="homePage" class="container-fluid">
+        <div class="row justify-content-center mb-5">
+            <div class="col-8">
+                <h1 class="ps-2" id="indexName">Katelynn Heasley<h1>
             </div>
         </div>
-        <hr>
-        <div id="indexContact" class="d-flex flex-row justify-content-evenly">
-            <h4>Email: heasleykr@gmail.com</h4>
-            <h4>Phone: 619-317-4334</h4>
+        <div class="row pe-3">
+            <div class="col">
+                <div>
+                    <h3 class="homeSub">future</h3>
+                    <h3 class="homeFocus">Junior Web Designer & Web Developer</h3>
+                </div>
+            </div>
+            <div class="col">
+                <div class="d-flex flex-column align-items-end">
+                    <h3 class="homeFocus">Computer Science</h3>
+                    <h3 class="homeSub">student</h3>
+                </div>
+            </div>
         </div>
     </div>
     `;
@@ -561,17 +560,27 @@ function init(){
         $resBtn: document.getElementById('resumeBtn'),
         $folioBtn: document.getElementById('folioBtn'),
         $contactBtn: document.getElementById('contactBtn'),
+        $homeNav: document.getElementById('homeNav'),
+        $aboutNav: document.getElementById('aboutNav'),
+        $resNav: document.getElementById('resumeNav'),
+        $folioNav: document.getElementById('folioNav'),
+        $contactNav: document.getElementById('contactNav'),
     };
 
     //load main content
     homeLoad();
 
-    //catch click events on side nav panel
+    //catch click events on side-nav & top-nav panel
     UI.$homeBtn.onclick = homeLoad;
     UI.$aboutBtn.onclick = aboutLoad;
     UI.$resBtn.onclick = resumeLoad;
     UI.$folioBtn.onclick = folioLoad;
     UI.$contactBtn.onclick = contactLoad;
+    UI.$homeNav.onclick = homeLoad;
+    UI.$aboutNav.onclick = aboutLoad;
+    UI.$resNav.onclick = resumeLoad;
+    UI.$folioNav.onclick = folioLoad;
+    UI.$contactNav.onclick = contactLoad;
     UI.$btnHide.onclick = showDetails;
 
     //catch click events on top nav
