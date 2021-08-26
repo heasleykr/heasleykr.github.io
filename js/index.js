@@ -8,6 +8,9 @@ var visible = true;
 //Function to dynamically display Home page content
 function homeLoad(){
 
+    //update body background
+    UI.$body.classList.remove('portfolio');
+
     //content to be displayed
     var home = `
     <div id="homePage" class="container-fluid">
@@ -41,6 +44,9 @@ function homeLoad(){
 //Function to dynamically display About page content
 function aboutLoad(){
 
+    //update body background
+    UI.$body.classList.remove('portfolio');
+
     //content to be displayed
     var about = `
     <div id="aboutCard">
@@ -70,12 +76,15 @@ function aboutLoad(){
 //Function to dynamically display Resume page content
 function resumeLoad(){
 
+    //update body background
+    UI.$body.classList.remove('portfolio');
+
     //content to be displayed
     var resume =`
         <div class="d-flex p-3">
             <div id="leftSide">
                 <div class="p-3">
-                    <div class="d-flex">
+                    <div class="d-flex justify-content-center">
                         <h1 class="firstName pe-2">KATELYNN</h1>
                         <h1 class="lastName">Heasley</h1>
                     </div>
@@ -439,6 +448,9 @@ function resumeLoad(){
 //Function to dynamically display Portfolio page content
 function folioLoad(){
 
+    //update body background
+    UI.$body.classList.add('portfolio');
+
     //content to be displayed
     var folio = `
         <div>
@@ -487,6 +499,9 @@ function folioLoad(){
 
 //Function to dynamically display Contact page content
 function contactLoad(){
+
+    //update body background
+    UI.$body.classList.remove('portfolio');
 
     //content to be displayed
     var contact = `
@@ -550,6 +565,7 @@ function init(){
 
     // UI DOM Object
     UI = {
+        $body: document.getElementById('main'),
         $main: document.getElementById('mainLoad'),
         $side: document.getElementById('sideBar'),
         $top: document.getElementById('topBar'),
