@@ -115,7 +115,6 @@ a {
 
 #mainLoad {
     height: 100%;
-    background-color: white;
     margin-left: 2rem;
 }
 
@@ -296,9 +295,42 @@ a {
 /* Portfolio */
 .portfolio {
     width: 100%;
-    background-image: linear-gradient(to right, rgba(44, 42, 42, 1), rgba(14, 13, 13, .4)), url(/img/portfolio.png);
+    background-image: url(/img/portfolio.png), linear-gradient(to bottom, rgba(216, 208, 208, 0.4), rgb(255, 255, 255));
     background-repeat: no-repeat, no-repeat;
-    background-position: top left, top right;
+    background-position: top right, top;
+    background-attachment: fixed;
+    height: 1500px;
+}
+
+#port_head {
+    font-family: 'Playfair Display', serif;
+    font-size: 6rem;
+    /* border-bottom: 2rem solid #6b2643;
+    padding-bottom: 10rem; */
+    color: #776a6a;
+}
+
+#gitBtn a {
+    color: white;
+    /* border-bottom: 2rem solid #6b2643; */
+    padding-bottom: 10rem;
+}
+
+#gitBtn a:link {
+    text-decoration: none;
+}
+
+#port_header {
+    margin-top: 3rem;
+    margin-left: 9rem;
+    margin-bottom: 15rem;
+}
+
+.port_cards {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgb(180, 178, 178));
+    background-repeat: no-repeat;
+    background-position: top;
+    margin-bottom: 3rem;
 }
 
 /* Footer */

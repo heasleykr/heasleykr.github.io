@@ -10,6 +10,7 @@ function homeLoad(){
 
     //update body background
     UI.$body.classList.remove('portfolio');
+    UI.$main.classList.add('bg-white');
 
     //content to be displayed
     var home = `
@@ -19,7 +20,7 @@ function homeLoad(){
                 <h1 class="ps-2" id="indexName">Katelynn Heasley<h1>
             </div>
         </div>
-        <div class="row pe-3">
+        <div class="row pe-3 bg-white">
             <div class="col">
                 <div>
                     <h3 class="homeSub">future</h3>
@@ -46,6 +47,7 @@ function aboutLoad(){
 
     //update body background
     UI.$body.classList.remove('portfolio');
+    UI.$main.classList.add('bg-white');
 
     //content to be displayed
     var about = `
@@ -78,6 +80,7 @@ function resumeLoad(){
 
     //update body background
     UI.$body.classList.remove('portfolio');
+    UI.$main.classList.add('bg-white');
 
     //content to be displayed
     var resume =`
@@ -450,44 +453,54 @@ function folioLoad(){
 
     //update body background
     UI.$body.classList.add('portfolio');
+    UI.$main.classList.remove('bg-white');
 
     //content to be displayed
     var folio = `
-        <div>
-            <h2>Portfolio</h2>
-            <h3>GitHub:  https://github.com/heasleykr</h3>
-            <hr>
-            <div>
-                <h3>ParkingLots</h3>
-                <h4>March 2021</h4>
-                <h4>URL: [https://github.com/heasleykr/ParkingLots]</h4>
-                <p>Built web application using the Django Framework, which utilizes APIs like CrispyForms, Jinja, Pillow, Bootstrap, and FontAwesome.</p>
-                <p>Employed Object Oriented Programming techniques to allow users to buy, sell, and rent parking spaces.</p>
-                <p>Designed and built logos and marketing content using Adobe Photoshop.</p>
+        <div class="bg-transparent">
+            <div id="port_header" class="d-flex">
+                <div class="d-flex flex-column justify-content-end">
+                <h2 id="port_head">Portfolio</h2>
+                <button id="gitBtn" class="btn btn-dark shadow rounded-pill"><a href="https://github.com/heasleykr"><i class="fab fa-github me-2"></i></a></i>Github</a>
+                    </button>
+                </div>
+                <div></div>
             </div>
             <div>
-                <h3>OrganicBeans</h3>
-                <h4>January 2021</h4>
-                <h4>URL: [https://github.com/heasleykr/OrganicBeansRedux]</h4>
-                <p>Web application build with React Framework for educational purposes with San Diego Global Knowledge University</p>
-                <p>Built and designed all front-end elements with original code, HTML/CSS/JS.</p>
-                <p>Utilizes Redux for state management in addition to AXIOS for web server connection for data storage.</p>
-            </div>
-            <div>
-                <h3>Property Rental</h3>
-                <h4>November 2020</h4>
-                <h4>URL: [https://github.com/heasleykr/Property-Rental-Web-Application]</h4>
-                <p>Web application build with Microsoft’s ASP .Net Core framework for educational purposes with San Diego Global Knowledge University</p>
-                <p>Built and designed all front-end elements with original code, HTML/CSS/JS.</p>
-                <p>Utilizes the Model-View-Controller architectural style and built backend alongside other students for the purposes of learning the ASP .Net Core framework.</p>
-            </div>
-            <div>
-                <h3>The Fashion Pet</h3>
-                <h4>September 2020</h4>
-                <h4>URL: [https://github.com/heasleykr/theFashionPet]</h4>
-                <p>Statically built website using HTML, CSS, & Javascript techniques.</p>
-                <p>Emphasized styling of content without API usage.</p>
-                <p>Used conventional CSS containers and techniques for layouts</p>
+                <div class="card port_cards">
+                    <div class="card body">
+                        <h3 class="card-title">ParkingLots</h3>
+                        <p>March 2021</p>
+                        <h4>URL: [https://github.com/heasleykr/ParkingLots]</h4>
+                        <p class="card-text">Built web application using the Django Framework, which utilizes APIs like CrispyForms, Jinja, Pillow, Bootstrap, and FontAwesome.</p>
+                        <p class="card-text">Employed Object Oriented Programming techniques to allow users to buy, sell, and rent parking spaces.</p>
+                        <p class="card-text">Designed and built logos and marketing content using Adobe Photoshop.</p>
+                    </div>
+                </div>
+                <div class="port_cards">
+                    <h3>OrganicBeans</h3>
+                    <h4>January 2021</h4>
+                    <h4>URL: [https://github.com/heasleykr/OrganicBeansRedux]</h4>
+                    <p>Web application build with React Framework for educational purposes with San Diego Global Knowledge University</p>
+                    <p>Built and designed all front-end elements with original code, HTML/CSS/JS.</p>
+                    <p>Utilizes Redux for state management in addition to AXIOS for web server connection for data storage.</p>
+                </div>
+                <div>
+                    <h3>Property Rental</h3>
+                    <h4>November 2020</h4>
+                    <h4>URL: [https://github.com/heasleykr/Property-Rental-Web-Application]</h4>
+                    <p>Web application build with Microsoft’s ASP .Net Core framework for educational purposes with San Diego Global Knowledge University</p>
+                    <p>Built and designed all front-end elements with original code, HTML/CSS/JS.</p>
+                    <p>Utilizes the Model-View-Controller architectural style and built backend alongside other students for the purposes of learning the ASP .Net Core framework.</p>
+                </div>
+                <div>
+                    <h3>The Fashion Pet</h3>
+                    <h4>September 2020</h4>
+                    <h4>URL: [https://github.com/heasleykr/theFashionPet]</h4>
+                    <p>Statically built website using HTML, CSS, & Javascript techniques.</p>
+                    <p>Emphasized styling of content without API usage.</p>
+                    <p>Used conventional CSS containers and techniques for layouts</p>
+                </div>
             </div>
         </div>
     `;
