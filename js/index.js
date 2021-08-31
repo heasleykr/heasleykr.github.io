@@ -10,6 +10,8 @@ function homeLoad(){
 
     //update body background
     UI.$body.classList.remove('portfolio');
+    UI.$body.classList.remove('resume');
+
     UI.$main.classList.add('bg-white');
 
     //content to be displayed
@@ -47,6 +49,8 @@ function aboutLoad(){
 
     //update body background
     UI.$body.classList.remove('portfolio');
+    UI.$body.classList.remove('resume');
+
     UI.$main.classList.add('bg-white');
 
     //content to be displayed
@@ -80,11 +84,13 @@ function resumeLoad(){
 
     //update body background
     UI.$body.classList.remove('portfolio');
+
+    UI.$body.classList.add('resume');
     UI.$main.classList.add('bg-white');
 
     //content to be displayed
     var resume =`
-        <div class="d-flex p-3">
+        <div class="d-flex mt-6 p-3">
             <div id="leftSide">
                 <div class="p-3">
                     <div class="d-flex justify-content-center">
@@ -453,6 +459,8 @@ function folioLoad(){
 
     //update body background
     UI.$body.classList.add('portfolio');
+
+    UI.$body.classList.remove('resume');
     UI.$main.classList.remove('bg-white');
 
     //content to be displayed
@@ -604,6 +612,9 @@ function contactLoad(){
 
     //update body background
     UI.$body.classList.remove('portfolio');
+    UI.$body.classList.remove('resume');
+
+    UI.$main.classList.add('bg-white');
 
     //content to be displayed
     var contact = `

@@ -11,7 +11,8 @@
 }
 
 a {
-    color: #6b2643;
+    /* color: #6b2643; */
+    color: white;
 }
 
 /* class to visually hide content on screen */
@@ -26,14 +27,35 @@ a {
 /* NavBar */
 #topBar {
     height: 6rem;
-    font-family: 'Playfair Display', serif;
-    font-size: 1.6rem;
-    background-color: white;
+    /* font-family: 'Playfair Display', serif; */
+    font-family: 'Bebas Neue', cursive;
+    /* font-size: 1.6rem; */
+    font-size: 1.2rem;
+    color: white;
+    /* background-color: white; */
+
 
 }
 
+#topBar a:hover {
+    color: white;
+    border-bottom: 2px solid #dca4b4;
+}
+
+#homeNav {
+    font-size: 1.8rem;
+    font-family: 'Rajdhani', sans-serif;
+    /* height: 100px; */
+    color: #dca4b4;
+    /* color: #bd365e; */
+    text-transform: uppercase;
+}
+
+
 #btnShow {
-    color: #6b2643;
+    /* color: #6b2643; */
+    /* color: #bd365e; */
+    color: #dca4b4;
     margin-top: .6rem;
     margin-left: .7rem;
 }
@@ -127,6 +149,7 @@ a {
     background-image: url(/img/codebg.png);
     background-repeat: no-repeat;
     background-position: bottom;
+    /* background-color: black; */
 
 }
 
@@ -212,6 +235,16 @@ a {
 
 
 /* Resume View */
+.resume {
+    width: 100%;
+    height: auto;
+    background-image: url(/img/water4.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    /* background-attachment: fixed; */
+    object-fit: cover;
+}
+
 #leftSide {
     background-color: #6b2643;
     color: white;
@@ -276,9 +309,9 @@ a {
     color: #6b2643;
     font-size: .8rem;
 
-    background-image: linear-gradient(to right, rgba(44, 42, 42, 1), rgba(14, 13, 13, .4)), url(/img/main_headshot_sm.jpg);
+    /* background-image: linear-gradient(to right, rgba(44, 42, 42, 1), rgba(14, 13, 13, .4)), url(/img/main_headshot_sm.jpg);
     background-repeat: no-repeat, no-repeat;
-    background-position: top, top right;
+    background-position: top, top right; */
 
 
 }
