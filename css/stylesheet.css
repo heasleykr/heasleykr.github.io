@@ -28,6 +28,8 @@ a {
     height: 6rem;
     font-family: 'Playfair Display', serif;
     font-size: 1.6rem;
+    background-color: white;
+
 }
 
 #btnShow {
@@ -296,6 +298,7 @@ a {
 .portfolio {
     width: 100%;
     background-image: url(/img/portfolio.png), linear-gradient(to bottom, rgba(216, 208, 208, 0.4), rgb(255, 255, 255));
+    /* background-image: url(/img/portfolio.png), linear-gradient(to bottom, rgba(10, 10, 10, 0.4), rgb(15, 13, 13)); */
     background-repeat: no-repeat, no-repeat;
     background-position: top right, top;
     background-attachment: fixed;
@@ -307,13 +310,18 @@ a {
     font-size: 6rem;
     /* border-bottom: 2rem solid #6b2643;
     padding-bottom: 10rem; */
-    color: #776a6a;
+    /* color: #776a6a; */
+    color: white;
 }
 
 #gitBtn a {
     color: white;
     /* border-bottom: 2rem solid #6b2643; */
     padding-bottom: 10rem;
+}
+
+.gitI {
+    color: green;
 }
 
 #gitBtn a:link {
@@ -327,10 +335,59 @@ a {
 }
 
 .port_cards {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgb(180, 178, 178));
     background-repeat: no-repeat;
     background-position: top;
-    margin-bottom: 3rem;
+    max-width: 900px;
+    height: 30rem;
+    margin-bottom: 5rem;
+    border: none;
+}
+
+.card1 {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgb(69, 196, 201));
+}
+
+.card2 {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgb(12, 90, 47));
+}
+
+.card4 {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgb(236, 186, 19));
+}
+
+.cardImg {
+    /* width: 400px; */
+    height: 478px;
+    object-position: left;
+    object-fit: cover;
+
+}
+
+.bullet {
+    color: black;
+    font-size: 0.5rem;
+    margin-right: 1rem;
+}
+
+.card_title {
+    font-family: 'Ultra', serif;
+    margin-top: 2rem;
+    /* background-color: rgba(92, 95, 95, 0.2); */
+    /* background-color: rgb(69, 196, 201); */
+    object-fit: cover;
+    /* padding: .8rem; */
+}
+
+
+.card_tab {
+    color: black;
+    font-size: 4rem;
+    object-position: right;
+}
+
+.port_cards p {
+    font-size: 1rem;
+    margin-bottom: 0.7rem;
 }
 
 /* Footer */

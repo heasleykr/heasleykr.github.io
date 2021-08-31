@@ -458,48 +458,137 @@ function folioLoad(){
     //content to be displayed
     var folio = `
         <div class="bg-transparent">
-            <div id="port_header" class="d-flex">
+            <div id="port_header" class="d-flex bg-transparent">
                 <div class="d-flex flex-column justify-content-end">
                 <h2 id="port_head">Portfolio</h2>
-                <button id="gitBtn" class="btn btn-dark shadow rounded-pill"><a href="https://github.com/heasleykr"><i class="fab fa-github me-2"></i></a></i>Github</a>
+                <button id="gitBtn" class="btn btn-dark shadow rounded-pill"><a href="https://github.com/heasleykr"><i class="gitI fab fa-github me-2"></i></a></i>Github</a>
                     </button>
                 </div>
                 <div></div>
             </div>
-            <div>
-                <div class="card port_cards">
-                    <div class="card body">
-                        <h3 class="card-title">ParkingLots</h3>
-                        <p>March 2021</p>
-                        <h4>URL: [https://github.com/heasleykr/ParkingLots]</h4>
-                        <p class="card-text">Built web application using the Django Framework, which utilizes APIs like CrispyForms, Jinja, Pillow, Bootstrap, and FontAwesome.</p>
-                        <p class="card-text">Employed Object Oriented Programming techniques to allow users to buy, sell, and rent parking spaces.</p>
-                        <p class="card-text">Designed and built logos and marketing content using Adobe Photoshop.</p>
+            <div class="container-fluid d-flex flex-column align-items-center bg-dark">
+                <div class="card mb-5 port_cards card1">
+                    <span class="position-absolute translate-middle badge rounded-pill bg-dark p-2">Django</span>
+                    <div class="row g-0">
+                        <div class="col-md-7 p-2">
+                            <div class="card-body">
+                                <h3 class="card_title">ParkingLots App</h3>
+                                <p>March 2021</p>
+                                <hr>
+                                <div class="d-flex">
+                                    <i class="bullet fas fa-circle pt-2"></i>
+                                    <p class="card-text">Built web application using the Django Framework, which utilizes APIs like CrispyForms, Jinja, Pillow, Bootstrap, and FontAwesome.</p>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="bullet fas fa-circle pt-2"></i>
+                                    <p class="card-text">Employed Object Oriented Programming techniques to allow users to buy, sell, and rent parking spaces.</p>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="bullet fas fa-circle pt-2"></i>
+                                    <p class="card-text">Designed and built logos and marketing content using Adobe Photoshop.</p>
+                                </div>
+                                <div class="d-flex justify-content-center mt-5">
+                                    <button class="btn btn-dark shadow rounded-pill p-3"><a href="https://github.com/heasleykr/ParkingLots"><i class="gitI fab fa-github me-2"></i></a></i>Github Code</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <img class="img-fluid rounded-end cardImg" src="../img/parking6.png" alt="Parking Lots">
+                        </div>
                     </div>
                 </div>
-                <div class="port_cards">
-                    <h3>OrganicBeans</h3>
-                    <h4>January 2021</h4>
-                    <h4>URL: [https://github.com/heasleykr/OrganicBeansRedux]</h4>
-                    <p>Web application build with React Framework for educational purposes with San Diego Global Knowledge University</p>
-                    <p>Built and designed all front-end elements with original code, HTML/CSS/JS.</p>
-                    <p>Utilizes Redux for state management in addition to AXIOS for web server connection for data storage.</p>
+
+                <div class="card mb-5 port_cards card2">
+                    <span class="position-absolute translate-middle badge rounded-pill bg-dark p-2">React</span>
+                    <div class="row g-0">
+                        <div class="col-md-7 p-2">
+                            <div class="card-body">
+                                <h3 class="card_title">OrganicBeans App</h3>
+                                <p>January 2021</p>
+                                <hr>
+                                <div class="d-flex">
+                                    <i class="bullet fas fa-circle pt-2"></i>
+                                    <p class="card-text">Web application build with React Framework for educational purposes with San Diego Global Knowledge University.</p>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="bullet fas fa-circle pt-2"></i>
+                                    <p class="card-text">Built and designed all front-end elements with original code, HTML/CSS/JS.</p>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="bullet fas fa-circle pt-2"></i>
+                                    <p class="card-text">Utilizes Redux for state management in addition to AXIOS for web server connection for data storage.</p>
+                                </div>
+                                <div class="d-flex justify-content-center mt-5">
+                                    <button class="btn btn-dark shadow rounded-pill p-3"><a href="https://github.com/heasleykr/OrganicBeansRedux"><i class="gitI fab fa-github me-2"></i></a></i>Github Code</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <img class="img-fluid rounded-end cardImg" src="../img/organic.png" alt="Organic Beans">
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h3>Property Rental</h3>
-                    <h4>November 2020</h4>
-                    <h4>URL: [https://github.com/heasleykr/Property-Rental-Web-Application]</h4>
-                    <p>Web application build with Microsoft’s ASP .Net Core framework for educational purposes with San Diego Global Knowledge University</p>
-                    <p>Built and designed all front-end elements with original code, HTML/CSS/JS.</p>
-                    <p>Utilizes the Model-View-Controller architectural style and built backend alongside other students for the purposes of learning the ASP .Net Core framework.</p>
+            
+                <div class="card mb-5 port_cards card2">
+                    <span class="position-absolute translate-middle badge rounded-pill bg-dark p-2">ASP.NET MVC</span>
+                    <div class="row g-0">
+                        <div class="col-md-7 p-2">
+                            <div class="card-body">
+                                <h3 class="card_title">Property Rental App</h3>
+                                <p>November 2020</p>
+                                <hr>
+                                <div class="d-flex">
+                                    <i class="bullet fas fa-circle pt-2"></i>
+                                    <p class="card-text">Web application build with Microsoft’s ASP.Net Core framework for educational purposes with San Diego Global Knowledge University.</p>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="bullet fas fa-circle pt-2"></i>
+                                    <p class="card-text">Built and designed all front-end elements with original code, HTML/CSS/JS.</p>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="bullet fas fa-circle pt-2"></i>
+                                    <p class="card-text">Utilizes the Model-View-Controller architectural style and built backend alongside other students for the purposes of learning the ASP .Net Core framework.</p>
+                                </div>
+                                <div class="d-flex justify-content-center mt-5">
+                                    <button class="btn btn-dark shadow rounded-pill p-3"><a href="https://github.com/heasleykr/Property-Rental-Web-Application"><i class="gitI fab fa-github me-2"></i></a></i>Github Code</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <img class="img-fluid rounded-end cardImg" src="../img/organic.png" alt="Organic Beans">
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <h3>The Fashion Pet</h3>
-                    <h4>September 2020</h4>
-                    <h4>URL: [https://github.com/heasleykr/theFashionPet]</h4>
-                    <p>Statically built website using HTML, CSS, & Javascript techniques.</p>
-                    <p>Emphasized styling of content without API usage.</p>
-                    <p>Used conventional CSS containers and techniques for layouts</p>
+                
+                <div class="card mb-5 port_cards card4">
+                    <span class="position-absolute translate-middle badge rounded-pill bg-dark p-2">HTTP CSS JS</span>
+                    <div class="row g-0">
+                        <div class="col-md-7 p-2">
+                            <div class="card-body">
+                                <h3 class="card_title">The Fashion Pet</h3>
+                                <p>September 2020</p>
+                                <hr>
+                                <div class="d-flex">
+                                    <i class="bullet fas fa-circle pt-2"></i>
+                                    <p class="card-text">Statically built website using HTML, CSS, & Javascript techniques.</p>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="bullet fas fa-circle pt-2"></i>
+                                    <p class="card-text">Emphasized styling of content without API usage.</p>
+                                </div>
+                                <div class="d-flex">
+                                    <i class="bullet fas fa-circle pt-2"></i>
+                                    <p class="card-text">Used conventional CSS containers and techniques for layouts.</p>
+                                </div>
+                                <div class="d-flex justify-content-center mt-5">
+                                    <button class="btn btn-dark shadow rounded-pill p-3"><a href="https://github.com/heasleykr/theFashionPet"><i class="gitI fab fa-github me-2"></i></a></i>Github Code</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5">
+                            <img class="img-fluid rounded-end cardImg" src="../img/fashion.png" alt="Fashion Pet">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
