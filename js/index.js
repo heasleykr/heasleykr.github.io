@@ -90,9 +90,12 @@ function resumeLoad(){
 
     //content to be displayed
     var resume =`
-        <div class="d-flex mt-6 p-3">
+        <div class="d-flex mt-6 p-3 bg-transparent">
             <div id="leftSide">
                 <div class="p-3">
+                    <div>
+                    <img id="darkHead" src="/img/dark_main.jpg" alt="logo">
+                    </div>
                     <div class="d-flex justify-content-center">
                         <h1 class="firstName pe-2">KATELYNN</h1>
                         <h1 class="lastName">Heasley</h1>

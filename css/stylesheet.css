@@ -8,6 +8,11 @@
     /* background-color: black; */
     /* background-color: white; */
     /* height: 1500px; */
+    background-color: #353232;
+    background-repeat: no-repeat;
+    background-position: top;
+    /* background-attachment: fixed; */
+    object-fit: cover;
 }
 
 a {
@@ -135,11 +140,15 @@ a {
     /* height: 1500px; */
     margin-top: 5rem;
 
+    /* background-attachment: fixed; */
+
+
 }
 
 #mainLoad {
     height: 100%;
     margin-left: 2rem;
+    /* bg-white */
 }
 
 /* Index View */
@@ -238,7 +247,8 @@ a {
 .resume {
     width: 100%;
     height: auto;
-    background-image: url(/img/water4.jpg);
+    /* background-image: url(/img/water4.jpg); */
+    background-color: #353232;
     background-repeat: no-repeat;
     background-position: top;
     /* background-attachment: fixed; */
@@ -246,7 +256,8 @@ a {
 }
 
 #leftSide {
-    background-color: #6b2643;
+    /* background-color: #6b2643; */
+    background-color: #050505;
     color: white;
 
 }
@@ -306,9 +317,11 @@ a {
 }
 
 #rightSide {
-    color: #6b2643;
+    /* color: #6b2643; */
+    color: white;
     font-size: .8rem;
-
+    /* background-color: #1f1d1d; */
+    background-color: black;
     /* background-image: linear-gradient(to right, rgba(44, 42, 42, 1), rgba(14, 13, 13, .4)), url(/img/main_headshot_sm.jpg);
     background-repeat: no-repeat, no-repeat;
     background-position: top, top right; */
@@ -319,7 +332,8 @@ a {
 #resume_head {
     font-family: 'Playfair Display', serif;
     font-size: 4rem;
-    color: #6b2643;
+    /* color: #6b2643; */
+    color: white;
 }
 
 #rightSide i {
