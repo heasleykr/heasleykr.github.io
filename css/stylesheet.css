@@ -1,6 +1,6 @@
 /* Global */
 #main {
-    height: 3000px;
+    /* height: 3000px; */
     /* background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center; */
@@ -15,6 +15,7 @@
     background-repeat: no-repeat;
     background-position: top;
     object-fit: cover;
+    height: 3000px;
 }
 
 a {
@@ -263,7 +264,7 @@ a {
     border-left: 1.5rem solid white;
     border-right: 1.5rem solid white; */
 
-    height: 1500px;
+    height: 4000px;
 
 }
 
@@ -273,6 +274,12 @@ a {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, .5), rgba(0, 0, 0, 1));
 } */
 
+#resume_head {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    /* color: #6b2643; */
+    color: white;
+}
 
 #resumeContent {
     /* background-color: black; */
@@ -280,7 +287,7 @@ a {
     border-right: 1.5rem solid #353232; */
     /* margin-top: 9rem; */
     box-shadow: 0 3rem 5rem rgba(255, 255, 255, 0.15);
-    height: 2500px;
+    height: 3000px;
 
 
 }
@@ -301,14 +308,25 @@ a {
     color: #313030;
 }
 
-#boxGraphic {
-    position: -webkit-sticky;
+#boxGraphic3 {
+    /* position: -webkit-sticky;
     position: absolute;
     top: 35%;
-    left: 30%;
+    left: 30%; */
+    margin-bottom: 2rem;
+    margin-right: -50rem;
     overflow: hidden;
 }
 
+#boxGraphic2 {
+    /* position: -webkit-sticky;
+    position: absolute;
+    top: 35%;
+    left: 30%; */
+    /* margin-left: -5rem; */
+    overflow: hidden;
+
+}
 
 #resume_header {
     /* font-family: 'Playfair Display', serif; */
@@ -320,7 +338,7 @@ a {
     padding-bottom: 2rem;
     /* color: #776a6a; */
     /* color: white; */
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     text-transform: uppercase;
 
 
@@ -332,7 +350,6 @@ a {
 
 #leftSide {
     /* background-color: #6b2643; */
-    background-color: #050505;
     color: white;
 
 }
@@ -344,6 +361,7 @@ a {
     background-position: center;
     width: 450px;
     height: 740px;
+    box-shadow: 0 3rem 5rem rgba(255, 255, 255, 0.15);
 }
 
 .firstName {
@@ -387,11 +405,17 @@ a {
 
 .h_title {
     color: white;
-    background-color: #3f1627;
+    /* background-color: #dca4b4; */
+    font-size: 1rem;
 }
 
 .h_body {
-    color: #6b2643;
+    color: #afabab;
+    font-size: 1rem;
+    margin-bottom: 3rem;
+    padding-left: .5rem;
+    /* background-color: #242222; */
+    border-left: .5rem dotted #313030;
 }
 
 .h2_info {
@@ -404,10 +428,11 @@ a {
 
 }
 
-#rightSide {
+#rightSkillsSide,
+#resumeBody {
     /* color: #6b2643; */
     color: #afabab;
-    font-size: .8rem;
+    font-size: 1rem;
     /* background-color: #1f1d1d; */
     /* background-color: rgb(92, 83, 83); */
     /* background-image: linear-gradient(to right, rgba(44, 42, 42, 1), rgba(14, 13, 13, .4)), url(/img/main_headshot_sm.jpg);
@@ -416,12 +441,15 @@ a {
     /* overflow-y: scroll; */
     /* position: relative;
     overflow-y: scroll; */
-    height: 1500px;
+    /* height: 1500px; */
+    /* height: auto; */
 
 }
 
-#rightSide h4,
-#rightSide h5 {
+#rightSkillsSide h4,
+#rightSkillsSide h5,
+#resumeBody h4,
+#resumeBody h5 {
     color: white;
     margin-top: 2rem;
 }
@@ -431,22 +459,47 @@ a {
     font-size: 2rem;
 }
 
+.subIcons {
+    color: #dca4b4;
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+}
 
 .bullets {
     font-size: .3rem;
     margin-right: .4rem;
 }
 
-#resume_head {
-    font-family: 'Playfair Display', serif;
-    font-size: 4rem;
-    /* color: #6b2643; */
-    color: white;
+.hardSkills {
+    /* background-color: rgba(189, 136, 177, 0.4); */
+    margin-top: 2rem;
 }
 
-.contact {
-    /* box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.15); */
+#resumeBody {
+    height: 2000px;
 }
+
+.highLight {
+    /* background-color: #dca4b4; */
+    /* opacity: 0.70; */
+    /* border-radius: 25% 10%; */
+    /* background-color: linear-gradient(to bottom, rgba(216, 208, 208, 0.4), #dca4b4); */
+    /* background-color: #afabab; */
+    /* background: linear-gradient(#141313, #dca4b4); */
+    /* color: #dca4b4; */
+    /* border-right: .1rem solid #dca4b4; */
+    /* border-bottom: .1rem solid #dca4b4; */
+
+}
+
+
+.resumeDate {
+    color: #dca4b4;
+    font-size: 1rem;
+
+
+}
+
 
 
 /* Portfolio */
