@@ -99,40 +99,70 @@ function resumeLoad(){
 
     //content to be displayed
     var resume =`
-        <div id="resumeTop" class="d-flex justify-content-center fixed-top bg-transparent">
+        <div id="resumeTop" class="d-flex justify-content-center bg-transparent">
             <h2 id="resume_header">Resume</h2>
         </div>
-        <div id="resumeContent" class="d-flex mt-6 p-3">
-            <div id="leftSide">
-                <div id="darkHead" class="p-3">
-                    <div class="d-flex justify-content-center">
-                        <h1 class="firstName pe-2">KATELYNN</h1>
-                        <h1 class="lastName">Heasley</h1>
+        <div id="resumeContent">
+            <div class="d-flex mt-6 p-3">
+                <div id="leftSide">
+                    <div id="darkHead" class="p-3">
+                        <div class="d-flex justify-content-center">
+                            <h1 class="firstName pe-2">KATELYNN</h1>
+                            <h1 class="lastName">Heasley</h1>
+                        </div>
+                        <p class="d-flex justify-content-center">Web Designer</p>
+                        <div class="d-flex justify-content-center">
+                            <button id="downloadBtn"class="btn btn-success shadow rounded-pill"><a href="/img/KHeasley_Resume.pdf"><i class="fas fa-arrow-circle-down me-2"></i>download resume</a>
+                            </button>
+                        </div>
                     </div>
-                    <p class="d-flex justify-content-center">Web Designer</p>
-                    <div class="d-flex justify-content-center">
-                        <button id="downloadBtn"class="btn btn-success shadow rounded-pill"><a href="/img/KHeasley_Resume.pdf"><i class="fas fa-arrow-circle-down me-2"></i>download resume</a>
-                        </button>
+                    <div>
+                        <h4 class="resumeHeader">Personal Info</h4>
+                        <div class="p-3 contact">
+                            <div class="row">
+                                <div class="col">
+                                    <i class="fas fa-phone mainIcons"></i>
+                                    <p class="pt-3">(619) 317-4334</p>
+                                </div>
+                                <div class="col">
+                                    <i class="far fa-envelope mainIcons"></i>
+                                    <p class="pt-3">heasleykr@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <i class="fas fa-globe mainIcons"></i>
+                                    <p class="pt-3">www.katelynnheasley.com</p>
+                                </div>
+                                <div class="col">
+                                    <i class="fab fa-linkedin mainIcons"></i>
+                                    <p class="pt-3">linkedin.com/in/katelynn-heasley-13933435/</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <h3 class="leftHeaders ps-3 d-flex">Personal Info</h3>
-                    <div class="p-3">
-                        <p class="p_info fw-bold">Phone</p>
-                        <p>(619) 317-4334</p>
-
-                        <p class="p_info fw-bold">Email</p>
-                        <p>heasleykr@gmail.com</p>
-
-                        <p class="p_info fw-bold">WWW</p>
-                        <p>www.katelynnheasley.com</p>
-
-                        <p class="p_info fw-bold">LinkedIn</p>
-                        <p>linkedin.com/in/katelynn-heasley-13933435/</p>
+                <div id="rightSide" class="ps-2">
+                    <div>
+                        <h4>Certifications</h4>
+                        <i class="fas fa-award mainIcons"></i>
+                        <div>
+                            <div class="row pt-2">
+                                <div class="col-2">
+                                    <p>January 2021</p>
+                                </div>
+                                <div class="col">
+                                    <div class="d-flex justify-content-start">
+                                        <p class="me-2 fw-bold">PSM I: </p>
+                                        <p>The Professional Scrum Master Level I (PSM I)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="mt-3">
-                    <h3 class="leftHeaders ps-3">Hard Skills</h3>
+                    <div class="mt-3">
+                        <h4>Hard Skills</h4>
+                        <i class="fas fa-code mainIcons"></i>
                         <div class="p-3">
                             <div class="card mb-3 border-0">
                                 <div class="card-header h_title">
@@ -167,287 +197,268 @@ function resumeLoad(){
                                 </div>
                             </div>
                         </div>
+                    </div>
                 </div>
-  
             </div>
-            <div id="rightSide">
+            // Full Viewport
+            <div>
+                <h4>Experience</h4>
+                <i class="fas fa-briefcase mainIcons"></i>
                 <div>
-                    <h4>Certifications</h4>
-                    <i class="fas fa-award mainIcons"></i>
-                    <div>
-                        <div class="row pt-2">
-                            <div class="col-2">
-                                <p>January 2021</p>
+                    <div class="row pt-2">
+                        <div class="col-2">
+                            <p>July 2020 –</p>
+                        </div>
+                        <div class="col">
+                            <p class="fw-bold">Patient Registrar, Department of Sharp Staffing Resource Network</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <p>Current</p>
+                        </div>
+                        <div class="col">
+                            <p class="fw-light fst-italic">Sharp Healthcare</p>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-2"></div>
+                        <div class="col">
+                            <div class="d-flex">
+                                <i class="fas fa-circle pt-2 bullets"></i>
+                                <p>Assisted department with registration, including insurance verification, benefits verification,referrals and collected patient liability.</p>
                             </div>
-                            <div class="col">
-                                <div class="d-flex justify-content-start">
-                                    <p class="me-2 fw-bold">PSM I: </p>
-                                    <p>The Professional Scrum Master Level I (PSM I)</p>
-                                </div>
+                            <div class="d-flex">
+                                <i class="fas fa-circle pt-2 bullets"></i>
+                                <p>Assisted department with insurance notifications and patient rights per guidelines to include emergency, urgent and elective medical care.</p>
                             </div>
                         </div>
                     </div>
-                </div>
                 
-                <div>
-                    <h4>Experience</h4>
-                    <i class="fas fa-briefcase mainIcons"></i>
-                    <div>
-                        <div class="row pt-2">
-                            <div class="col-2">
-                                <p>July 2020 –</p>
+                    <div class="row">
+                        <div class="col-2">
+                            <p>July 2017 –</p>
+                        </div>
+                        <div class="col">
+                            <p class="fw-bold">Patient Registrar, Department of Patient Access</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <p>August 2019</p>
+                        </div>
+                        <div class="col">
+                            <p class="fst-italic">UC San Diego Health<p>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-2"></div>
+                        <div class="col">
+                            <div class="d-flex">
+                                <i class="fas fa-circle pt-2 bullets"></i>
+                                <p>Assisted department with registration, including insurance verification, benefits verification, referrals and collected patient liability.</p>
                             </div>
-                            <div class="col">
-                                <p class="fw-bold">Patient Registrar, Department of Sharp Staffing Resource Network</p>
+                            <div class="d-flex">
+                                <i class="fas fa-circle pt-2 bullets"></i>
+                                <p>Assisted department with insurance notifications and patient rights per guidelines to include emergency, urgent and elective medical care.</p>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-2">
-                                <p>Current</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <p>November 2012 -</p>
+                        </div>
+                        <div class="col">
+                            <p class="fw-bold">Public Affairs Coordinator, United States Marine Corps Band</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <p>November 2016</p>
+                        </div>
+                        <div class="col">
+                            <p class="fst-italic">Third Marine Aircraft Wing</p>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-2"></div>
+                        <div class="col">
+                            <div class="d-flex">
+                                <i class="fas fa-circle pt-2 bullets"></i>
+                                <p>Maintained community relations and marketed performance events across social media and local community platforms resulting in a 15% increase in performance opportunities and audience support.</p>
                             </div>
-                            <div class="col">
-                                <p class="fw-light fst-italic">Sharp Healthcare</p>
+                            <div class="d-flex">
+                                <i class="fas fa-circle pt-2 bullets"></i>
+                                <p>Facilitated and designed public outreach tables during performance events that resulted in personal contact and communication with over 50,000 people.</p>
                             </div>
                         </div>
-                        <div class="row mb-5">
-                            <div class="col-2"></div>
-                            <div class="col">
-                                <div class="d-flex">
-                                    <i class="fas fa-circle pt-2 bullets"></i>
-                                    <p>Assisted department with registration, including insurance verification, benefits verification,referrals and collected patient liability.</p>
-                                </div>
-                                <div class="d-flex">
-                                    <i class="fas fa-circle pt-2 bullets"></i>
-                                    <p>Assisted department with insurance notifications and patient rights per guidelines to include emergency, urgent and elective medical care.</p>
-                                </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <p>November 2012 -</p>
+                        </div>
+                        <div class="col">
+                            <p class="fw-bold">Musician/Percussionist, United States Marine Corps Band</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <p>November 2016</p>
+                        </div>
+                        <div class="col">
+                            <p class="fst-italic">Third Marine Aircraft Wing</p>
+                        </div>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-2"></div>
+                        <div class="col">
+                            <div class="d-flex">
+                                <i class="fas fa-circle pt-2 bullets"></i>
+                                <p>Maintained and upheld the history and traditions of the United States Marine Corps through weekly performances for both military and civilian audiences across the United States in multiple ensembles to include marching bands, rock bands, jazz ensembles, and symphonic bands that amounted to over 500 musical performances.</p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="fas fa-circle pt-2 bullets"></i>
+                                <p>Wrote and composed military marching cadences for the ensemble which was performance for an audience with over tens of thousands in attendance.</p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="fas fa-circle pt-2 bullets"></i>
+                                <p>Provided over 50 hours of musical instruction and guidance to 8 percussion employees in preparation for community performances.</p>
                             </div>
                         </div>
-                    
-                        <div class="row">
-                            <div class="col-2">
-                                <p>July 2017 –</p>
-                            </div>
-                            <div class="col">
-                                <p class="fw-bold">Patient Registrar, Department of Patient Access</p>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <p>August 2010 -</p>
                         </div>
-                        <div class="row">
-                            <div class="col-2">
-                                <p>August 2019</p>
-                            </div>
-                            <div class="col">
-                                <p class="fst-italic">UC San Diego Health<p>
-                            </div>
+                        <div class="col">
+                            <p class="fw-bold">Patient Services Assistant, University of Michigan Health System</p>
                         </div>
-                        <div class="row mb-5">
-                            <div class="col-2"></div>
-                            <div class="col">
-                                <div class="d-flex">
-                                    <i class="fas fa-circle pt-2 bullets"></i>
-                                    <p>Assisted department with registration, including insurance verification, benefits verification, referrals and collected patient liability.</p>
-                                </div>
-                                <div class="d-flex">
-                                    <i class="fas fa-circle pt-2 bullets"></i>
-                                    <p>Assisted department with insurance notifications and patient rights per guidelines to include emergency, urgent and elective medical care.</p>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                            <p>August 2012</p>
                         </div>
-                        <div class="row">
-                            <div class="col-2">
-                                <p>November 2012 -</p>
-                            </div>
-                            <div class="col">
-                                <p class="fw-bold">Public Affairs Coordinator, United States Marine Corps Band</p>
-                            </div>
+                        <div class="col">
+                            <p class="fst-italic">Department of Urology & Department of General Surgery</p>
                         </div>
-                        <div class="row">
-                            <div class="col-2">
-                                <p>November 2016</p>
+                    </div>
+                    <div class="row mb-5">
+                        <div class="col-2"></div>
+                        <div class="col">
+                            <div class="d-flex">
+                                <i class="fas fa-circle pt-2 bullets"></i>
+                                <p>Verified patient eligibility, distributed new patient registration packets, ensured accuracy of forms resulting in an increase in organizational operations for the patient care team.</p>
                             </div>
-                            <div class="col">
-                                <p class="fst-italic">Third Marine Aircraft Wing</p>
+                            <div class="d-flex">
+                                <i class="fas fa-circle pt-2 bullets"></i>
+                                <p>Scheduled new and return clinic visits, diagnostic services, and ambulatory procedures for patients according to physician associate guidelines.</p>
                             </div>
-                        </div>
-                        <div class="row mb-5">
-                            <div class="col-2"></div>
-                            <div class="col">
-                                <div class="d-flex">
-                                    <i class="fas fa-circle pt-2 bullets"></i>
-                                    <p>Maintained community relations and marketed performance events across social media and local community platforms resulting in a 15% increase in performance opportunities and audience support.</p>
-                                </div>
-                                <div class="d-flex">
-                                    <i class="fas fa-circle pt-2 bullets"></i>
-                                    <p>Facilitated and designed public outreach tables during performance events that resulted in personal contact and communication with over 50,000 people.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-2">
-                                <p>November 2012 -</p>
-                            </div>
-                            <div class="col">
-                                <p class="fw-bold">Musician/Percussionist, United States Marine Corps Band</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-2">
-                                <p>November 2016</p>
-                            </div>
-                            <div class="col">
-                                <p class="fst-italic">Third Marine Aircraft Wing</p>
-                            </div>
-                        </div>
-                        <div class="row mb-5">
-                            <div class="col-2"></div>
-                            <div class="col">
-                                <div class="d-flex">
-                                    <i class="fas fa-circle pt-2 bullets"></i>
-                                    <p>Maintained and upheld the history and traditions of the United States Marine Corps through weekly performances for both military and civilian audiences across the United States in multiple ensembles to include marching bands, rock bands, jazz ensembles, and symphonic bands that amounted to over 500 musical performances.</p>
-                                </div>
-                                <div class="d-flex">
-                                    <i class="fas fa-circle pt-2 bullets"></i>
-                                    <p>Wrote and composed military marching cadences for the ensemble which was performance for an audience with over tens of thousands in attendance.</p>
-                                </div>
-                                <div class="d-flex">
-                                    <i class="fas fa-circle pt-2 bullets"></i>
-                                    <p>Provided over 50 hours of musical instruction and guidance to 8 percussion employees in preparation for community performances.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-2">
-                                <p>August 2010 -</p>
-                            </div>
-                            <div class="col">
-                                <p class="fw-bold">Patient Services Assistant, University of Michigan Health System</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-2">
-                                <p>August 2012</p>
-                            </div>
-                            <div class="col">
-                                <p class="fst-italic">Department of Urology & Department of General Surgery</p>
-                            </div>
-                        </div>
-                        <div class="row mb-5">
-                            <div class="col-2"></div>
-                            <div class="col">
-                                <div class="d-flex">
-                                    <i class="fas fa-circle pt-2 bullets"></i>
-                                    <p>Verified patient eligibility, distributed new patient registration packets, ensured accuracy of forms resulting in an increase in organizational operations for the patient care team.</p>
-                                </div>
-                                <div class="d-flex">
-                                    <i class="fas fa-circle pt-2 bullets"></i>
-                                    <p>Scheduled new and return clinic visits, diagnostic services, and ambulatory procedures for patients according to physician associate guidelines.</p>
-                                </div>
-                                <div class="d-flex">
-                                    <i class="fas fa-circle pt-2 bullets"></i>
-                                    <p>Accepted payment for medical services according to cash acceptance guidelines and performed daily reconciliation with zero balance discrepancies.</p>
-                                </div>
+                            <div class="d-flex">
+                                <i class="fas fa-circle pt-2 bullets"></i>
+                                <p>Accepted payment for medical services according to cash acceptance guidelines and performed daily reconciliation with zero balance discrepancies.</p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div>
-                    <h4>Education</h4>
-                    <i class="fas fa-graduation-cap mainIcons"></i>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col">
-                                <h5>Current Enrollments:</h5>
+            <div>
+                <h4>Education</h4>
+                <i class="fas fa-graduation-cap mainIcons"></i>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h5>Current Enrollments:</h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <p>Expected Comp: May 2022</p>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex justify-content-start">
+                                <p class="me-2 fw-bold">SECOND BACHELORS:</p>
+                                <p>B.S. in Computer Science, San Diego Miramar College</p>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-4">
-                                <p>Expected Comp: May 2022</p>
-                            </div>
-                            <div class="col">
-                                <div class="d-flex justify-content-start">
-                                    <p class="me-2 fw-bold">SECOND BACHELORS:</p>
-                                    <p>B.S. in Computer Science, San Diego Miramar College</p>
-                                </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <h5>Completed: </h5>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <p>March 2021</p>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex justify-content-start">
+                                <p class="me-2 fw-bold">FULL-STACK CODING PROGRAM:</p>
+                                <p>San Diego Global Knowledge University</p>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col">
-                                <h5>Completed: </h5>
-                            </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <p class="ps-3">May 2011</p>
                         </div>
-                        <div class="row">
-                            <div class="col-4">
-                                <p>March 2021</p>
-                            </div>
-                            <div class="col">
-                                <div class="d-flex justify-content-start">
-                                    <p class="me-2 fw-bold">FULL-STACK CODING PROGRAM:</p>
-                                    <p>San Diego Global Knowledge University</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-4">
-                                <p class="ps-3">May 2011</p>
-                            </div>
-                            <div class="col">
-                                <div class="d-flex justify-content-start">
-                                    <p class="me-2 fw-bold">BACHELORS:</p>
-                                    <p>B.A. in Music Performance, University of Michigan</p>
-                                </div>
+                        <div class="col">
+                            <div class="d-flex justify-content-start">
+                                <p class="me-2 fw-bold">BACHELORS:</p>
+                                <p>B.A. in Music Performance, University of Michigan</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            
-                <div>
-                    <h4>Key classes completed towards B.S. in Computer Science</h4>
-                    <i class="fas fa-check mainIcons"></i>
-                    <div class="container">
-                        <div class="row mt-5">
-                            <div class="col-4">
-                                <div class="d-flex">
-                                    <i class="fas fa-circle pt-2 bullets"></i>
-                                    <p>Introduction to Java</p>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="d-flex">
-                                    <i class="fas fa-circle pt-2 bullets"></i>
-                                    <p>Intermediate Java Programming</p>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="d-flex">
-                                    <i class="fas fa-circle pt-2 bullets"></i>
-                                    <p>Computer Org and Assembly Lang</p>
-                                </div>
+            </div>
+        
+            <div>
+                <h4>Key classes completed towards B.S. in Computer Science</h4>
+                <i class="fas fa-check mainIcons"></i>
+                <div class="container">
+                    <div class="row mt-5">
+                        <div class="col-4">
+                            <div class="d-flex">
+                                <i class="fas fa-circle pt-2 bullets"></i>
+                                <p>Introduction to Java</p>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="d-flex">
-                                    <i class="fas fa-circle pt-2 bullets"></i>
-                                    <p>Introduction to C/C++</p>
-                                </div>
+                        <div class="col">
+                            <div class="d-flex">
+                                <i class="fas fa-circle pt-2 bullets"></i>
+                                <p>Intermediate Java Programming</p>
                             </div>
-                            <div class="col">
-                                <div class="d-flex">
-                                    <i class="fas fa-circle pt-2 bullets"></i>
-                                    <p>Calculus/Analytic Geometry II</p>
-                                </div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex">
+                                <i class="fas fa-circle pt-2 bullets"></i>
+                                <p>Computer Org and Assembly Lang</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="d-flex">
+                                <i class="fas fa-circle pt-2 bullets"></i>
+                                <p>Introduction to C/C++</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex">
+                                <i class="fas fa-circle pt-2 bullets"></i>
+                                <p>Calculus/Analytic Geometry II</p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <hr>
+            <div>
                 <hr>
-                <div>
-                    <hr>
-                    <h4>Recommendations</h4>
-                    <hr>
-                    <img src="/img/inzunza.pdf" alt="">
-                    <img src="/img/mejia.pdf" alt="">
-                </div>
+                <h4>Recommendations</h4>
+                <hr>
+                <img src="/img/inzunza.pdf" alt="">
+                <img src="/img/mejia.pdf" alt="">
             </div>
         </div>
     `;

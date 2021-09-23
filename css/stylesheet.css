@@ -278,7 +278,7 @@ a {
     /* background-color: black; */
     /* border-left: 1.5rem solid #353232;
     border-right: 1.5rem solid #353232; */
-    margin-top: 9rem;
+    /* margin-top: 9rem; */
     box-shadow: 0 3rem 5rem rgba(255, 255, 255, 0.15);
     height: 2500px;
 
@@ -321,7 +321,6 @@ a {
     /* color: #776a6a; */
     /* color: white; */
     margin-bottom: 2rem;
-    margin-top: 10rem;
     text-transform: uppercase;
 
 
@@ -445,6 +444,9 @@ a {
     color: white;
 }
 
+.contact {
+    /* box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.15); */
+}
 
 
 /* Portfolio */
