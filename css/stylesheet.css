@@ -199,17 +199,6 @@ a {
     color: black;
 }
 
-/* Contact info removed */
-/* #indexContact h4 {
-    font-family: 'Bebas Neue', cursive;
-    color: #6b2643;
-    /* background-color: #6b2643; */
-/* border: 2px solid #6b2643;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    padding: .5rem; */
-
-
 /* About View */
 #aboutCard {
     width: 100%;
@@ -274,11 +263,12 @@ a {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, .5), rgba(0, 0, 0, 1));
 } */
 
-#resume_head {
-    font-family: 'Playfair Display', serif;
-    font-size: 4rem;
+#resume_head,
+#contact_header {
+    /* font-family: 'Playfair Display', serif;
+    font-size: 4rem; */
     /* color: #6b2643; */
-    color: white;
+    /* color: white; */
 }
 
 #resumeContent {
@@ -308,6 +298,10 @@ a {
     color: #313030;
 }
 
+.linesTri {
+    margin-top: -4.5rem;
+}
+
 #boxGraphic3 {
     /* position: -webkit-sticky;
     position: absolute;
@@ -328,7 +322,8 @@ a {
 
 }
 
-#resume_header {
+#resume_header,
+#contact_header {
     /* font-family: 'Playfair Display', serif; */
     font-family: 'Rajdhani', sans-serif;
     font-size: 4rem;
@@ -361,7 +356,7 @@ a {
     background-position: center;
     width: 450px;
     height: 740px;
-    box-shadow: 0 3rem 5rem rgba(255, 255, 255, 0.15);
+    /* box-shadow: 0 3rem 5rem rgba(255, 255, 255, 0.15); */
 }
 
 .firstName {
@@ -500,7 +495,17 @@ a {
 
 }
 
+.resumeTitles {
+    /* background-color: #353232; */
+    /* margin: 0;
+    width: 100%; */
+    /* text-decoration: solid overline #dca4b4 1px; */
+    /* border-top: .1rem solid #dca4b4; */
+}
 
+.educationBullets {
+    border-left: .5rem dotted #dca4b4;
+}
 
 /* Portfolio */
 .portfolio {
@@ -596,6 +601,21 @@ a {
 .port_cards p {
     font-size: 1rem;
     margin-bottom: 0.7rem;
+}
+
+/* Contact Page */
+#contactContent {
+    width: 100%;
+    height: 1000px;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+    background-image: linear-gradient(to top, rgba(44, 42, 42, 1), rgba(14, 13, 13, .4)), url(/img/seaMe.JPG);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, center left;
+    border-bottom: 1.5rem solid white;
+    border-left: 1.5rem solid white;
+    border-right: 1.5rem solid white;
+    color: white;
 }
 
 /* Footer */

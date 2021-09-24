@@ -99,10 +99,15 @@ function resumeLoad(){
 
     //content to be displayed
     var resume =`
-        <div id="resumeTop" class="d-flex flex-column justify-content-center align-items-center bg-transparent">
-            <h2 id="resume_header">Resume</h2>
-            <div>
-            <img id="boxGraphic3" src="/img/box6.png" alt="box">
+        <div class="d-flex flex-row justify-content-start">
+            <div class="ms-5 me-5 ps-5">
+                <img class="linesTri" src="/img/line2.png" alt="dots">
+            </div>
+            <div id="resumeTop" class="d-flex flex-column justify-content-center align-items-center bg-transparent">
+                <h2 id="resume_header">Resume</h2>
+                <div>
+                <img id="boxGraphic3" src="/img/box6.png" alt="box">
+                </div>
             </div>
         </div>
         <div id="resumeContent">
@@ -189,8 +194,8 @@ function resumeLoad(){
             <div>
                 <img id="boxGraphic2" src="/img/box6.png" alt="box">
             </div>
-            <div id="resumeBody" class="container">
-                <div>
+            <div id="resumeBody">
+                <div class="container">
                     <div class="d-flex flex-column justify-contents-center align-items-center mb-3">
                         <h4>Experience</h4>
                         <i class="fas fa-briefcase mainIcons"></i>
@@ -353,104 +358,105 @@ function resumeLoad(){
                         </div>
                     </div>
                 </div>
-            
-                <div>
-                    <h4>Education</h4>
-                    <i class="fas fa-graduation-cap mainIcons"></i>
-                    <div class="mt-1 container">
-                        <div class="row">
-                            <div class="col">
-                                <h5>Current Enrollments:</h5>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-4">
-                                <p>Expected Comp: May 2022</p>
-                            </div>
-                            <div class="col">
-                                <div class="d-flex justify-content-start">
-                                    <p class="me-2 fw-bold">SECOND BACHELORS:</p>
-                                    <p>B.S. in Computer Science, San Diego Miramar College</p>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div id="education" class="col">
+                            <h4 class="resumeTitles">Education</h4>
+                            <i class="fas fa-graduation-cap mainIcons"></i>
+                            <div class="educationBullets mt-5 mb-5 container">
+                                <div class="row">
+                                    <div class="col">
+                                        <h5>Current Enrollments:</h5>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <p>Expected Comp: May 2022</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex justify-content-start">
+                                            <p class="me-2 fw-bold">SECOND BACHELORS:</p>
+                                            <p>B.S. in Computer Science, San Diego Miramar College</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <h5>Completed: </h5>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <p>March 2021</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex justify-content-start">
+                                            <p class="me-2 fw-bold">FULL-STACK CODING PROGRAM:</p>
+                                            <p>San Diego Global Knowledge University</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <p class="">May 2011</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex justify-content-start">
+                                            <p class="me-2 fw-bold">BACHELORS:</p>
+                                            <p>B.A. in Music Performance, University of Michigan</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col">
-                                <h5>Completed: </h5>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-4">
-                                <p>March 2021</p>
-                            </div>
-                            <div class="col">
-                                <div class="d-flex justify-content-start">
-                                    <p class="me-2 fw-bold">FULL-STACK CODING PROGRAM:</p>
-                                    <p>San Diego Global Knowledge University</p>
+                
+                        <div id="keyClasses" class="col">
+                            <h4 class="resumeTitles">Key classes</h4> 
+                            <h4>completed towards B.S. in Computer Science</h4>
+                            <i class="fas fa-check mainIcons"></i>
+                            <div class="educationBullets container">
+                                <div class="row mt-5">
+                                    <div class="col-4">
+                                        <div class="d-flex">
+                                            <i class="fas fa-circle pt-2 bullets"></i>
+                                            <p>Introduction to Java</p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex">
+                                            <i class="fas fa-circle pt-2 bullets"></i>
+                                            <p>Intermediate Java Programming</p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex">
+                                            <i class="fas fa-circle pt-2 bullets"></i>
+                                            <p>Computer Org and Assembly Lang</p>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-4">
-                                <p class="ps-3">May 2011</p>
-                            </div>
-                            <div class="col">
-                                <div class="d-flex justify-content-start">
-                                    <p class="me-2 fw-bold">BACHELORS:</p>
-                                    <p>B.A. in Music Performance, University of Michigan</p>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <div class="d-flex">
+                                            <i class="fas fa-circle pt-2 bullets"></i>
+                                            <p>Introduction to C/C++</p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex">
+                                            <i class="fas fa-circle pt-2 bullets"></i>
+                                            <p>Calculus/Analytic Geometry II</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            
                 <div>
-                    <h4>Key classes completed towards B.S. in Computer Science</h4>
-                    <i class="fas fa-check mainIcons"></i>
-                    <div class="container">
-                        <div class="row mt-5">
-                            <div class="col-4">
-                                <div class="d-flex">
-                                    <i class="fas fa-circle pt-2 bullets"></i>
-                                    <p>Introduction to Java</p>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="d-flex">
-                                    <i class="fas fa-circle pt-2 bullets"></i>
-                                    <p>Intermediate Java Programming</p>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="d-flex">
-                                    <i class="fas fa-circle pt-2 bullets"></i>
-                                    <p>Computer Org and Assembly Lang</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="d-flex">
-                                    <i class="fas fa-circle pt-2 bullets"></i>
-                                    <p>Introduction to C/C++</p>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="d-flex">
-                                    <i class="fas fa-circle pt-2 bullets"></i>
-                                    <p>Calculus/Analytic Geometry II</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr>
-                <div>
-                    <hr>
                     <h4>Recommendations</h4>
-                    <hr>
-                    <img src="/img/inzunza.pdf" alt="">
-                    <img src="/img/mejia.pdf" alt="">
+                    <i class="mainIcons fas fa-user-check"></i>
+                    <p class="h_info">Please contact directly for reference requests.</p>
                 </div>
             </div>
         </div>
@@ -626,48 +632,59 @@ function folioLoad(){
 function contactLoad(){
 
     //update body background
-    UI.$body.classList.remove('portfolio');
-    UI.$top.classList.remove('resumeNav');
+    UI.$body.classList.remove('portfolio', 'main');
+    UI.$top.classList.remove('shadow', 'navCustom');
 
-    UI.$body.classList.add('main');
-    UI.$main.classList.add('bg-white');
-    UI.$top.classList.add('shadow', 'navCustom');
-    UI.$resumeBackground.classList.add('hide');
+    UI.$body.classList.add('resume');
+    UI.$top.classList.add('resumeNav');
+    UI.$resumeBackground.classList.remove('hide');
 
     //content to be displayed
     var contact = `
-    <div>
-        <h2>TODO:</h2>
-        <h4>Insert Contact information here. Career paragraph and more.</h4>
-        <p>Do we need this page or can it be something else?</p>
-        <div>
-                        <h4 class="resumeHeader">Personal Info</h4>
-                        <div class="p-3 contact">
-                            <div class="row">
-                                <div class="col">
-                                    <i class="fas fa-phone mainIcons"></i>
-                                    <p class="pt-3">(619) 317-4334</p>
-                                </div>
-                                <div class="col">
-                                    <i class="far fa-envelope mainIcons"></i>
-                                    <p class="pt-3">heasleykr@gmail.com</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <i class="fas fa-globe mainIcons"></i>
-                                    <p class="pt-3">www.katelynnheasley.com</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <i class="fab fa-linkedin mainIcons"></i>
-                                    <p class="pt-3">linkedin.com/in/katelynn-heasley-13933435/</p>
-                                </div>
-                            </div>
+        <div class="d-flex flex-row justify-content-start">
+            <div class="ms-5 me-5 ps-5">
+                <img class="linesTri" src="/img/line2.png" alt="dots">
+            </div>
+            <div id="contactTop" class="d-flex flex-column justify-content-center align-items-center bg-transparent">
+                <h2 id="contact_header">Contact</h2>
+                <div>
+                <img id="boxGraphic3" src="/img/box6.png" alt="box">
+                </div>
+            </div>
+        </div>
+        <div id="contactContent">
+            <div class="d-flex flex-column justify-content-end mt-6 p-3">
+                <h2>TODO:</h2>
+                <h4>Insert Contact information here. Career paragraph and more.</h4>
+                <p>Do we need this page or can it be something else?</p>
+            
+                <h4 class="resumeHeader">Personal Info</h4>
+                <div class="p-3 contact">
+                    <div class="row">
+                        <div class="col">
+                            <i class="fas fa-phone mainIcons"></i>
+                            <p class="pt-3">(619) 317-4334</p>
+                        </div>
+                        <div class="col">
+                            <i class="far fa-envelope mainIcons"></i>
+                            <p class="pt-3">heasleykr@gmail.com</p>
                         </div>
                     </div>
-    </div>
+                    <div class="row">
+                        <div class="col">
+                            <i class="fas fa-globe mainIcons"></i>
+                            <p class="pt-3">www.katelynnheasley.com</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <i class="fab fa-linkedin mainIcons"></i>
+                            <p class="pt-3">linkedin.com/in/katelynn-heasley-13933435/</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     `;
 
     //add html to DOM object
