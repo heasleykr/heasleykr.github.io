@@ -9,35 +9,83 @@ var visible = true;
 function homeLoad(){
 
     //update body background
-    UI.$body.classList.remove('portfolio');
+    UI.$body.classList.remove('portfolio', 'main');
     UI.$body.classList.remove('resume');
     UI.$top.classList.remove('resumeNav');
+    UI.$body.classList.remove('contact');
 
-    UI.$body.classList.add('main');
-    UI.$main.classList.add('bg-white');
+    UI.$body.classList.add('home');
     UI.$top.classList.add('shadow', 'navCustom');
     UI.$resumeBackground.classList.add('hide');
 
     //content to be displayed
     var home = `
-    <div id="homePage" class="container-fluid">
-        <div class="row justify-content-center mb-5">
-            <div class="col-8">
-                <h1 class="ps-2" id="indexName">Katelynn Heasley<h1>
+    <div id="homePage" class="d-flex justify-content-start bg-white">
+        <div id="homeGraphicPanel" class="me-2">
+            <div class="row">
+                <div class="col">
+                    <i class="homeIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="homeIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="homeIcons far fa-circle"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <i class="homeIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="homeIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="homeIcons far fa-circle"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <i class="homeIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="homeIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="homeIcons far fa-circle"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <i class="homeIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="homeIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="homeIcons far fa-circle"></i>
+                </div>
             </div>
         </div>
-        <div class="row pe-3 bg-white">
-            <div class="col">
+        <div class="homeGreeting flex-grow">
+            <div class="d-flex flex-column justify-content-start"> 
                 <div>
-                    <h3 class="homeSub">future</h3>
-                    <h3 class="homeFocus">Junior Web Designer & Web Developer</h3>
+                    <img class="homeLines mb-3" src="/img/linesHeader3.png">
+                    <h3 class="homeSub">Hi there!</h3>
                 </div>
-            </div>
-            <div class="col">
-                <div class="d-flex flex-column align-items-end">
-                    <h3 class="homeFocus">Computer Science</h3>
-                    <h3 class="homeSub">student</h3>
+                <div class="d-flex flex-row">
+                    <h3 class="homeSub pe-2">I'm</h3>
+                    <h3 class="homeFocus" id="indexName">Katelynn Heasley<h3>
                 </div>
+                <div class="d-flex flex-row">
+                    <h3 class="homeSub pe-2">Computer Science</h3>
+                    <h3 class="homeSub">student,</h3>
+                </div>
+                <div class="d-flex flex-row">
+                    <h3 class="homeSub pe-2">and your</h3>
+                    <h3 class="homeFocus">future</h3>
+                </div>
+                <h3 class="homeFocus">Junior Frontend Developer</h3>
             </div>
         </div>
     </div>
@@ -55,6 +103,8 @@ function aboutLoad(){
     UI.$body.classList.remove('portfolio');
     UI.$body.classList.remove('resume');
     UI.$top.classList.remove('resumeNav');
+    UI.$body.classList.remove('contact');
+    UI.$body.classList.remove('home');
 
     UI.$body.classList.add('main');
     UI.$main.classList.add('bg-white');
@@ -73,6 +123,8 @@ function aboutLoad(){
                 <div class="col"></div>
                 <div class="col-6">
                     <p>I am a driven and creative individual who is currently completing both a second bachelors in Computer Science and a Full-Stack Coding Program to fully immerse myself in learning the art of software development. Two years ago, I made the decision to make a career change into software development from the classical music industry. Since then, I am working to educate myself to become the best developer I can. I seek junior-level employment within a creative team environment that attains to develop, design, and bring innovative devices and services through the use of cutting-edge software development. With over 9 years of working in healthcare, music, and the United States Marine Corps, I am committed to quality work and to joining a team that is on the forefront of technology innovation. Please contact me for any inquries, interest, or opportunites you may have.
+
+                    Hello! I am: passionate about front-end design & development. Working towards: A 2nd degree in Computer Science & an entry-level front-end position. 
                                     -Katelynn </p>
                 </div>
                 <div class="col"></div>
@@ -92,10 +144,13 @@ function resumeLoad(){
     //update body background
     UI.$body.classList.remove('portfolio', 'main');
     UI.$top.classList.remove('shadow', 'navCustom');
+    UI.$body.classList.remove('contact');
+    UI.$body.classList.remove('home');
 
     UI.$body.classList.add('resume');
     UI.$top.classList.add('resumeNav');
     UI.$resumeBackground.classList.remove('hide');
+
 
     //content to be displayed
     var resume =`
@@ -478,10 +533,12 @@ function folioLoad(){
     UI.$body.classList.add('main');
     UI.$top.classList.add('shadow', 'navCustom');
     UI.$resumeBackground.classList.add('hide');
+    UI.$body.classList.remove('home');
 
     UI.$body.classList.remove('resume');
     UI.$main.classList.remove('bg-white');
     UI.$top.classList.remove('resumeNav');
+    UI.$body.classList.remove('contact');
 
 
     //content to be displayed
@@ -634,8 +691,10 @@ function contactLoad(){
     //update body background
     UI.$body.classList.remove('portfolio', 'main');
     UI.$top.classList.remove('shadow', 'navCustom');
+    UI.$body.classList.remove('home');
 
-    UI.$body.classList.add('resume');
+    // UI.$body.classList.add('resume');
+    UI.$body.classList.add('contact');
     UI.$top.classList.add('resumeNav');
     UI.$resumeBackground.classList.remove('hide');
 
@@ -652,35 +711,44 @@ function contactLoad(){
                 </div>
             </div>
         </div>
-        <div id="contactContent">
-            <div class="d-flex flex-column justify-content-end mt-6 p-3">
-                <h2>TODO:</h2>
-                <h4>Insert Contact information here. Career paragraph and more.</h4>
-                <p>Do we need this page or can it be something else?</p>
-            
-                <h4 class="resumeHeader">Personal Info</h4>
-                <div class="p-3 contact">
-                    <div class="row">
-                        <div class="col">
-                            <i class="fas fa-phone mainIcons"></i>
-                            <p class="pt-3">(619) 317-4334</p>
+        <div id="contactContent" class="bg-transparent">
+            <div class="d-flex flex-row justify-contents-center">
+                <div>
+                    <img class="" src="/img/contact4.jpg" alt="headshot">
+                </div>
+
+                <div id="contactInfo">
+                    <div class="d-flex flex-column p-3">
+                        <h2 class="contactGreeting ps-5">Reach out,</h2>
+                        <h2 class="contactGreetingSub ps-5">I'd love to connect!</h2>
+                        <div class="d-flex flex-column justify-content-end ps-5 pe-5">
+                            <p class="">Feel free to contact me using any communication tool, or platform, of your preference. I'm seeking entry-level, junior front-end developer employment. Any communication is welcome.</p>
+                            <p class="me-5 pe-5 align-self-end"> -Katelynn</p>
                         </div>
-                        <div class="col">
-                            <i class="far fa-envelope mainIcons"></i>
-                            <p class="pt-3">heasleykr@gmail.com</p>
+                        
+                        <div class="contactMain mt-5">
+                            <div class="directContact row pe-5">
+                                <div class="col d-flex flex-row justify-content-end">
+                                    <i class="mainIcons fas fa-phone"></i>
+                                    <p class="ps-3">(619) 317-4334</p>
+                                </div>
+                                <div class="col d-flex flex-row justify-content-end">
+                                    <i class="mainIcons far fa-envelope"></i>
+                                    <p class="ps-3">heasleykr@gmail.com</p>
+                                </div>
+                            </div>
+                            <div id="contactSubIcons" class="row">
+                                <div id="subIconsInner" class="col d-flex flex-row justify-content-center">
+                                    <p class="p-5"><a href="https://github.com/heasleykr"><i class="fab fa-github"></i></a></p>
+                                    <p class="p-5"><a href="https://www.linkedin.com/in/katelynn-heasley-13933435/"><i class="fab fa-linkedin-in"></i></a></p>
+                                    <p class="p-5"><a href="https://www.facebook.com/katelynn.heasley/"><i class="fab fa-facebook"></i></a></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <i class="fas fa-globe mainIcons"></i>
-                            <p class="pt-3">www.katelynnheasley.com</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <i class="fab fa-linkedin mainIcons"></i>
-                            <p class="pt-3">linkedin.com/in/katelynn-heasley-13933435/</p>
-                        </div>
+                    <div class="d-flex flex-column align-items-center mt-3">
+                        <i class="contactIcons fas fa-globe"></i>
+                        <p class="pt-3">www.katelynnheasley.com</p>
                     </div>
                 </div>
             </div>

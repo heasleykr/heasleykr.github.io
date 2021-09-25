@@ -134,8 +134,31 @@ a {
 
 
 /* Home View */
+.home {
+    width: 100%;
+    /* background-color: #353232; */
+    background-image: linear-gradient(to right, rgba(44, 42, 42, .5), rgba(14, 13, 13, .2)), url(/img/cover1.jpg);
+    /* background-image: url(/img/cover1.jpg); */
+    background-position: top 6% left 100%;
+    background-repeat: no-repeat;
+    /* object-fit: cover; */
+    /* top: 15%;
+    left: 80%; */
+    /* background-position: top; */
+    /* object-fit: cover; */
+    height: 3000px;
+}
+
+/* .homePhotoDiv {
+    position: absolute;
+    top: 15%;
+    left: 80%;
+    filter: opacity(60%);
+} */
+
 #homeView {
     margin: 0;
+    /* width: 100%; */
     /* background-repeat: no-repeat; */
 
     /* background-attachment: fixed; */
@@ -160,30 +183,69 @@ a {
 
 /* Index View */
 #homePage {
-    width: 65rem;
-    height: 55rem;
-    background-image: url(/img/codebg.png);
+    /* width: 65rem; */
+    width: 100%;
+    height: auto;
+    /* height: 55rem;  */
+    /* background-image: url(/img/cover.JPG);
     background-repeat: no-repeat;
-    background-position: bottom;
-    /* background-color: black; */
+    background-position: right; */
+    /* background-color: blue; */
+
+}
+
+.homeIcons {
+    color: #5c5656;
+    font-size: .6rem;
+    padding: 2rem;
+    margin-bottom: 9rem;
+}
+
+
+
+#homePhoto {
+    /* overflow-x: visible; */
+    /* margin-right: -10rem; */
+    /* filter: opacity(60%); */
+    /* background: rgba(0, 0, 0, 0.4); */
 
 }
 
 #indexName {
     /* color: #6b2643; */
     /* color: black; */
-    font-family: 'Kaushan Script', cursive;
+    /* font-family: 'Kaushan Script', cursive;
     font-family: 'Playfair Display', serif;
     font-size: 5rem;
     margin-bottom: 5rem;
     background: linear-gradient(to right, rgba(78, 196, 131, 0.8), rgba(7, 174, 216, 0.8), rgba(168, 46, 152, 0.8));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
+}
+
+.homeGreeting {
+    color: white;
+    /* margin-right: 30rem; */
+
+    padding-top: 7rem;
+    /* position: -webkit-sticky;
+    position: sticky;
+    top: 5rem; */
+    /* left: rem; */
+    /* position: absolute;
+    top: 15%;
+    left: 25%; */
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 0.164), rgba(255, 255, 255, 0.8)); */
+
+
 }
 
 .homeFocus {
-    font-family: 'Ultra', serif;
-    font-size: 1.5rem;
+    /* font-family: 'Ultra', serif;
+    font-family: 'Bebas Neue', cursive; */
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: #dca4b4;
     /* color: white; */
     /* background: linear-gradient(to right, rgba(78, 168, 196, 0.8), rgba(168, 46, 152, 0.8));
     -webkit-background-clip: text;
@@ -191,12 +253,16 @@ a {
 }
 
 .homeSub {
+    /* font-family: 'Playfair Display', serif; */
+    /* font-family: 'Ultra', serif;
+    font-family: 'Bebas Neue', cursive; */
     font-family: 'Playfair Display', serif;
+    font-size: 3rem;
     /* color: white; */
     /* background: linear-gradient(to right, rgba(207, 40, 40, 0.5), rgba(14, 13, 13, 0.4));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
-    color: black;
+    color: white;
 }
 
 /* About View */
@@ -604,18 +670,97 @@ a {
 }
 
 /* Contact Page */
+.contact {
+    width: 100%;
+    /* background-image: url(/img/water4.jpg); */
+    /* background-color: #353232; */
+    background-color: white;
+    /* background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed; */
+    /* object-fit: cover; */
+    /* border-top: 1.5rem solid white;
+    border-left: 1.5rem solid white;
+    border-right: 1.5rem solid white; */
+
+    height: 900px;
+
+}
+
 #contactContent {
     width: 100%;
-    height: 1000px;
-    margin-top: -1rem;
-    margin-bottom: -1rem;
-    background-image: linear-gradient(to top, rgba(44, 42, 42, 1), rgba(14, 13, 13, .4)), url(/img/seaMe.JPG);
+    height: auto;
+    /* margin-top: -1rem; */
+    /* margin-bottom: -1rem; */
+    /* background-image: linear-gradient(to top, rgba(44, 42, 42, 1), rgba(14, 13, 13, .4)), url(/img/seaMe.JPG);
     background-repeat: no-repeat, no-repeat;
-    background-position: top, center left;
+    background-position: top, center left; */
     border-bottom: 1.5rem solid white;
     border-left: 1.5rem solid white;
     border-right: 1.5rem solid white;
+    color: #313030;
+    color: #dca4b4;
+    /* color: white; */
+}
+
+#contactInfo {
+    background-color: #dca4b4;
+    background-color: #313030;
+    width: 620px;
+    height: 688px;
+    margin-top: 5rem;
+    margin-left: -2rem;
+}
+
+.contactGreeting {
+    /* font-family: 'Ultra', serif;
+    font-size: 3rem; */
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: #dca4b4;
     color: white;
+    margin-top: 3rem;
+    margin-bottom: .5rem;
+
+
+}
+
+.contactGreetingSub {
+    /* font-family: 'Ultra', serif;
+    font-size: 3rem; */
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: white;
+    /* margin-top: 5rem; */
+    margin-bottom: 3rem;
+
+
+}
+
+.contactMain {
+    color: white;
+    /* margin-top: 2rem; */
+    /* background-color: rgba(44, 42, 42, .1);
+    background-color: rgb(255, 255, 255, .2) */
+}
+
+.contactIcons {
+    color: #474646;
+    font-size: 2rem;
+}
+
+#contactSubIcons {
+    font-size: 1.5rem;
+    /* border-top: 1px solid #474646; */
+
+}
+
+#subIconsInner i {
+    /* border-top: 1px solid #474646; */
+}
+
+.directContact {
+    font-size: 1.3rem;
 }
 
 /* Footer */
