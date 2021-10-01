@@ -14,7 +14,7 @@
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ultra&family=Kaushan+Script&family=Playfair+Display&family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ultra&family=Kaushan+Script&family=Playfair+Display&family=Rajdhani:wght@300&family=Secular+One&family=Montserrat:wght@200&family=Varela&display=swap" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/stylesheet.css">
@@ -27,12 +27,12 @@
 </head>
 <body id="main" class="main">
     <!-- Nav Display -->
-    <ul id="topBar" class="nav navCustom fixed-top justify-content-around hide shadow pt-3">
+    <ul id="topBar" class="nav navCustom fixed-top justify-content-between hide shadow pt-3">
         <div class="justify-content-start">
             <li class="nav-item">
-                <a class="nav-link" aria-current="page" type="button" id="homeNav"><img id="logo" src="/img/logo.png" alt="logo">  Katelynn Heasley</a></li>
+                <a class="nav-link" aria-current="page" type="button" id="homeNav"><img class="me-2" id="logo" src="/img/logo.png" alt="logo">  Katelynn Heasley</a></li>
         </div>
-        <div class="d-flex flex-row justify-content-end pt-1">
+        <div class="d-flex flex-row justify-content-end pt-1 me-2">
             <li class="nav-item">
             <a class="nav-link" type="button" id="aboutNav">about</a>
             </li>
@@ -53,6 +53,54 @@
 
     <!-- Main Wrapper -->
     <div class="d-flex justify-content-center container-fluid">
+        <!-- Hidden Home Page Graphics -->
+        <div id="homeGraphicDiv" class="hide">
+            <div class="row">
+                <div class="col">
+                    <i class="homeIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="homeIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="homeIcons far fa-circle"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <i class="homeIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="homeIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="homeIcons far fa-circle"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <i class="homeIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="homeIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="homeIcons far fa-circle"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <i class="homeIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="homeIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="homeIcons far fa-circle"></i>
+                </div>
+            </div>
+        </div>
+    
         <!-- Hidden Resume Page Graphics -->
         <div id="resumeGraphics" class="hide">
             <div id="circleGraphic" class="d-flex flex-column">
@@ -75,14 +123,14 @@
             </div>
         </div>
 
-        <div id="homeView" class="container-fluid d-flex justify-content-center">
+        <div id="homeView" class="container-fluid d-flex justify-content-evenly">
             <!-- SideBar -->
             <div id="sideBar" class="sideBar">
                 <a class="d-flex justify-content-end" type="button" id="btnHide"><i class="fas fa-times"></i></a>
                 <div class="d-flex flex-column align-items-center">
-                    <div id="sideName" class="ms-4 mb-3 d-flex flex-row justify-content-center">
-                        <h3 id="sideNameFirst" class="ps-3">Katelynn</h3>
-                        <h3 id="sideNameLast" class="ps-2 pe-3">Heasley</h3>
+                    <div class="logoName ms-4 mb-3 d-flex flex-row justify-content-center">
+                        <h3 class="logoNameFirst ps-3">Katelynn</h3>
+                        <h3 class="logoNameLast ps-2 pe-3">Heasley</h3>
                     </div>
                     <!-- Icons -->
                     <div id="sideLinks" class="ps-4 d-flex flex-row justify-content-around">
@@ -112,19 +160,23 @@
             </div>
         </div>
     </div>
-    <div id="fwrapper">
-        <footer id="trial">
-            <div id="grid2" class="d-flex justify-content-center">
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-pinterest-square"></i>
-                <i class="fab fa-instagram"></i>
+    <div">
+        <footer id="footer" class="mainFooter">
+            <div class="d-flex justify-content-center mb-5">
+                <img class="folioLines mt-5" src="../img/folioLinePink.png">
             </div>
-            <div id="grid3" class="d-flex justify-content-center">
-                <p id="link"><a href="{% url 'listings' %}">Contact</a></p>
-                | <p id="register"><a href="{% url 'signup' %}">Resume</a></p>
+            <div class="d-flex justify-content-center">
+                <p><a href="https://github.com/heasleykr"><i class="fab fa-github"></i></a></p>
+                <p><a href="https://www.linkedin.com/in/katelynn-heasley-13933435/"><i class="fab fa-linkedin-in"></i></a></p>
+                <p><a href="mailto:heasleykr@gmail.com"><i class="fas fa-envelope"></i></a></p>
             </div>
-            <div id="grid4" class="d-flex justify-content-start">
-                <p id="copyright">Copyright reserved &copy; 2021 Katelynn Heasley</p>
+            <div class="d-flex justify-content-center m-2">
+                <p><a type="button" id="footerResume">Resume</a></p>
+                <p><a type="button" id="footerContact">Contact</a></p>
+            </div>
+            <div class="logoName mt-5 mb-5 d-flex flex-row justify-content-center">
+                <h3 class="logoNameFirst ps-3">Katelynn</h3>
+                <h3 class="logoNameLast ps-2 pe-3">Heasley</h3>
             </div>
         </footer>
     </div>

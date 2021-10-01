@@ -9,65 +9,23 @@ var visible = true;
 function homeLoad(){
 
     //update body background
+    UI.$homeBackground.classList.remove('hide');
     UI.$body.classList.remove('portfolio', 'main');
     UI.$body.classList.remove('resume');
     UI.$top.classList.remove('resumeNav');
     UI.$body.classList.remove('contact');
+    UI.$footer.classList.remove('contactFooter');
 
     UI.$body.classList.add('home');
     UI.$top.classList.add('shadow', 'navCustom');
     UI.$resumeBackground.classList.add('hide');
+    UI.$footer.classList.add('mainFooter');
+    
 
     //content to be displayed
     var home = `
-    <div id="homePage" class="d-flex justify-content-start bg-white">
-        <div id="homeGraphicPanel" class="me-2">
-            <div class="row">
-                <div class="col">
-                    <i class="homeIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="homeIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="homeIcons far fa-circle"></i>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <i class="homeIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="homeIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="homeIcons far fa-circle"></i>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <i class="homeIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="homeIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="homeIcons far fa-circle"></i>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <i class="homeIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="homeIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="homeIcons far fa-circle"></i>
-                </div>
-            </div>
-        </div>
-        <div class="homeGreeting flex-grow">
+    <div id="homePage" class="container-fluid">
+        <div class="homeGreeting">
             <div class="d-flex flex-column justify-content-start"> 
                 <div>
                     <img class="homeLines mb-3" src="/img/linesHeader3.png">
@@ -82,10 +40,13 @@ function homeLoad(){
                     <h3 class="homeSub">student,</h3>
                 </div>
                 <div class="d-flex flex-row">
-                    <h3 class="homeSub pe-2">and your</h3>
-                    <h3 class="homeFocus">future</h3>
+                    <h3 class="homeSub pe-2">& future</h3>
+                    <h3 class="homeFocus">Frontend Developer</h3>
                 </div>
-                <h3 class="homeFocus">Junior Frontend Developer</h3>
+                <div>
+                    <p class="homeMiniFocus d-flex justify-content-center align-self-center mt-5 pt-3 pb-3">I'm currently seeking employment</p>
+                </div>
+                <button id="starterBtn" class="btn btn-warning">See my resume</button>
             </div>
         </div>
     </div>
@@ -105,10 +66,13 @@ function aboutLoad(){
     UI.$top.classList.remove('resumeNav');
     UI.$body.classList.remove('contact');
     UI.$body.classList.remove('home');
+    UI.$footer.classList.remove('contactFooter');
 
     UI.$body.classList.add('main');
+    UI.$homeBackground.classList.add('hide');
     UI.$main.classList.add('bg-white');
     UI.$top.classList.add('shadow', 'navCustom');
+    UI.$footer.classList.add('mainFooter');
 
     //content to be displayed
     var about = `
@@ -146,10 +110,13 @@ function resumeLoad(){
     UI.$top.classList.remove('shadow', 'navCustom');
     UI.$body.classList.remove('contact');
     UI.$body.classList.remove('home');
+    UI.$footer.classList.remove('contactFooter');
 
     UI.$body.classList.add('resume');
+    UI.$homeBackground.classList.add('hide');
     UI.$top.classList.add('resumeNav');
     UI.$resumeBackground.classList.remove('hide');
+    UI.$footer.classList.add('mainFooter');
 
 
     //content to be displayed
@@ -531,148 +498,127 @@ function folioLoad(){
     //update body background
     UI.$body.classList.add('portfolio');
     UI.$body.classList.add('main');
-    UI.$top.classList.add('shadow', 'navCustom');
+    UI.$top.classList.add('resumeNav');
     UI.$resumeBackground.classList.add('hide');
     UI.$body.classList.remove('home');
+    UI.$footer.classList.add('mainFooter');
+    UI.$homeBackground.classList.add('hide');
 
     UI.$body.classList.remove('resume');
     UI.$main.classList.remove('bg-white');
-    UI.$top.classList.remove('resumeNav');
+    UI.$top.classList.remove('shadow', 'navCustom');
     UI.$body.classList.remove('contact');
+    UI.$footer.classList.remove('contactFooter');
+    UI.$body.classList.remove('home');
 
 
     //content to be displayed
     var folio = `
         <div class="bg-transparent">
-            <div id="port_header" class="d-flex bg-transparent">
-                <div class="d-flex flex-column justify-content-end">
-                <h2 id="port_head">Portfolio</h2>
-                <button id="gitBtn" class="btn btn-dark shadow rounded-pill"><a href="https://github.com/heasleykr"><i class="gitI fab fa-github me-2"></i></a></i>Github</a>
-                    </button>
-                </div>
-                <div></div>
+            <div id="port_header" class="d-flex flex-column align-items-center bg-transparent">
+                <h2 id="port_head" class="m-3">Portfolio</h2>
+                <h3 id="portSubHead" class="mb-5">My recent works and their source code</h3>
+                <button id="gitBtn" class="btn btn-outline-light rounded-pill mb-5"><a href="https://github.com/heasleykr"><i class="gitI fab fa-github me-2"></i></a></i>Github</a>
+                </button>
+                <img class="folioLines mt-5" src="../img/folioLine2.png">
             </div>
-            <div class="container-fluid d-flex flex-column align-items-center bg-dark">
-                <div class="card mb-5 port_cards card1">
-                    <span class="position-absolute translate-middle badge rounded-pill bg-dark p-2">Django</span>
-                    <div class="row g-0">
-                        <div class="col-md-7 p-2">
-                            <div class="card-body">
-                                <h3 class="card_title">ParkingLots App</h3>
-                                <p>March 2021</p>
-                                <hr>
-                                <div class="d-flex">
-                                    <i class="bullet fas fa-circle pt-2"></i>
-                                    <p class="card-text">Built web application using the Django Framework, which utilizes APIs like CrispyForms, Jinja, Pillow, Bootstrap, and FontAwesome.</p>
-                                </div>
-                                <div class="d-flex">
-                                    <i class="bullet fas fa-circle pt-2"></i>
-                                    <p class="card-text">Employed Object Oriented Programming techniques to allow users to buy, sell, and rent parking spaces.</p>
-                                </div>
-                                <div class="d-flex">
-                                    <i class="bullet fas fa-circle pt-2"></i>
-                                    <p class="card-text">Designed and built logos and marketing content using Adobe Photoshop.</p>
-                                </div>
-                                <div class="d-flex justify-content-center mt-5">
-                                    <button class="btn btn-dark shadow rounded-pill p-3"><a href="https://github.com/heasleykr/ParkingLots"><i class="gitI fab fa-github me-2"></i></a></i>Github Code</a></button>
-                                </div>
+            <div class="portfolioMain container-fluid">
+                <div class="row g-5 ms-5 me-5">
+                    <div class="col pe-5">
+                        <span class="position-absolute translate-middle badge rounded-pill bg-dark p-2">Django</span>
+                        <div class="d-flex flex-column projectView">
+                            <img class="img-fluid rounded projectImg" src="../img/parking6.png" alt="Parking Lots">
+                            <h3 class="projectTitle">ParkingLots App</h3>
+                            <p class="projectSubDate">March 2021</p>
+                            <div class="d-flex">
+                                <i class="bullet fas fa-circle pt-2"></i>
+                                <p class="projectSub">Built web application using the Django Framework, which utilizes APIs like CrispyForms, Jinja, Pillow, Bootstrap, and FontAwesome.</p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="bullet fas fa-circle pt-2"></i>
+                                <p class="projectSub">Employed Object Oriented Programming techniques to allow users to buy, sell, and rent parking spaces.</p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="bullet fas fa-circle pt-2"></i>
+                                <p class="projectSub">Designed and built logos and marketing content using Adobe Photoshop.</p>
+                            </div>
+                            <div class="d-flex justify-content-center mt-5">
+                                <button class="btn btn-outline-light shadow rounded-pill p-3"><a href="https://github.com/heasleykr/ParkingLots"><i class="gitI fab fa-github me-2"></i></a></i>Github Code</a></button>
                             </div>
                         </div>
-                        <div class="col-5">
-                            <img class="img-fluid rounded-end cardImg" src="../img/parking6.png" alt="Parking Lots">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card mb-5 port_cards card2">
-                    <span class="position-absolute translate-middle badge rounded-pill bg-dark p-2">React</span>
-                    <div class="row g-0">
-                        <div class="col-md-7 p-2">
-                            <div class="card-body">
-                                <h3 class="card_title">OrganicBeans App</h3>
-                                <p>January 2021</p>
-                                <hr>
-                                <div class="d-flex">
-                                    <i class="bullet fas fa-circle pt-2"></i>
-                                    <p class="card-text">Web application build with React Framework for educational purposes with San Diego Global Knowledge University.</p>
-                                </div>
-                                <div class="d-flex">
-                                    <i class="bullet fas fa-circle pt-2"></i>
-                                    <p class="card-text">Built and designed all front-end elements with original code, HTML/CSS/JS.</p>
-                                </div>
-                                <div class="d-flex">
-                                    <i class="bullet fas fa-circle pt-2"></i>
-                                    <p class="card-text">Utilizes Redux for state management in addition to AXIOS for web server connection for data storage.</p>
-                                </div>
-                                <div class="d-flex justify-content-center mt-5">
-                                    <button class="btn btn-dark shadow rounded-pill p-3"><a href="https://github.com/heasleykr/OrganicBeansRedux"><i class="gitI fab fa-github me-2"></i></a></i>Github Code</a></button>
-                                </div>
+                    </div>       
+                
+                    <div class="col">
+                        <span class="position-absolute translate-middle badge rounded-pill bg-dark p-2">React</span>
+                        <div class="d-flex flex-column projectView">
+                            <img class="img-fluid rounded-end projectImg" src="../img/organic.png" alt="Organic Beans">
+                            <h3 class="projectTitle">OrganicBeans App</h3>
+                            <p class="projectSubDate">January 2021</p>
+                            <div class="d-flex">
+                                <i class="bullet fas fa-circle pt-2"></i>
+                                <p class="projectSub">Web application build with React Framework for educational purposes with San Diego Global Knowledge University.</p>
                             </div>
-                        </div>
-                        <div class="col-5">
-                            <img class="img-fluid rounded-end cardImg" src="../img/organic.png" alt="Organic Beans">
-                        </div>
-                    </div>
-                </div>
-            
-                <div class="card mb-5 port_cards card2">
-                    <span class="position-absolute translate-middle badge rounded-pill bg-dark p-2">ASP.NET MVC</span>
-                    <div class="row g-0">
-                        <div class="col-md-7 p-2">
-                            <div class="card-body">
-                                <h3 class="card_title">Property Rental App</h3>
-                                <p>November 2020</p>
-                                <hr>
-                                <div class="d-flex">
-                                    <i class="bullet fas fa-circle pt-2"></i>
-                                    <p class="card-text">Web application build with Microsoft’s ASP.Net Core framework for educational purposes with San Diego Global Knowledge University.</p>
-                                </div>
-                                <div class="d-flex">
-                                    <i class="bullet fas fa-circle pt-2"></i>
-                                    <p class="card-text">Built and designed all front-end elements with original code, HTML/CSS/JS.</p>
-                                </div>
-                                <div class="d-flex">
-                                    <i class="bullet fas fa-circle pt-2"></i>
-                                    <p class="card-text">Utilizes the Model-View-Controller architectural style and built backend alongside other students for the purposes of learning the ASP .Net Core framework.</p>
-                                </div>
-                                <div class="d-flex justify-content-center mt-5">
-                                    <button class="btn btn-dark shadow rounded-pill p-3"><a href="https://github.com/heasleykr/Property-Rental-Web-Application"><i class="gitI fab fa-github me-2"></i></a></i>Github Code</a></button>
-                                </div>
+                            <div class="d-flex">
+                                <i class="bullet fas fa-circle pt-2"></i>
+                                <p class="projectSub">Built and designed all front-end elements with original code, HTML/CSS/JS.</p>
                             </div>
-                        </div>
-                        <div class="col-5">
-                            <img class="img-fluid rounded-end cardImg" src="../img/organic.png" alt="Organic Beans">
+                            <div class="d-flex">
+                                <i class="bullet fas fa-circle pt-2"></i>
+                                <p class="projectSub">Utilizes Redux for state management in addition to AXIOS for web server connection for data storage.</p>
+                            </div>
+                            <div class="d-flex justify-content-center mt-5">
+                                <button class="btn btn-outline-light shadow rounded-pill p-3"><a href="https://github.com/heasleykr/OrganicBeansRedux"><i class="gitI fab fa-github me-2"></i></a></i>Github Code</a></button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="card mb-5 port_cards card4">
-                    <span class="position-absolute translate-middle badge rounded-pill bg-dark p-2">HTTP CSS JS</span>
-                    <div class="row g-0">
-                        <div class="col-md-7 p-2">
-                            <div class="card-body">
-                                <h3 class="card_title">The Fashion Pet</h3>
-                                <p>September 2020</p>
-                                <hr>
-                                <div class="d-flex">
-                                    <i class="bullet fas fa-circle pt-2"></i>
-                                    <p class="card-text">Statically built website using HTML, CSS, & Javascript techniques.</p>
-                                </div>
-                                <div class="d-flex">
-                                    <i class="bullet fas fa-circle pt-2"></i>
-                                    <p class="card-text">Emphasized styling of content without API usage.</p>
-                                </div>
-                                <div class="d-flex">
-                                    <i class="bullet fas fa-circle pt-2"></i>
-                                    <p class="card-text">Used conventional CSS containers and techniques for layouts.</p>
-                                </div>
-                                <div class="d-flex justify-content-center mt-5">
-                                    <button class="btn btn-dark shadow rounded-pill p-3"><a href="https://github.com/heasleykr/theFashionPet"><i class="gitI fab fa-github me-2"></i></a></i>Github Code</a></button>
-                                </div>
+                <div class="row g-5 m-5">
+                    <div class="col pe-5">
+                        <span class="position-absolute translate-middle badge rounded-pill bg-dark p-2">ASP.NET MVC</span>
+                        <div class="d-flex flex-column projectView">
+                            <img class="img-fluid rounded-end projectImg" src="../img/organic.png" alt="Organic Beans">
+                            <h3 class="projectTitle">Property Rental App</h3>
+                            <p class="projectSubDate">November 2020</p>
+                            <div class="d-flex">
+                                <i class="bullet fas fa-circle pt-2"></i>
+                                <p class="projectSub">Web application build with Microsoft’s ASP.Net Core framework for educational purposes with San Diego Global Knowledge University.</p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="bullet fas fa-circle pt-2"></i>
+                                <p class="projectSub">Built and designed all front-end elements with original code, HTML/CSS/JS.</p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="bullet fas fa-circle pt-2"></i>
+                                <p class="projectSub">Utilizes the Model-View-Controller architectural style and built backend alongside other students for the purposes of learning the ASP .Net Core framework.</p>
+                            </div>
+                            <div class="d-flex justify-content-center mt-5">
+                                <button class="btn btn-outline-light shadow rounded-pill p-3"><a href="https://github.com/heasleykr/Property-Rental-Web-Application"><i class="gitI fab fa-github me-2"></i></a></i>Github Code</a></button>
                             </div>
                         </div>
-                        <div class="col-5">
-                            <img class="img-fluid rounded-end cardImg" src="../img/fashion.png" alt="Fashion Pet">
+                    </div>
+
+                    <div class="col">
+                        <span class="position-absolute translate-middle badge rounded-pill bg-dark p-2">HTTP CSS JS</span>
+                        <div class="d-flex flex-column projectView">
+                            <img class="img-fluid rounded-end projectImg" src="../img/fashion.png" alt="Fashion Pet">
+                            <h3 class="projectTitle">The Fashion Pet</h3>
+                            <p class="projectSubDate">September 2020</p>
+                            <div class="d-flex">
+                                <i class="bullet fas fa-circle pt-2"></i>
+                                <p class="projectSub">Statically built website using HTML, CSS, & Javascript techniques.</p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="bullet fas fa-circle pt-2"></i>
+                                <p class="projectSub">Emphasized styling of content without API usage.</p>
+                            </div>
+                            <div class="d-flex">
+                                <i class="bullet fas fa-circle pt-2"></i>
+                                <p class="projectSub">Used conventional CSS containers and techniques for layouts.</p>
+                            </div>
+                            <div class="d-flex justify-content-center mt-5">
+                                <button class="btn btn-outline-light shadow rounded-pill p-3"><a href="https://github.com/heasleykr/theFashionPet"><i class="gitI fab fa-github me-2"></i></a></i>Github Code</a></button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -692,11 +638,14 @@ function contactLoad(){
     UI.$body.classList.remove('portfolio', 'main');
     UI.$top.classList.remove('shadow', 'navCustom');
     UI.$body.classList.remove('home');
+    UI.$footer.classList.remove('mainFooter');
+    UI.$body.classList.remove('resume');
 
-    // UI.$body.classList.add('resume');
+    
     UI.$body.classList.add('contact');
+    UI.$footer.classList.add('contactFooter');
     UI.$top.classList.add('resumeNav');
-    UI.$resumeBackground.classList.remove('hide');
+    UI.$homeBackground.classList.add('hide');
 
     //content to be displayed
     var contact = `
@@ -711,7 +660,7 @@ function contactLoad(){
                 </div>
             </div>
         </div>
-        <div id="contactContent" class="bg-transparent">
+        <div id="contactContent" class="mt-5 bg-transparent">
             <div class="d-flex flex-row justify-contents-center">
                 <div>
                     <img class="" src="/img/contact4.jpg" alt="headshot">
@@ -812,6 +761,7 @@ function init(){
         $main: document.getElementById('mainLoad'),
         $side: document.getElementById('sideBar'),
         $top: document.getElementById('topBar'),
+        $footer: document.getElementById('footer'),
         $btnShow: document.getElementById('btnShow'),
         $btnHide: document.getElementById('btnHide'),
         $homeBtn: document.getElementById('homeBtn'),
@@ -824,6 +774,10 @@ function init(){
         $resNav: document.getElementById('resumeNav'),
         $folioNav: document.getElementById('folioNav'),
         $contactNav: document.getElementById('contactNav'),
+        $starterBtn: document.getElementById('starterBtn'),
+        $resFtBtn: document.getElementById('footerResume'),
+        $contactFtBtn: document.getElementById('footerContact'),
+        $homeBackground: document.getElementById('homeGraphicDiv'),
         $resumeBackground: document.getElementById('resumeGraphics'),
     };
 
@@ -841,11 +795,15 @@ function init(){
     UI.$resNav.onclick = resumeLoad;
     UI.$folioNav.onclick = folioLoad;
     UI.$contactNav.onclick = contactLoad;
+    UI.$starterBtn.onclick = resumeLoad;
+    UI.$resFtBtn.onclick = resumeLoad;
+    UI.$contactFtBtn.onclick = contactLoad;
     UI.$btnHide.onclick = showDetails;
-
-    //catch click events on top nav
-    UI.$btnShow.onclick = showDetails; 
+    UI.$btnShow.onclick = showDetails;
 }
+
+   
+    
 
 
 
