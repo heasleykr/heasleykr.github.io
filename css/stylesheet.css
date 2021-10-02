@@ -45,30 +45,36 @@ a {
     margin-left: .7rem;
 }
 
-/* SideDiv */
-#sideBar {
+/* Lrg Sidebar */
+#sidebarLg {
+    width: 25%;
+    height: inherit;
     padding-top: .5rem;
     color: #6b2643;
     text-transform: uppercase;
+    background-color: green;
+    position: absolute;
+    top: 0%;
+    left: 0%;
 }
 
-#sideBar a {
+#sidebarLg a {
     padding: 1.5rem;
     font-size: 1.2rem;
 }
 
-#sideBar a:hover {
+#sidebarLg a:hover {
     padding: 1.5rem;
     font-size: 1.2rem;
     color: black;
 }
 
-#sideBar ul {
+#sidebarLg ul {
     list-style-type: none;
     color: white;
 }
 
-#sideBar li {
+#sidebarLg li {
     width: 11rem;
     height: 4.5rem;
     background-color: #6b2643;
@@ -76,7 +82,7 @@ a {
     margin-bottom: .7rem;
 }
 
-#sideBar li:hover {
+#sidebarLg li:hover {
     width: 11rem;
     height: 4.5rem;
     background-color: black;
@@ -104,8 +110,23 @@ a {
     color: #5c5656;
 }
 
-#copyright {
-    margin-top: 10rem;
+/* Sm Sidebar */
+#sidebarSm {
+    width: 40px;
+    height: 100%;
+    color: white;
+    background-color: #3b3737;
+    position: fixed;
+    left: 0%;
+}
+
+#sidebarSm a {
+    padding-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+#sidebarSm a:hover {
+    color: black;
 }
 
 
@@ -144,8 +165,8 @@ a {
 }
 
 .navCustom {
-    /* background-color: #353232; */
-    background-color: none;
+    background-color: #1f1e1e;
+    /* background-color: none; */
 }
 
 #mainLoad {
@@ -266,6 +287,10 @@ a {
 }
 
 /* About View */
+.about {
+    background-color: rgba(44, 42, 42, 1);
+}
+
 #aboutCard {
     width: 100%;
     height: auto;
@@ -337,7 +362,8 @@ a {
     border-right: 1.5rem solid #353232; */
     /* margin-top: 9rem; */
     box-shadow: 0 3rem 5rem rgba(255, 255, 255, 0.15);
-    height: 3000px;
+    /* height: 3000px; */
+    height: auto;
 
 
 }
@@ -345,17 +371,6 @@ a {
 .resumeNav {
     box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.15);
     background-color: black;
-}
-
-#resumeGraphics {
-    padding-top: 7rem;
-}
-
-#circleGraphic i {
-
-    font-size: 1.5rem;
-    margin-bottom: 9rem;
-    color: #313030;
 }
 
 .linesTri {
@@ -382,8 +397,7 @@ a {
 
 }
 
-#resume_header,
-#contact_header {
+#resume_header {
     /* font-family: 'Playfair Display', serif; */
     /* font-family: 'Rajdhani', sans-serif; */
     font-family: 'Varela', sans-serif;
@@ -582,7 +596,21 @@ a {
     height: auto;
 }
 
-#port_head {
+#folioGraphicDiv,
+#contactGraphicDiv,
+#resumeGraphicDiv {
+    margin-top: -3rem;
+    width: auto;
+}
+
+.folioIcons {
+    font-size: .4rem;
+    padding: 2rem;
+    color: white;
+}
+
+#port_head,
+#resume_head {
     /* font-family: 'Playfair Display', serif; */
     /* font-family: 'Questrial', sans-serif; */
     /* font-family: 'Secular One', sans-serif; */
@@ -600,7 +628,8 @@ a {
 
 }
 
-#portSubHead {
+#portSubHead,
+#resumeSubHead {
     /* font-family: 'Questrial', sans-serif; */
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
@@ -632,8 +661,9 @@ a {
     text-decoration: none;
 }
 
-#port_header {
-    margin-top: 8rem;
+#port_header,
+#resume_header {
+    margin-top: 5rem;
     /* margin-left: 9rem; */
     margin-bottom: 15rem;
 }
@@ -736,6 +766,25 @@ a {
 
 }
 
+#contact_header {
+    /* margin-top: 5rem; */
+    /* margin-bottom: 5rem; */
+    /* color: #dca4b4; */
+    color: white;
+    color: #dca4b4;
+    /* color: #dca4b4; */
+    /* font-size: 3rem; */
+    /* position: absolute;
+    top: 15%;
+    left: 41%; */
+    font-family: 'Playfair Display', serif;
+    font-family: 'Varela', sans-serif;
+    /* font-size: 4rem; */
+    font-size: 3rem;
+    /* border-bottom: 2rem solid #6b2643; */
+    padding-bottom: 5rem;
+}
+
 #contactContent {
     width: 100%;
     height: auto;
@@ -744,17 +793,23 @@ a {
     /* background-image: linear-gradient(to top, rgba(44, 42, 42, 1), rgba(14, 13, 13, .4)), url(/img/seaMe.JPG);
     background-repeat: no-repeat, no-repeat;
     background-position: top, center left; */
-    border-bottom: 1.5rem solid white;
+    /* border-bottom: 1.5rem solid white;
     border-left: 1.5rem solid white;
-    border-right: 1.5rem solid white;
+    border-right: 1.5rem solid white; */
     color: #313030;
-    color: #dca4b4;
+    /* color: #dca4b4; */
+    /* color: white;
+    color: #dedede; */
     /* color: white; */
+    /* margin-top: 10rem; */
 }
 
 #contactInfo {
     background-color: #dca4b4;
     background-color: #313030;
+    background-color: white;
+    /* background-color: #b9b7b7; */
+    background-color: rgba(255, 255, 255, .6);
     width: 620px;
     height: 688px;
     margin-top: 5rem;
@@ -766,8 +821,8 @@ a {
     font-size: 3rem; */
     font-family: 'Playfair Display', serif;
     font-size: 4rem;
-    color: #dca4b4;
-    color: white;
+    color: #313030;
+    /* color: white; */
     margin-top: 3rem;
     margin-bottom: .5rem;
 
@@ -779,7 +834,7 @@ a {
     font-size: 3rem; */
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
-    color: white;
+    color: #313030;
     /* margin-top: 5rem; */
     margin-bottom: 3rem;
 
@@ -788,6 +843,7 @@ a {
 
 .contactMain {
     color: white;
+    color: #313030;
     /* margin-top: 2rem; */
     /* background-color: rgba(44, 42, 42, .1);
     background-color: rgb(255, 255, 255, .2) */
@@ -795,22 +851,34 @@ a {
 
 .contactIcons {
     color: #474646;
-    font-size: 2rem;
+    color: #dca4b4;
+    color: white;
+    font-size: 1.7rem;
 }
 
-#contactSubIcons {
+.contactSubIcons {
     font-size: 1.5rem;
+    color: #474646;
+    padding: 3rem 3rem 1rem 3rem;
+
     /* border-top: 1px solid #474646; */
 
 }
 
-#subIconsInner i {
+.subIcon2 {
+    font-size: 1.5rem;
+    color: #8b8888;
     /* border-top: 1px solid #474646; */
 }
 
 .directContact {
-    font-size: 1.3rem;
+    width: auto;
+    font-size: 1.2rem;
+    color: white;
+
 }
+
+
 
 /* Footer */
 .mainFooter {

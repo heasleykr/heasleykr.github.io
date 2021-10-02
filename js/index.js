@@ -1,7 +1,7 @@
 // Global variables
 var showIcon = `<i class="fas fa-bars"></i>`;
 var hideIcon = `<i class="fas fa-angle-double-right"></i>`;
-var visible = true;
+var visible = false;
       //cache DOM
       var UI = {};
 
@@ -10,7 +10,7 @@ function homeLoad(){
 
     //update body background
     UI.$homeBackground.classList.remove('hide');
-    UI.$body.classList.remove('portfolio', 'main');
+    UI.$body.classList.remove('portfolio', 'main', 'about');
     UI.$body.classList.remove('resume');
     UI.$top.classList.remove('resumeNav');
     UI.$body.classList.remove('contact');
@@ -18,7 +18,6 @@ function homeLoad(){
 
     UI.$body.classList.add('home');
     UI.$top.classList.add('shadow', 'navCustom');
-    UI.$resumeBackground.classList.add('hide');
     UI.$footer.classList.add('mainFooter');
     
 
@@ -33,7 +32,7 @@ function homeLoad(){
                 </div>
                 <div class="d-flex flex-row">
                     <h3 class="homeSub pe-2">I'm</h3>
-                    <h3 class="homeFocus" id="indexName">Katelynn Heasley<h3>
+                    <h3 class="homeFocus" id="indexName">Katelynn Heasley</h3>
                 </div>
                 <div class="d-flex flex-row">
                     <h3 class="homeSub pe-2">Computer Science</h3>
@@ -44,17 +43,24 @@ function homeLoad(){
                     <h3 class="homeFocus">Frontend Developer</h3>
                 </div>
                 <div>
-                    <p class="homeMiniFocus d-flex justify-content-center align-self-center mt-5 pt-3 pb-3">I'm currently seeking employment</p>
+                    <p class="homeMiniFocus d-flex justify-content-center align-self-center mt-3 pt-3 pb-3">I'm currently seeking employment</p>
                 </div>
-                <button id="starterBtn" class="btn btn-warning">See my resume</button>
+                <div>
+                    <a class="btn btn-warning mt-2" type="button" id="starterBtn">See my resume</a>
+                </div>
             </div>
         </div>
     </div>
     `;
 
+    
     //add html to DOM object
     UI.$main.innerHTML = home;
     console.log("Home Page");
+
+    //listen for js dynamically loaded click events
+    $("#starterBtn").on( "click", resumeLoad);
+    
 }
 
 //Function to dynamically display About page content
@@ -62,13 +68,13 @@ function aboutLoad(){
 
     //update body background
     UI.$body.classList.remove('portfolio');
-    UI.$body.classList.remove('resume');
+    UI.$body.classList.remove('resume', 'main');
     UI.$top.classList.remove('resumeNav');
     UI.$body.classList.remove('contact');
     UI.$body.classList.remove('home');
     UI.$footer.classList.remove('contactFooter');
 
-    UI.$body.classList.add('main');
+    UI.$body.classList.add('about');
     UI.$homeBackground.classList.add('hide');
     UI.$main.classList.add('bg-white');
     UI.$top.classList.add('shadow', 'navCustom');
@@ -76,7 +82,7 @@ function aboutLoad(){
 
     //content to be displayed
     var about = `
-    <div id="aboutCard">
+    <div id="aboutCard" class="ps-5">
         <div class="p-3 about_border">
             <div class="row py-5 about_row1">
                 <div class="col vertical_l text-uppercase"><p>Katelynn Heasley</p></div>
@@ -106,34 +112,145 @@ function aboutLoad(){
 function resumeLoad(){
 
     //update body background
-    UI.$body.classList.remove('portfolio', 'main');
+    UI.$body.classList.remove('portfolio', 'main', 'about', 'contact', 'home');
     UI.$top.classList.remove('shadow', 'navCustom');
-    UI.$body.classList.remove('contact');
-    UI.$body.classList.remove('home');
     UI.$footer.classList.remove('contactFooter');
 
     UI.$body.classList.add('resume');
     UI.$homeBackground.classList.add('hide');
     UI.$top.classList.add('resumeNav');
-    UI.$resumeBackground.classList.remove('hide');
     UI.$footer.classList.add('mainFooter');
 
 
     //content to be displayed
     var resume =`
-        <div class="d-flex flex-row justify-content-start">
-            <div class="ms-5 me-5 ps-5">
-                <img class="linesTri" src="/img/line2.png" alt="dots">
+        <div id="resumeGraphicDiv" class="d-flex flex-column align-items-center">
+            <div class="row">
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
             </div>
-            <div id="resumeTop" class="d-flex flex-column justify-content-center align-items-center bg-transparent">
-                <h2 id="resume_header">Resume</h2>
-                <div>
-                <img id="boxGraphic3" src="/img/box6.png" alt="box">
+            <div class="row">
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
                 </div>
             </div>
         </div>
+        <div class="bg-transparent">
+            <div id="resume_header" class="d-flex flex-column align-items-center bg-transparent">
+                <h2 id="resume_head" class="m-3">Resume</h2>
+                <h3 id="resumeSubHead" class="mb-5">My recent works and their source code</h3>
+                <button id="gitBtnR" class="btn btn-outline-light rounded-pill mb-2"><a href="https://github.com/heasleykr"><i class="gitI fab fa-github me-2"></i></a></i>Github</a>
+                </button>
+                <img class="folioLines mt-5" src="../img/folioLine2.png">
+            </div>
+        </div>
         <div id="resumeContent">
-            <div class="d-flex mt-6 p-3">
+            <div class="d-flex p-3">
                 <div id="leftSide">
                     <div id="darkHead" class="p-3">
                         <div class="d-flex justify-content-center">
@@ -484,6 +601,7 @@ function resumeLoad(){
         </div>
     `;
 
+
     //add html to DOM object
     UI.$main.innerHTML = `
         <div>${resume}</div>
@@ -499,21 +617,133 @@ function folioLoad(){
     UI.$body.classList.add('portfolio');
     UI.$body.classList.add('main');
     UI.$top.classList.add('resumeNav');
-    UI.$resumeBackground.classList.add('hide');
-    UI.$body.classList.remove('home');
     UI.$footer.classList.add('mainFooter');
     UI.$homeBackground.classList.add('hide');
 
-    UI.$body.classList.remove('resume');
+    UI.$body.classList.remove('resume', 'about', 'home', 'contact');
     UI.$main.classList.remove('bg-white');
     UI.$top.classList.remove('shadow', 'navCustom');
-    UI.$body.classList.remove('contact');
     UI.$footer.classList.remove('contactFooter');
-    UI.$body.classList.remove('home');
 
 
     //content to be displayed
     var folio = `
+        <div id="folioGraphicDiv" class="d-flex flex-column align-items-center">
+            <div class="row">
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+            </div>
+        </div>
         <div class="bg-transparent">
             <div id="port_header" class="d-flex flex-column align-items-center bg-transparent">
                 <h2 id="port_head" class="m-3">Portfolio</h2>
@@ -635,72 +865,173 @@ function folioLoad(){
 function contactLoad(){
 
     //update body background
-    UI.$body.classList.remove('portfolio', 'main');
+    UI.$body.classList.remove('portfolio', 'main', 'home', 'resume');
     UI.$top.classList.remove('shadow', 'navCustom');
-    UI.$body.classList.remove('home');
     UI.$footer.classList.remove('mainFooter');
-    UI.$body.classList.remove('resume');
-
     
-    UI.$body.classList.add('contact');
+    UI.$body.classList.add('about');
     UI.$footer.classList.add('contactFooter');
     UI.$top.classList.add('resumeNav');
     UI.$homeBackground.classList.add('hide');
 
     //content to be displayed
     var contact = `
-        <div class="d-flex flex-row justify-content-start">
-            <div class="ms-5 me-5 ps-5">
-                <img class="linesTri" src="/img/line2.png" alt="dots">
+        <div id="contactGraphicDiv" class="d-flex flex-column align-items-center">
+            <div class="row">
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
             </div>
-            <div id="contactTop" class="d-flex flex-column justify-content-center align-items-center bg-transparent">
-                <h2 id="contact_header">Contact</h2>
-                <div>
-                <img id="boxGraphic3" src="/img/box6.png" alt="box">
+            <div class="row">
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
+                </div>
+                <div class="col">
+                    <i class="folioIcons far fa-circle"></i>
                 </div>
             </div>
         </div>
-        <div id="contactContent" class="mt-5 bg-transparent">
-            <div class="d-flex flex-row justify-contents-center">
-                <div>
-                    <img class="" src="/img/contact4.jpg" alt="headshot">
+        <div class="d-flex justify-content-center mt-5">
+            <p id="contact_header">Contact</p>
+        </div>
+        <div id="contactContent" class="bg-transparent d-flex flex-row justify-content-center">
+            <div>
+                <img class="" src="/img/contact4.jpg" alt="headshot">
+            </div>
+            <div id="contactInfo">
+                <div class="d-flex flex-column p-3">
+                    <h2 class="contactGreeting ps-5">Reach out,</h2>
+                    <h2 class="contactGreetingSub ps-5">I'd love to connect!</h2>
+                    <div class="contactTrial d-flex flex-column justify-content-end ps-5 pe-5">
+                        <p class="">Feel free to contact me using any communication tool, or platform, of your preference. I'm seeking entry-level, junior front-end developer employment. Any communication is welcome.</p>
+                        <p class="me-5 pe-5 align-self-end"> -Katelynn</p>
+                    </div>
+                    
+                    <div class="contactMain mt-5">
+                        <div class="directContact d-flex flex-row justify-content-evenly align-items-center">
+                            <div class="d-flex flex-row justify-content-center">
+                                <i class="contactIcons fas fa-phone"></i>
+                                <p class="ps-3">(619) 317-4334</p>
+                            </div>
+                            <div class="d-flex flex-row justify-content-center">
+                                <i class="contactIcons far fa-envelope"></i>
+                                <p class="ps-3">heasleykr@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-row justify-content-center">
+                            <p><a href="https://github.com/heasleykr"><i class="contactSubIcons fab fa-github"></i></a></p>
+                            <p><a href="https://www.linkedin.com/in/katelynn-heasley-13933435/"><i class="contactSubIcons fab fa-linkedin-in"></i></a></p>
+                            <p><a href="https://www.facebook.com/katelynn.heasley/"><i class="contactSubIcons fab fa-facebook"></i></a></p>
+                        </div>
+                    </div>
                 </div>
-
-                <div id="contactInfo">
-                    <div class="d-flex flex-column p-3">
-                        <h2 class="contactGreeting ps-5">Reach out,</h2>
-                        <h2 class="contactGreetingSub ps-5">I'd love to connect!</h2>
-                        <div class="d-flex flex-column justify-content-end ps-5 pe-5">
-                            <p class="">Feel free to contact me using any communication tool, or platform, of your preference. I'm seeking entry-level, junior front-end developer employment. Any communication is welcome.</p>
-                            <p class="me-5 pe-5 align-self-end"> -Katelynn</p>
-                        </div>
-                        
-                        <div class="contactMain mt-5">
-                            <div class="directContact row pe-5">
-                                <div class="col d-flex flex-row justify-content-end">
-                                    <i class="mainIcons fas fa-phone"></i>
-                                    <p class="ps-3">(619) 317-4334</p>
-                                </div>
-                                <div class="col d-flex flex-row justify-content-end">
-                                    <i class="mainIcons far fa-envelope"></i>
-                                    <p class="ps-3">heasleykr@gmail.com</p>
-                                </div>
-                            </div>
-                            <div id="contactSubIcons" class="row">
-                                <div id="subIconsInner" class="col d-flex flex-row justify-content-center">
-                                    <p class="p-5"><a href="https://github.com/heasleykr"><i class="fab fa-github"></i></a></p>
-                                    <p class="p-5"><a href="https://www.linkedin.com/in/katelynn-heasley-13933435/"><i class="fab fa-linkedin-in"></i></a></p>
-                                    <p class="p-5"><a href="https://www.facebook.com/katelynn.heasley/"><i class="fab fa-facebook"></i></a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column align-items-center mt-3">
-                        <i class="contactIcons fas fa-globe"></i>
-                        <p class="pt-3">www.katelynnheasley.com</p>
-                    </div>
+                <div class="d-flex flex-column align-items-center">
+                    <i class="subIcon2 fas fa-globe"></i>
+                    <p class="pt-2">www.katelynnheasley.com</p>
                 </div>
             </div>
+            
         </div>
     `;
 
@@ -713,24 +1044,30 @@ function contactLoad(){
 function showDetails(){
 
 
-    // Show details
+    // Show Side Large Panel & Hide Small
     if(!visible){
-        // Show side bar
-        UI.$side.classList.remove('hide');
+        //Show Large side bar
+        UI.$sideL.classList.remove('hide');
 
-        //Hide top bar
+        //Hide nav bar
         UI.$top.classList.add('hide');
+
+        //Hide small side bar
+        UI.$sideSm.classList.add('hide');
 
         // change boolean
         visible = true;
     }
-    //Hide Details
+    //Hide Side Large Panel & Show small
     else{ 
-        //Hide side bar
-        UI.$side.classList.add('hide');
+        //Hide Large side bar
+        UI.$sideL.classList.add('hide');
 
-        //Show top bar
+        //Show nav bar
         UI.$top.classList.remove('hide');
+
+        //Show small side bar
+        UI.$sideSm.classList.remove('hide');
 
         // change boolean
         visible = false;
@@ -759,7 +1096,8 @@ function init(){
     UI = {
         $body: document.getElementById('main'),
         $main: document.getElementById('mainLoad'),
-        $side: document.getElementById('sideBar'),
+        $sideL: document.getElementById('sidebarLg'),
+        $sideSm: document.getElementById('sidebarSm'),
         $top: document.getElementById('topBar'),
         $footer: document.getElementById('footer'),
         $btnShow: document.getElementById('btnShow'),
@@ -774,11 +1112,9 @@ function init(){
         $resNav: document.getElementById('resumeNav'),
         $folioNav: document.getElementById('folioNav'),
         $contactNav: document.getElementById('contactNav'),
-        $starterBtn: document.getElementById('starterBtn'),
         $resFtBtn: document.getElementById('footerResume'),
         $contactFtBtn: document.getElementById('footerContact'),
         $homeBackground: document.getElementById('homeGraphicDiv'),
-        $resumeBackground: document.getElementById('resumeGraphics'),
     };
 
     //load main content
@@ -795,11 +1131,11 @@ function init(){
     UI.$resNav.onclick = resumeLoad;
     UI.$folioNav.onclick = folioLoad;
     UI.$contactNav.onclick = contactLoad;
-    UI.$starterBtn.onclick = resumeLoad;
     UI.$resFtBtn.onclick = resumeLoad;
     UI.$contactFtBtn.onclick = contactLoad;
     UI.$btnHide.onclick = showDetails;
     UI.$btnShow.onclick = showDetails;
+
 }
 
    
