@@ -1,3 +1,18 @@
+/* 
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+https://getbootstrap.com/docs/5.1/layout/breakpoints/
+
+*/
+
+
+
 /* Global */
 .main {
     background-color: #353232;
@@ -43,6 +58,11 @@ a {
     color: #dca4b4;
     margin-top: .6rem;
     margin-left: .7rem;
+}
+
+#logo {
+    width: 69px;
+    height: 50px;
 }
 
 /* Lrg Sidebar */
@@ -357,6 +377,9 @@ a {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, .5), rgba(0, 0, 0, 1));
 } */
 
+.topGrids {
+    overflow: hidden;
+}
 
 #resumeContent {
     /* background-color: white; */
@@ -423,6 +446,25 @@ a {
     font-family: 'Varela', sans-serif;
     font-size: 3rem;
     color: white;
+}
+
+.profile {
+    /* background-color: white; */
+    background-color: rgba(255, 255, 255, 0.6);
+    color: #dca4b4;
+    color: white;
+    color: black;
+    font-size: 0.5rem;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Varela', sans-serif;
+    border: 2px solid white;
+    /* color: #524f4f; */
+}
+
+#resumeSubTitle {
+    color: #313030;
+    color: white;
+    font-family: 'Varela', sans-serif;
 }
 
 
@@ -653,12 +695,14 @@ a {
     border-right: 1px solid #524e4e;
 }
 
-#resumeLineBottom {
+#resumeLineBottom,
+#portfolioLineBottom {
     width: 461px;
     height: 50px;
 }
 
-#resumeTopBtn {
+#resumeTopBtn,
+#portfolioTopBtn {
     color: #dca4b4;
     width: 20%;
 }
@@ -689,23 +733,26 @@ a {
     color: white;
 }
 
+
+
 #port_head {
     font-family: 'Varela', sans-serif;
     font-size: 3rem;
     color: white;
 }
 
-#portSubHead,
-#resumeSubTitle {
+#portSubHead {
     /* font-family: 'Questrial', sans-serif; */
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
     color: #dca4b4;
 }
 
+
+
 .portfolioMain {
-    border-right: 1px solid #474646;
-    border-left: 1px solid #474646;
+    /* border-right: 1px solid #474646;
+    border-left: 1px solid #474646; */
 
 }
 
@@ -748,8 +795,17 @@ a {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgb(69, 196, 201));
 }
 
-.card2 {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgb(12, 90, 47));
+#organicDiv,
+#fashionDiv,
+#topDiv {
+    background-color: #313030;
+}
+
+#organic,
+#fashion,
+#property {
+    margin-top: 0rem;
+    padding-top: 2rem;
 }
 
 .card4 {
@@ -757,18 +813,17 @@ a {
 }
 
 .projectView {
-    width: 497px;
+    /* width: 497px; */
+    background: transparent;
 }
 
 .projectImg {
-    width: 497px;
-    height: 478px;
-    /* height: 478px; */
-    /* object-position: left;*/
-    object-fit: cover;
-    /* opacity: 33%; */
-
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
 }
+
+.projectContent {}
 
 .bullet {
     /* color: black; */
@@ -781,7 +836,7 @@ a {
 .projectSub {
     /* color: #dca4b4; */
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
 }
 
 .projectSubDate {
@@ -812,6 +867,21 @@ a {
 .port_cards p {
     font-size: 1rem;
     margin-bottom: 0.7rem;
+}
+
+#portfolioGrid2,
+#portfolioGrid4 {
+    background-image: linear-gradient(to bottom, black, #313030);
+    overflow: hidden;
+}
+
+#portfolioGrid3 {
+    background-image: linear-gradient(to bottom, #313030, black);
+    overflow: hidden;
+}
+
+#folioImg {
+    /* margin-bottom: -2rem; */
 }
 
 /* Contact Page */

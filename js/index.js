@@ -1,3 +1,5 @@
+
+
 // Global variables
 var showIcon = `<i class="fas fa-bars"></i>`;
 var hideIcon = `<i class="fas fa-angle-double-right"></i>`;
@@ -52,8 +54,13 @@ function homeLoad(){
         </div>
     </div>
     `;
-
     
+    //load content at top of page, hide until top is reached
+    // $('body').hide(0, function(){
+    //     window.scrollTo(0,0);
+    // });
+    // $('body').show(2000);
+
     //add html to DOM object
     UI.$main.innerHTML = home;
     console.log("Home Page");
@@ -93,15 +100,21 @@ function aboutLoad(){
                 <div class="col"></div>
                 <div class="col-6">
                     <p>I am a driven and creative individual who is currently completing both a second bachelors in Computer Science and a Full-Stack Coding Program to fully immerse myself in learning the art of software development. Two years ago, I made the decision to make a career change into software development from the classical music industry. Since then, I am working to educate myself to become the best developer I can. I seek junior-level employment within a creative team environment that attains to develop, design, and bring innovative devices and services through the use of cutting-edge software development. With over 9 years of working in healthcare, music, and the United States Marine Corps, I am committed to quality work and to joining a team that is on the forefront of technology innovation. Please contact me for any inquries, interest, or opportunites you may have.
-
-                    Hello! I am: passionate about front-end design & development. Working towards: A 2nd degree in Computer Science & an entry-level front-end position. 
-                                    -Katelynn </p>
+                    <div class="d-flex justify-content-end">
+                        <p> - Katelynn </p>
+                    </div>
                 </div>
                 <div class="col"></div>
             </div>
         </div>
     </div>
     `;
+
+    //load content at top of page, hide until top is reached
+    // $('body').hide(0, function(){
+    //     window.scrollTo(0,0);
+    // });
+    // $('body').show(2000);
 
     //add html to DOM object
     UI.$main.innerHTML = about;
@@ -124,16 +137,19 @@ function resumeLoad(){
 
     //content to be displayed
     var resume =`
-        <div>
+        <div class="topGrids">
             <img src="../img/circleGrid3.png">
         </div>
         <div class="bg-transparent">
             <div id="resumeHeader" class="d-flex flex-column align-items-center bg-transparent mb-4">
                 <h2 id="resumeTitle" class="m-3">Resume</h2>
-                <h3 id="resumeSubTitle" class="mb-5">My recent works and their source code</h3>
                 <button id="downloadBtn" class="btn btn-outline-success rounded-pill mb-2"><a href="/img/KHeasley_Resume.pdf"><i class="fas fa-arrow-circle-down me-2"></i>download resume</a>
                 </button>
-                <img class="folioLines mt-5" src="../img/folioLine2.png">
+                <img class="folioLines mt-5 mb-5" src="../img/folioLine2.png">
+            </div>
+            <div class="profile d-flex justify-content-start mt-5 mb-5 ms-5 p-3">
+            <h3 id="resumeSubTitle">Profile: </h3>
+            <h4 class="ms-3">Current Computer Science student, Veteran, & former Professional Musican with a BA in Music Performance. Passionately driven towards front-end development and a rewarding career in the tech industry.</h4>
             </div>
         </div>
         <div id="resumeContent" class="mt-5">
@@ -470,6 +486,12 @@ function resumeLoad(){
         </div>
     `;
 
+    //load content at top of page, hide until top is reached
+    // $('body').hide(0, function(){
+    //     window.scrollTo(0,0);
+    // });
+    // $('body').show(2000);
+
 
     //add html to DOM object
     UI.$main.innerHTML = `
@@ -487,6 +509,7 @@ function resumeLoad(){
 //Function to dynamically display Portfolio page content
 function folioLoad(){
 
+
     //update body background
     UI.$body.classList.add('portfolio');
     UI.$body.classList.add('main');
@@ -502,124 +525,174 @@ function folioLoad(){
 
     //content to be displayed
     var folio = `
-        <div>
+    <div class="container-fluid">
+        <div class="topGrids">
             <img src="../img/circleGrid3.png">
         </div>
         <div class="bg-transparent">
-            <div id="port_header" class="d-flex flex-column align-items-center bg-transparent">
+            <div id="port_header" class="d-flex flex-column justify-content-center align-items-center bg-transparent">
                 <h2 id="port_head" class="m-3">Portfolio</h2>
                 <h3 id="portSubHead" class="mb-5">My recent works and their source code</h3>
                 <button id="gitBtn" class="btn btn-outline-light rounded-pill mb-5"><a href="https://github.com/heasleykr"><i class="gitI fab fa-github me-2"></i></a></i>Github</a>
                 </button>
                 <img class="folioLines mt-5" src="../img/folioLine2.png">
             </div>
-            <div class="portfolioMain container-fluid">
-                <div class="row g-5 ms-5 me-5">
-                    <div class="col pe-5">
-                        <span class="position-absolute translate-middle badge rounded-pill bg-dark p-2">Django</span>
-                        <div class="d-flex flex-column projectView">
-                            <img class="img-fluid rounded projectImg" src="../img/parking6.png" alt="Parking Lots">
-                            <h3 class="projectTitle">ParkingLots App</h3>
-                            <p class="projectSubDate">March 2021</p>
-                            <div class="d-flex">
-                                <i class="bullet fas fa-circle pt-2"></i>
-                                <p class="projectSub">Built web application using the Django Framework, which utilizes APIs like CrispyForms, Jinja, Pillow, Bootstrap, and FontAwesome.</p>
-                            </div>
-                            <div class="d-flex">
-                                <i class="bullet fas fa-circle pt-2"></i>
-                                <p class="projectSub">Employed Object Oriented Programming techniques to allow users to buy, sell, and rent parking spaces.</p>
-                            </div>
-                            <div class="d-flex">
-                                <i class="bullet fas fa-circle pt-2"></i>
-                                <p class="projectSub">Designed and built logos and marketing content using Adobe Photoshop.</p>
-                            </div>
-                            <div class="d-flex justify-content-center mt-5">
-                                <button class="btn btn-outline-light shadow rounded-pill p-3"><a href="https://github.com/heasleykr/ParkingLots"><i class="gitI fab fa-github me-2"></i></a></i>Github Code</a></button>
-                            </div>
-                        </div>
-                    </div>       
-                
-                    <div class="col">
-                        <span class="position-absolute translate-middle badge rounded-pill bg-dark p-2">React</span>
-                        <div class="d-flex flex-column projectView">
-                            <img class="img-fluid rounded-end projectImg" src="../img/organic.png" alt="Organic Beans">
-                            <h3 class="projectTitle">OrganicBeans App</h3>
-                            <p class="projectSubDate">January 2021</p>
-                            <div class="d-flex">
-                                <i class="bullet fas fa-circle pt-2"></i>
-                                <p class="projectSub">Web application build with React Framework for educational purposes with San Diego Global Knowledge University.</p>
-                            </div>
-                            <div class="d-flex">
-                                <i class="bullet fas fa-circle pt-2"></i>
-                                <p class="projectSub">Built and designed all front-end elements with original code, HTML/CSS/JS.</p>
-                            </div>
-                            <div class="d-flex">
-                                <i class="bullet fas fa-circle pt-2"></i>
-                                <p class="projectSub">Utilizes Redux for state management in addition to AXIOS for web server connection for data storage.</p>
-                            </div>
-                            <div class="d-flex justify-content-center mt-5">
-                                <button class="btn btn-outline-light shadow rounded-pill p-3"><a href="https://github.com/heasleykr/OrganicBeansRedux"><i class="gitI fab fa-github me-2"></i></a></i>Github Code</a></button>
-                            </div>
-                        </div>
+
+
+            
+            <div class="row mb-5 projectView">
+                <div class="col">
+                    <span class="position-absolute translate-middle badge rounded-pill bg-dark p-2">Django</span>
+                    <div class="d-flex flex-column">
+                        <img class="img-fluid rounded projectImg" src="../img/parking6.png" alt="Parking Lots">
                     </div>
                 </div>
-                
-                <div class="row g-5 m-5">
-                    <div class="col pe-5">
-                        <span class="position-absolute translate-middle badge rounded-pill bg-dark p-2">ASP.NET MVC</span>
-                        <div class="d-flex flex-column projectView">
+                <div class="col projectContent">
+                    <h3 class="projectTitle">ParkingLots App</h3>
+                    <p class="projectSubDate">March 2021</p>
+                    <div class="d-flex">
+                        <i class="bullet fas fa-circle pt-2"></i>
+                        <p class="projectSub">Built web application using the Django Framework, which utilizes APIs like CrispyForms, Jinja, Pillow, Bootstrap, and FontAwesome.</p>
+                    </div>
+                    <div class="d-flex">
+                        <i class="bullet fas fa-circle pt-2"></i>
+                        <p class="projectSub">Employed Object Oriented Programming techniques to allow users to buy, sell, and rent parking spaces.</p>
+                    </div>
+                    <div class="d-flex">
+                        <i class="bullet fas fa-circle pt-2"></i>
+                        <p class="projectSub">Designed and built logos and marketing content using Adobe Photoshop.</p>
+                    </div>
+                    <div class="d-flex justify-content-center mt-5">
+                        <button class="btn btn-outline-light shadow rounded-pill p-3"><a href="https://github.com/heasleykr/ParkingLots"><i class="gitI fab fa-github me-2"></i></a></i>Github Code</a></button>
+                    </div>
+                </div>
+            </div>
+            <div id="organicDiv">
+                <div id="portfolioGrid2">
+                    <img id="folioImg" src="/img/circleDripSm2.png">
+                </div>
+                <div class="row pb-5 projectView bg-transparent" id="organic">
+                    <div class="col">
+                        <span class="position-absolute translate-middle badge rounded-pill bg-dark p-2">React</span>
+                        <div class="d-flex flex-column">
                             <img class="img-fluid rounded-end projectImg" src="../img/organic.png" alt="Organic Beans">
-                            <h3 class="projectTitle">Property Rental App</h3>
-                            <p class="projectSubDate">November 2020</p>
-                            <div class="d-flex">
-                                <i class="bullet fas fa-circle pt-2"></i>
-                                <p class="projectSub">Web application build with Microsoft’s ASP.Net Core framework for educational purposes with San Diego Global Knowledge University.</p>
-                            </div>
-                            <div class="d-flex">
-                                <i class="bullet fas fa-circle pt-2"></i>
-                                <p class="projectSub">Built and designed all front-end elements with original code, HTML/CSS/JS.</p>
-                            </div>
-                            <div class="d-flex">
-                                <i class="bullet fas fa-circle pt-2"></i>
-                                <p class="projectSub">Utilizes the Model-View-Controller architectural style and built backend alongside other students for the purposes of learning the ASP .Net Core framework.</p>
-                            </div>
-                            <div class="d-flex justify-content-center mt-5">
-                                <button class="btn btn-outline-light shadow rounded-pill p-3"><a href="https://github.com/heasleykr/Property-Rental-Web-Application"><i class="gitI fab fa-github me-2"></i></a></i>Github Code</a></button>
-                            </div>
                         </div>
                     </div>
-
-                    <div class="col">
-                        <span class="position-absolute translate-middle badge rounded-pill bg-dark p-2">HTTP CSS JS</span>
-                        <div class="d-flex flex-column projectView">
-                            <img class="img-fluid rounded-end projectImg" src="../img/fashion.png" alt="Fashion Pet">
-                            <h3 class="projectTitle">The Fashion Pet</h3>
-                            <p class="projectSubDate">September 2020</p>
-                            <div class="d-flex">
-                                <i class="bullet fas fa-circle pt-2"></i>
-                                <p class="projectSub">Statically built website using HTML, CSS, & Javascript techniques.</p>
-                            </div>
-                            <div class="d-flex">
-                                <i class="bullet fas fa-circle pt-2"></i>
-                                <p class="projectSub">Emphasized styling of content without API usage.</p>
-                            </div>
-                            <div class="d-flex">
-                                <i class="bullet fas fa-circle pt-2"></i>
-                                <p class="projectSub">Used conventional CSS containers and techniques for layouts.</p>
-                            </div>
-                            <div class="d-flex justify-content-center mt-5">
-                                <button class="btn btn-outline-light shadow rounded-pill p-3"><a href="https://github.com/heasleykr/theFashionPet"><i class="gitI fab fa-github me-2"></i></a></i>Github Code</a></button>
-                            </div>
+                    <div class="col projectContent">
+                        <h3 class="projectTitle">OrganicBeans App</h3>
+                        <p class="projectSubDate">January 2021</p>
+                        <div class="d-flex">
+                            <i class="bullet fas fa-circle pt-2"></i>
+                            <p class="projectSub">Web application build with React Framework for educational purposes with San Diego Global Knowledge University.</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class="bullet fas fa-circle pt-2"></i>
+                            <p class="projectSub">Built and designed all front-end elements with original code, HTML/CSS/JS.</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class="bullet fas fa-circle pt-2"></i>
+                            <p class="projectSub">Utilizes Redux for state management in addition to AXIOS for web server connection for data storage.</p>
+                        </div>
+                        <div class="d-flex justify-content-center mt-5">
+                            <button class="btn btn-outline-light shadow rounded-pill p-3"><a href="https://github.com/heasleykr/OrganicBeansRedux"><i class="gitI fab fa-github me-2"></i></a></i>Github Code</a></button>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div id="propertyDiv">
+                <div id="portfolioGrid3">
+                    <img id="folioImg" src="/img/circleDripSm2.png">
+                </div> 
+                <div class="row pb-5 projectView bg-transparent" id="property">
+                    <div class="col">
+                        <span class="position-absolute translate-middle badge rounded-pill bg-dark p-2">ASP.NET MVC</span>
+                        <div class="d-flex flex-column">
+                            <img class="img-fluid rounded-end projectImg" src="../img/organic.png" alt="Organic Beans">
+                        </div>
+                    </div>
+                    <div class="col projectContent">
+                        <h3 class="projectTitle">Property Rental App</h3>
+                        <p class="projectSubDate">November 2020</p>
+                        <div class="d-flex">
+                            <i class="bullet fas fa-circle pt-2"></i>
+                            <p class="projectSub">Web application build with Microsoft’s ASP.Net Core framework for educational purposes with San Diego Global Knowledge University.</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class="bullet fas fa-circle pt-2"></i>
+                            <p class="projectSub">Built and designed all front-end elements with original code, HTML/CSS/JS.</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class="bullet fas fa-circle pt-2"></i>
+                            <p class="projectSub">Utilizes the Model-View-Controller architectural style and built backend alongside other students for the purposes of learning the ASP .Net Core framework.</p>
+                        </div>
+                        <div class="d-flex justify-content-center mt-5">
+                            <button class="btn btn-outline-light shadow rounded-pill p-3"><a href="https://github.com/heasleykr/Property-Rental-Web-Application"><i class="gitI fab fa-github me-2"></i></a></i>Github Code</a></button>
+                        </div>
+                    </div>
+                </div>
+            <div>
+
+            <div id="fashionDiv">
+                <div id="portfolioGrid4">
+                    <img id="folioImg" src="/img/circleDripSm2.png">
+                </div> 
+                <div class="row pb-5 projectView bg-transparent" id="fashion">
+                    <div class="col">
+                        <span class="position-absolute translate-middle badge rounded-pill bg-dark p-2">HTTP CSS JS</span>
+                        <div class="d-flex flex-column">
+                            <img class="img-fluid rounded-end projectImg" src="../img/fashion.png" alt="Fashion Pet">
+                        </div>
+                    </div>
+                    <div class="col projectContent">
+                        <h3 class="projectTitle">The Fashion Pet</h3>
+                        <p class="projectSubDate">September 2020</p>
+                        <div class="d-flex">
+                            <i class="bullet fas fa-circle pt-2"></i>
+                            <p class="projectSub">Statically built website using HTML, CSS, & Javascript techniques.</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class="bullet fas fa-circle pt-2"></i>
+                            <p class="projectSub">Emphasized styling of content without API usage.</p>
+                        </div>
+                        <div class="d-flex">
+                            <i class="bullet fas fa-circle pt-2"></i>
+                            <p class="projectSub">Used conventional CSS containers and techniques for layouts.</p>
+                        </div>
+                        <div class="d-flex justify-content-center mt-5">
+                            <button class="btn btn-outline-light shadow rounded-pill p-3"><a href="https://github.com/heasleykr/theFashionPet"><i class="gitI fab fa-github me-2"></i></a></i>Github Code</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="topDiv" class="row d-flex flex-column justify-content-center align-items-center p-5">
+                <img id="portfolioLineBottom" class="mt-2 mb-5" src="../img/bottomLine3.png">
+                <a class="btn btn-outline-secondary mt-2 mb-2" type="button" id="portfolioTopBtn">Top</a>
+            </div>
+            
         </div>
+    </div>
     `;
+
+    //load content at top of page, hide until top is reached
+    // $('body').hide(0, function(){
+    //     window.scrollTo(0,0);
+    // });
+    // $('body').show(2000);
+
 
     //add html to DOM object
     UI.$main.innerHTML = folio;
     console.log("Portfolio Page");
+
+    
+
+    //listen for js dynamically loaded click events
+    $("#portfolioTopBtn").on( "click", function() {
+        window.scrollTo(0,0);
+    });
 }
 
 //Function to dynamically display Contact page content
@@ -795,6 +868,12 @@ function contactLoad(){
             
         </div>
     `;
+
+    //load content at top of page, hide until top is reached
+    $('body').hide(0, function(){
+        window.scrollTo(0,0);
+    });
+    $('body').show(2000);
 
     //add html to DOM object
     UI.$main.innerHTML = contact;
