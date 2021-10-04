@@ -124,152 +124,37 @@ function resumeLoad(){
 
     //content to be displayed
     var resume =`
-        <div id="resumeGraphicDiv" class="d-flex flex-column align-items-center">
-            <div class="row">
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-            </div>
+        <div>
+            <img src="../img/circleGrid3.png">
         </div>
         <div class="bg-transparent">
-            <div id="resume_header" class="d-flex flex-column align-items-center bg-transparent">
-                <h2 id="resume_head" class="m-3">Resume</h2>
-                <h3 id="resumeSubHead" class="mb-5">My recent works and their source code</h3>
-                <button id="gitBtnR" class="btn btn-outline-light rounded-pill mb-2"><a href="https://github.com/heasleykr"><i class="gitI fab fa-github me-2"></i></a></i>Github</a>
+            <div id="resumeHeader" class="d-flex flex-column align-items-center bg-transparent mb-4">
+                <h2 id="resumeTitle" class="m-3">Resume</h2>
+                <h3 id="resumeSubTitle" class="mb-5">My recent works and their source code</h3>
+                <button id="downloadBtn" class="btn btn-outline-success rounded-pill mb-2"><a href="/img/KHeasley_Resume.pdf"><i class="fas fa-arrow-circle-down me-2"></i>download resume</a>
                 </button>
                 <img class="folioLines mt-5" src="../img/folioLine2.png">
             </div>
         </div>
-        <div id="resumeContent">
-            <div class="d-flex p-3">
-                <div id="leftSide">
+        <div id="resumeContent" class="mt-5">
+            <div class="d-flex">
+                <div id="leftSide" class="pb-5">
                     <div id="darkHead" class="p-3">
                         <div class="d-flex justify-content-center">
                             <h1 class="firstName pe-2">KATELYNN</h1>
                             <h1 class="lastName">Heasley</h1>
                         </div>
                         <p class="d-flex justify-content-center">Web Designer</p>
-                        <div class="d-flex justify-content-center">
-                            <button id="downloadBtn"class="btn btn-success shadow rounded-pill"><a href="/img/KHeasley_Resume.pdf"><i class="fas fa-arrow-circle-down me-2"></i>download resume</a>
-                            </button>
-                        </div>
                     </div>
                 </div>
-                <div id="rightSkillsSide" class="ps-2">
+                <div id="rightSkillsSide" class="ps-2 pb-5">
                     <div>
-                        <h4>Certifications</h4>
-                        <i class="fas fa-award mainIcons"></i>
+                        <div class="rightHeads d-flex">
+                            <h4 id="certification">Certifications</h4>
+                            <i class="fas fa-award mainIcons mt-4 ps-3"></i>
+                        </div>
                         <div>
-                            <div class="row pt-2">
+                            <div class="row pt-2 ps-3">
                                 <div class="col-2">
                                     <p>January 2021</p>
                                 </div>
@@ -283,8 +168,10 @@ function resumeLoad(){
                         </div>
                     </div>
                     <div class="mt-5">
-                        <h4>Hard Skills</h4>
-                        <i class="fas fa-code mainIcons"></i>
+                        <div class="rightHeads d-flex"> 
+                            <h4>Hard Skills</h4>
+                            <i class="fas fa-code mainIcons mt-4 ps-3"></i>
+                        </div>
                         <div class="hardSkills p-3">
                             <div class="row">
                                 <div class="col mb-3 border-0">
@@ -330,29 +217,23 @@ function resumeLoad(){
                     </div>
                 </div>
             </div>
-            <div>
-                <img id="boxGraphic2" src="/img/box6.png" alt="box">
+            <div id="resumeGrid" class="ps-3">
+                <img id="gridImg" src="/img/circleDripSm2.png">
+                <div class="d-flex flex-row mb-3 ps-3">   
+                    <h4 id="experienceHead" class="me-3">Experience</h4>
+                    <i class="mainIcons fas fa-glasses ms-5"></i>
+                </div>
             </div>
             <div id="resumeBody">
                 <div class="container">
-                    <div class="d-flex flex-column justify-contents-center align-items-center mb-3">
-                        <h4>Experience</h4>
-                        <i class="fas fa-briefcase mainIcons"></i>
-                        <div class="mt-3">
-                    </div>
                     <div>
                         <div class="row pt-2">
                             <div class="col-2">
                                 <p class="resumeDate fw-bold">July 2020 – Current</p>
                             </div>
-                            <div class="col">
-                                <p class="h_title fw-bold">Patient Registrar, Department of Sharp Staffing Resource Network</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="highLight col-2"></div>
-                            <div class="col">
-                                <p class="h_title fw-light fst-italic">Sharp Healthcare</p>
+                            <div class="col d-flex flex-column">
+                                <p class="h_title2 fw-bold">Patient Registrar, Department of Sharp Staffing Resource Network</p>
+                                <p class="h_titleSub fw-light fst-italic">Sharp Healthcare</p>
                             </div>
                         </div>
                         <div class="row mb-5">
@@ -375,14 +256,9 @@ function resumeLoad(){
                             <div class="col-2">
                                 <p class="resumeDate fw-bold">July 2017 – August 2019</p>
                             </div>
-                            <div class="col">
-                                <p class="h_title fw-bold">Patient Registrar, Department of Patient Access</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="highLight col-2"></div>
-                            <div class="col">
-                                <p class="h_title fst-italic">UC San Diego Health<p>
+                            <div class="col d-flex flex-column">
+                                <p class="h_title2 fw-bold">Patient Registrar, Department of Patient Access</p>
+                                <p class="h_titleSub fst-italic">UC San Diego Health<p>
                             </div>
                         </div>
                         <div class="row mb-5">
@@ -404,14 +280,9 @@ function resumeLoad(){
                             <div class="col-2">
                                 <p class="resumeDate fw-bold">November 2012 - November 2016</p>
                             </div>
-                            <div class="col">
-                                <p class="h_title fw-bold">Public Affairs Coordinator, United States Marine Corps Band</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="highLight col-2"></div>
-                            <div class="col">
-                                <p class="h_title fst-italic">Third Marine Aircraft Wing</p>
+                            <div class="col d-flex flex-column">
+                                <p class="h_title2 fw-bold">Public Affairs Coordinator, United States Marine Corps Band</p>
+                                <p class="h_titleSub fst-italic">Third Marine Aircraft Wing</p>
                             </div>
                         </div>
                         <div class="row mb-5">
@@ -433,14 +304,9 @@ function resumeLoad(){
                             <div class="col-2">
                                 <p class="resumeDate fw-bold">November 2012 - November 2016</p>
                             </div>
-                            <div class="col">
-                                <p class="h_title fw-bold">Musician/Percussionist, United States Marine Corps Band</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="highLight col-2"></div>
-                            <div class="col">
-                                <p class="h_title fst-italic">Third Marine Aircraft Wing</p>
+                            <div class="col d-flex flex-column">
+                                <p class="h_title2 fw-bold">Musician: Percussionist, United States Marine Corps Band</p>
+                                <p class="h_titleSub fst-italic">Third Marine Aircraft Wing</p>
                             </div>
                         </div>
                         <div class="row mb-5">
@@ -466,14 +332,9 @@ function resumeLoad(){
                             <div class="col-2">
                                 <p class="resumeDate fw-bold">August 2010 - August 2012</p>
                             </div>
-                            <div class="col">
-                                <p class="h_title fw-bold">Patient Services Assistant, University of Michigan Health System</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="highLight col-2"></div>
-                            <div class="col">
-                                <p class="h_title fst-italic">Department of Urology & Department of General Surgery</p>
+                            <div class="col d-flex flex-column">
+                                <p class="h_title2 fw-bold">Patient Services Assistant, University of Michigan Health System</p>
+                                <p class="h_titleSub fst-italic">Department of Urology & Department of General Surgery</p>
                             </div>
                         </div>
                         <div class="row mb-5">
@@ -498,10 +359,13 @@ function resumeLoad(){
                     </div>
                 </div>
                 <div class="container-fluid">
-                    <div class="row">
-                        <div id="education" class="col">
-                            <h4 class="resumeTitles">Education</h4>
-                            <i class="fas fa-graduation-cap mainIcons"></i>
+                    <div id="education" class="row ps-5 pt-5 mb-3">
+                        <div class="col">
+                            <div class="d-flex">
+                                <h4 class="resumeTitles pe-3">Education</h4>
+                                <i class="fas fa-graduation-cap mainIcons"></i>
+                                <img class="resumeLine ps-5 mt-2"src="../img/resumeLine3.png">
+                            </div>
                             <div class="educationBullets mt-5 mb-5 container">
                                 <div class="row">
                                     <div class="col">
@@ -548,10 +412,11 @@ function resumeLoad(){
                                 </div>
                             </div>
                         </div>
-                
+                    </div>
+                    <div class="row pt-5 pb-5 ps-5">
                         <div id="keyClasses" class="col">
-                            <h4 class="resumeTitles">Key classes</h4> 
-                            <h4>completed towards B.S. in Computer Science</h4>
+                            <h4 class="resumeTitles">Key classes completed</h4> 
+                            <h4>towards B.S. in Computer Science</h4>
                             <i class="fas fa-check mainIcons"></i>
                             <div class="educationBullets container">
                                 <div class="row mt-5">
@@ -590,12 +455,16 @@ function resumeLoad(){
                                 </div>
                             </div>
                         </div>
+                        <div class="col">
+                            <h4>Recommendations</h4>
+                            <i class="mainIcons fas fa-user-check mt-5"></i>
+                            <p class="h_info mt-4">Please contact directly for reference requests.</p>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <h4>Recommendations</h4>
-                    <i class="mainIcons fas fa-user-check"></i>
-                    <p class="h_info">Please contact directly for reference requests.</p>
+                    <div class="d-flex flex-column justify-content-center align-items-center p-5">
+                        <img id="resumeLineBottom" class="mt-2 mb-5" src="../img/bottomLine3.png">
+                        <a class="btn btn-outline-secondary mt-2 mb-2" type="button" id="resumeTopBtn">Top</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -607,6 +476,11 @@ function resumeLoad(){
         <div>${resume}</div>
     `;
     console.log("Resume Page");
+
+    //listen for js dynamically loaded click events
+    $("#resumeTopBtn").on( "click", function() {
+        window.scrollTo(0,0);
+    });
 
 }
 
@@ -628,121 +502,8 @@ function folioLoad(){
 
     //content to be displayed
     var folio = `
-        <div id="folioGraphicDiv" class="d-flex flex-column align-items-center">
-            <div class="row">
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-            </div>
+        <div>
+            <img src="../img/circleGrid3.png">
         </div>
         <div class="bg-transparent">
             <div id="port_header" class="d-flex flex-column align-items-center bg-transparent">

@@ -193,9 +193,9 @@ a {
 }
 
 #homeGraphicDiv {
-    width: 30%;
-    margin-top: 10rem;
-    margin-left: 7rem;
+    /* width: 30%; */
+    margin-top: 8rem;
+    margin-left: 5rem;
     outline: 8000px solid rgba(0, 0, 0, 0.5) !important;
     outline-offset: -3000px;
 }
@@ -336,6 +336,8 @@ a {
     /* background-image: url(/img/water4.jpg); */
     /* background-color: #353232; */
     background-color: black;
+
+    /* background-image: linear-gradient(to bottom, black, rgba(255, 255, 255, 0.15)); */
     /* background-repeat: no-repeat;
     background-position: top;
     background-attachment: fixed; */
@@ -357,13 +359,18 @@ a {
 
 
 #resumeContent {
-    /* background-color: black; */
+    /* background-color: white; */
     /* border-left: 1.5rem solid #353232;
     border-right: 1.5rem solid #353232; */
     /* margin-top: 9rem; */
-    box-shadow: 0 3rem 5rem rgba(255, 255, 255, 0.15);
+    /* box-shadow: 0 3rem 5rem rgba(255, 255, 255, 0.15); */
     /* height: 3000px; */
+    margin-top: 10em;
+    margin-left: 1rem;
     height: auto;
+    /* border-top: 4px solid white; */
+    /* border-top: 4px solid #dca4b4; */
+
 
 
 }
@@ -371,10 +378,6 @@ a {
 .resumeNav {
     box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.15);
     background-color: black;
-}
-
-.linesTri {
-    margin-top: -4.5rem;
 }
 
 #boxGraphic3 {
@@ -397,30 +400,34 @@ a {
 
 }
 
-#resume_header {
-    /* font-family: 'Playfair Display', serif; */
-    /* font-family: 'Rajdhani', sans-serif; */
-    font-family: 'Varela', sans-serif;
-    font-size: 3rem;
-    /* border-bottom: .5rem solid #dca4b4;
-    ; */
-    /* color: #dca4b4; */
-    color: #313030;
-    padding-bottom: 2rem;
-    /* color: #776a6a; */
-    /* color: white; */
-    margin-bottom: 1rem;
-    /* text-transform: uppercase; */
+#resumeGrid {
+    /* margin-top: -2rem; */
+    /* margin-bottom: -2rem; */
+    /* background-image: linear-gradient(to bottom, black, rgba(255, 255, 255, 0.15)); */
+    background-image: linear-gradient(to bottom, black, #313030);
+    overflow: hidden;
+}
 
-
-    /* background-color: #dca4b4; */
-    /* padding-bottom: 10rem; */
+#gridImg {
+    margin-bottom: -2rem;
 }
 
 
+#resumeHeader {
+    margin-top: 5rem;
+}
+
+#resumeTitle {
+    margin-top: 5rem;
+    margin-bottom: 15rem;
+    font-family: 'Varela', sans-serif;
+    font-size: 3rem;
+    color: white;
+}
+
 
 #leftSide {
-    /* background-color: #6b2643; */
+    background-color: black;
     color: white;
 
 }
@@ -445,9 +452,6 @@ a {
     color: white;
 }
 
-#downloadBtn {
-    margin-top: 35rem;
-}
 
 #downloadBtn a {
     text-decoration: none;
@@ -462,22 +466,30 @@ a {
 
 #downloadBtn i {
     color: white;
-    /* font-size: 2rem; */
 }
 
-#downloadBtn a:hover,
-#downloadBtn i:hover {
-    color: #6b2643;
-}
+
 
 .p_info {
     margin-bottom: -0.2rem;
 }
 
-.h_title {
+.h_title,
+.h_titleSub {
     color: white;
-    /* background-color: #dca4b4; */
     font-size: 1rem;
+}
+
+.h_title {
+    /* background-color: rgba(255, 255, 255, 0.15); */
+}
+
+.h_title2 {
+    color: white;
+    font-size: 1rem;
+    padding: .5rem;
+    /* background-color: rgba(255, 255, 255, 0.05); */
+    border-top: 1px solid #dca4b4;
 }
 
 .h_body {
@@ -485,8 +497,10 @@ a {
     font-size: 1rem;
     margin-bottom: 3rem;
     padding-left: .5rem;
-    /* background-color: #242222; */
     border-left: .5rem dotted #313030;
+    border-left: .5rem dotted #dca4b4;
+
+
 }
 
 .h2_info {
@@ -497,6 +511,18 @@ a {
 .leftHeaders {
     background-color: #3f1627;
 
+}
+
+#resumeBody {
+    background-color: #313030;
+    /* background-color: #312e2e; */
+    /* background-color: #2d2e2e; */
+    /* background-color: #2c2e2e; */
+}
+
+#rightSkillsSide {
+    /* margin-top: -0.8rem; */
+    background-color: black;
 }
 
 #rightSkillsSide,
@@ -517,12 +543,41 @@ a {
 
 }
 
-#rightSkillsSide h4,
-#rightSkillsSide h5,
 #resumeBody h4,
 #resumeBody h5 {
     color: white;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
+    /* background-color: black; */
+}
+
+#rightSkillsSide h4,
+#rightSkillsSide h5 {
+    color: white;
+    margin-top: 1rem;
+    padding: .5rem;
+    /* background-color: rgba(255, 255, 255, 0.15); */
+    /* background-color: rgba(255, 255, 255, 0.05); */
+
+}
+
+.rightHeads {
+    /* border-top: 1px solid rgba(255, 255, 255, 0.10);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10); */
+    /* border-bottom: 1px solid #dca4b4; */
+    border-top: 3px solid white;
+    /* background-color: rgba(87, 80, 85, 0.2); */
+}
+
+#certification {
+    margin-top: none;
+}
+
+#experienceHead {
+    font-size: 2rem;
+    /* margin-top: 3rem; */
+    margin-bottom: 3rem;
+    background-color: transparent;
+    color: white;
 }
 
 .mainIcons {
@@ -532,6 +587,7 @@ a {
 
 .subIcons {
     color: #dca4b4;
+    color: #313030;
     font-size: 1.4rem;
     margin-bottom: 1.5rem;
 }
@@ -539,6 +595,7 @@ a {
 .bullets {
     font-size: .3rem;
     margin-right: .4rem;
+    color: #dca4b4;
 }
 
 .hardSkills {
@@ -546,9 +603,7 @@ a {
     margin-top: 2rem;
 }
 
-#resumeBody {
-    height: 2000px;
-}
+
 
 .highLight {
     /* background-color: #dca4b4; */
@@ -560,6 +615,7 @@ a {
     /* color: #dca4b4; */
     /* border-right: .1rem solid #dca4b4; */
     /* border-bottom: .1rem solid #dca4b4; */
+
 
 }
 
@@ -579,8 +635,32 @@ a {
     /* border-top: .1rem solid #dca4b4; */
 }
 
+#education {
+    background-color: #252424;
+}
+
+.resumeLine {
+    height: 17px;
+    overflow: hidden;
+    /* padding-top: .5rem; */
+}
+
 .educationBullets {
     border-left: .5rem dotted #dca4b4;
+}
+
+#keyClasses {
+    border-right: 1px solid #524e4e;
+}
+
+#resumeLineBottom {
+    width: 461px;
+    height: 50px;
+}
+
+#resumeTopBtn {
+    color: #dca4b4;
+    width: 20%;
 }
 
 /* Portfolio */
@@ -609,27 +689,14 @@ a {
     color: white;
 }
 
-#port_head,
-#resume_head {
-    /* font-family: 'Playfair Display', serif; */
-    /* font-family: 'Questrial', sans-serif; */
-    /* font-family: 'Secular One', sans-serif; */
+#port_head {
     font-family: 'Varela', sans-serif;
     font-size: 3rem;
-
-    /* border-bottom: 2rem solid #6b2643;
-    padding-bottom: 10rem; */
-    /* color: #776a6a; */
     color: white;
-
-    /* color: #dca4b4; */
-    /* color: #4ce9ad; */
-
-
 }
 
 #portSubHead,
-#resumeSubHead {
+#resumeSubTitle {
     /* font-family: 'Questrial', sans-serif; */
     font-family: 'Montserrat', sans-serif;
     font-size: 3rem;
@@ -661,11 +728,11 @@ a {
     text-decoration: none;
 }
 
-#port_header,
-#resume_header {
+#port_header {
     margin-top: 5rem;
-    /* margin-left: 9rem; */
     margin-bottom: 15rem;
+
+
 }
 
 .port_cards {
