@@ -525,31 +525,31 @@ function folioLoad(){
 
     //content to be displayed
     var folio = `
-    <div class="container-fluid">
+    <div class="container-fluid bg-transparent">
         <div class="topGrids">
             <img src="../img/circleGrid3.png">
         </div>
-        <div class="bg-transparent">
-            <div id="port_header" class="d-flex flex-column justify-content-center align-items-center bg-transparent">
+        <div>
+            <div id="port_header" class="d-flex flex-column justify-content-center align-items-center">
                 <h2 id="port_head" class="m-3">Portfolio</h2>
                 <h3 id="portSubHead" class="mb-5">My recent works and their source code</h3>
-                <button id="gitBtn" class="btn btn-outline-light rounded-pill mb-5"><a href="https://github.com/heasleykr"><i class="gitI fab fa-github me-2"></i></a></i>Github</a>
+                <button id="gitBtn" class="btn btn-outline-light rounded-pill mb-5"><a href="https://github.com/heasleykr"><i class="gitI fab fa-github me-2"></i>Github</a>
                 </button>
                 <img class="folioLines mt-5" src="../img/folioLine2.png">
             </div>
-
-
-            
-            <div class="row mb-5 projectView">
-                <div class="col">
-                    <span class="position-absolute translate-middle badge rounded-pill bg-dark p-2">Django</span>
-                    <div class="d-flex flex-column">
-                        <img class="img-fluid rounded projectImg" src="../img/parking6.png" alt="Parking Lots">
-                    </div>
+        </div>
+        <div id="portfolioContent">    
+            <div id="parking" class="row mb-5 projectView">
+                <div class="col d-flex justify-content-center">
+                    <img class="img-fluid rounded projectImg" src="../img/parking6.png" alt="Parking Lots">
                 </div>
-                <div class="col projectContent">
-                    <h3 class="projectTitle">ParkingLots App</h3>
+                <div class="col projectContent p-3 me-2">
+                    <div class="d-flex">
+                        <h3 class="projectTitle pe-3">ParkingLots App</h3>
+                        <i class="mainIcons fas fa-car"></i>
+                    </div>
                     <p class="projectSubDate">March 2021</p>
+                    <p>Summary: </p>
                     <div class="d-flex">
                         <i class="bullet fas fa-circle pt-2"></i>
                         <p class="projectSub">Built web application using the Django Framework, which utilizes APIs like CrispyForms, Jinja, Pillow, Bootstrap, and FontAwesome.</p>
@@ -562,116 +562,122 @@ function folioLoad(){
                         <i class="bullet fas fa-circle pt-2"></i>
                         <p class="projectSub">Designed and built logos and marketing content using Adobe Photoshop.</p>
                     </div>
-                    <div class="d-flex justify-content-center mt-5">
-                        <button class="btn btn-outline-light shadow rounded-pill p-3"><a href="https://github.com/heasleykr/ParkingLots"><i class="gitI fab fa-github me-2"></i></a></i>Github Code</a></button>
+                    <div class="d-flex justify-content-evenly align-items-center mt-3">
+                        <img src="https://img.icons8.com/color/96/000000/django.png"/>
+                        <button class="gitI btn btn-outline-light rounded-pill"><a href="https://github.com/heasleykr/ParkingLots"><i class="fab fa-github me-2"></i>Github Code</a></button>
                     </div>
-                </div>
-            </div>
-            <div id="organicDiv">
-                <div id="portfolioGrid2">
-                    <img id="folioImg" src="/img/circleDripSm2.png">
-                </div>
-                <div class="row pb-5 projectView bg-transparent" id="organic">
-                    <div class="col">
-                        <span class="position-absolute translate-middle badge rounded-pill bg-dark p-2">React</span>
-                        <div class="d-flex flex-column">
-                            <img class="img-fluid rounded-end projectImg" src="../img/organic.png" alt="Organic Beans">
-                        </div>
-                    </div>
-                    <div class="col projectContent">
-                        <h3 class="projectTitle">OrganicBeans App</h3>
-                        <p class="projectSubDate">January 2021</p>
-                        <div class="d-flex">
-                            <i class="bullet fas fa-circle pt-2"></i>
-                            <p class="projectSub">Web application build with React Framework for educational purposes with San Diego Global Knowledge University.</p>
-                        </div>
-                        <div class="d-flex">
-                            <i class="bullet fas fa-circle pt-2"></i>
-                            <p class="projectSub">Built and designed all front-end elements with original code, HTML/CSS/JS.</p>
-                        </div>
-                        <div class="d-flex">
-                            <i class="bullet fas fa-circle pt-2"></i>
-                            <p class="projectSub">Utilizes Redux for state management in addition to AXIOS for web server connection for data storage.</p>
-                        </div>
-                        <div class="d-flex justify-content-center mt-5">
-                            <button class="btn btn-outline-light shadow rounded-pill p-3"><a href="https://github.com/heasleykr/OrganicBeansRedux"><i class="gitI fab fa-github me-2"></i></a></i>Github Code</a></button>
-                        </div>
-                    </div>
+                    <a class="companySite" href="https://icons8.com/icon/qV-JzWYl9dzP/django">Django icon by Icons8</a>
                 </div>
             </div>
 
-            <div id="propertyDiv">
-                <div id="portfolioGrid3">
-                    <img id="folioImg" src="/img/circleDripSm2.png">
-                </div> 
-                <div class="row pb-5 projectView bg-transparent" id="property">
-                    <div class="col">
-                        <span class="position-absolute translate-middle badge rounded-pill bg-dark p-2">ASP.NET MVC</span>
-                        <div class="d-flex flex-column">
-                            <img class="img-fluid rounded-end projectImg" src="../img/organic.png" alt="Organic Beans">
-                        </div>
-                    </div>
-                    <div class="col projectContent">
-                        <h3 class="projectTitle">Property Rental App</h3>
-                        <p class="projectSubDate">November 2020</p>
-                        <div class="d-flex">
-                            <i class="bullet fas fa-circle pt-2"></i>
-                            <p class="projectSub">Web application build with Microsoft’s ASP.Net Core framework for educational purposes with San Diego Global Knowledge University.</p>
-                        </div>
-                        <div class="d-flex">
-                            <i class="bullet fas fa-circle pt-2"></i>
-                            <p class="projectSub">Built and designed all front-end elements with original code, HTML/CSS/JS.</p>
-                        </div>
-                        <div class="d-flex">
-                            <i class="bullet fas fa-circle pt-2"></i>
-                            <p class="projectSub">Utilizes the Model-View-Controller architectural style and built backend alongside other students for the purposes of learning the ASP .Net Core framework.</p>
-                        </div>
-                        <div class="d-flex justify-content-center mt-5">
-                            <button class="btn btn-outline-light shadow rounded-pill p-3"><a href="https://github.com/heasleykr/Property-Rental-Web-Application"><i class="gitI fab fa-github me-2"></i></a></i>Github Code</a></button>
-                        </div>
-                    </div>
+            <div id="portfolioGrid2">
+                <img id="folioImg" src="/img/circleGrid3.png">
+            </div>
+            <div class="row pb-5 pt-5 projectView" id="organic">
+                <div class="col d-flex justify-content-center">
+                    <img class="img-fluid rounded-end projectImg" src="../img/organic.png" alt="Organic Beans">
                 </div>
-            <div>
-
-            <div id="fashionDiv">
-                <div id="portfolioGrid4">
-                    <img id="folioImg" src="/img/circleDripSm2.png">
-                </div> 
-                <div class="row pb-5 projectView bg-transparent" id="fashion">
-                    <div class="col">
-                        <span class="position-absolute translate-middle badge rounded-pill bg-dark p-2">HTTP CSS JS</span>
-                        <div class="d-flex flex-column">
-                            <img class="img-fluid rounded-end projectImg" src="../img/fashion.png" alt="Fashion Pet">
-                        </div>
+                <div class="col projectContent p-3">
+                    <div class="d-flex">
+                        <h3 class="projectTitle pe-3">OrganicBeans App</h3>
+                        <i class="mainIcons fas fa-shopping-cart"></i>
                     </div>
-                    <div class="col projectContent">
-                        <h3 class="projectTitle">The Fashion Pet</h3>
-                        <p class="projectSubDate">September 2020</p>
-                        <div class="d-flex">
-                            <i class="bullet fas fa-circle pt-2"></i>
-                            <p class="projectSub">Statically built website using HTML, CSS, & Javascript techniques.</p>
-                        </div>
-                        <div class="d-flex">
-                            <i class="bullet fas fa-circle pt-2"></i>
-                            <p class="projectSub">Emphasized styling of content without API usage.</p>
-                        </div>
-                        <div class="d-flex">
-                            <i class="bullet fas fa-circle pt-2"></i>
-                            <p class="projectSub">Used conventional CSS containers and techniques for layouts.</p>
-                        </div>
-                        <div class="d-flex justify-content-center mt-5">
-                            <button class="btn btn-outline-light shadow rounded-pill p-3"><a href="https://github.com/heasleykr/theFashionPet"><i class="gitI fab fa-github me-2"></i></a></i>Github Code</a></button>
-                        </div>
+                    <p class="projectSubDate">January 2021</p>
+                    <p>Summary: </p>
+                    <div class="d-flex">
+                        <i class="bullet fas fa-circle pt-2"></i>
+                        <p class="projectSub">Web application build with React Framework for educational purposes with San Diego Global Knowledge University.</p>
                     </div>
+                    <div class="d-flex">
+                        <i class="bullet fas fa-circle pt-2"></i>
+                        <p class="projectSub">Built and designed all front-end elements with original code, HTML/CSS/JS.</p>
+                    </div>
+                    <div class="d-flex">
+                        <i class="bullet fas fa-circle pt-2"></i>
+                        <p class="projectSub">Utilizes Redux for state management in addition to AXIOS for web server connection for data storage.</p>
+                    </div>
+                    <div class="d-flex justify-content-evenly align-items-center mt-3 pb-3">
+                        <img id="react" src="https://img.icons8.com/officel/80/000000/react.png"/>
+                        <button class="gitI btn btn-outline-light shadow rounded-pill"><a href="https://github.com/heasleykr/OrganicBeansRedux"><i class="fab fa-github me-2"></i>Github Code</a></button>
+                    </div>
+                    <a class="companySite" href="https://icons8.com/icon/wPohyHO_qO1a/react">React icon by Icons8</a>   
                 </div>
             </div>
 
+            <div id="portfolioGrid3">
+                <img id="folioImg" src="/img/circleGrid3.png">
+            </div> 
+            <div class="row pb-5 pt-5 projectView" id="property">
+                <div class="col d-flex justify-content-center">
+                    <img class="img-fluid rounded-end projectImg" src="../img/organic.png" alt="Organic Beans">
+                </div>
+                <div class="col projectContent p-3 me-2">
+                    <div class="d-flex">
+                        <h3 class="projectTitle pe-3">Property Rental App</h3>
+                        <i class="mainIcons fas fa-home"></i>
+                    </div>
+                    <p class="projectSubDate">November 2020</p>
+                    <p>Summary: </p>
+                    <div class="d-flex">
+                        <i class="bullet fas fa-circle pt-2"></i>
+                        <p class="projectSub">Web application build with Microsoft’s ASP.Net Core framework for educational purposes with San Diego Global Knowledge University.</p>
+                    </div>
+                    <div class="d-flex">
+                        <i class="bullet fas fa-circle pt-2"></i>
+                        <p class="projectSub">Built and designed all front-end elements with original code, HTML/CSS/JS.</p>
+                    </div>
+                    <div class="d-flex">
+                        <i class="bullet fas fa-circle pt-2"></i>
+                        <p class="projectSub">Utilizes the Model-View-Controller architectural style and built backend alongside other students for the purposes of learning the ASP .Net Core framework.</p>
+                    </div>
+                    <div class="d-flex justify-content-evenly align-items-center mt-3 pb-3">
+                        <img id="microsoft" src="https://img.icons8.com/color/96/000000/microsoft.png"/>
+                        <button class="gitI btn btn-outline-light shadow rounded-pill"><a href="https://github.com/heasleykr/Property-Rental-Web-Application"><i class="fab fa-github me-2"></i>Github Code</a></button>
+                    </div>
+                    <a class="companySite" href="https://icons8.com/icon/22989/microsoft">Microsoft icon by Icons8</a>
+                </div>
+            </div>
+
+            <div id="portfolioGrid4">
+                <img id="folioImg" src="/img/circleGrid3.png">
+            </div> 
+            <div class="row pb-5 pt-5 projectView" id="fashion">
+                <div class="col d-flex justify-content-center">
+                    <img class="img-fluid rounded-end projectImg" src="../img/fashion.png" alt="Fashion Pet">
+                </div>
+                <div class="col projectContent p-3 me-2">
+                    <div class="d-flex">
+                        <h3 class="projectTitle pe-3">The Fashion Pet</h3>
+                        <i class="mainIcons fas fa-dog"></i>
+                    </div>
+                    <p class="projectSubDate">September 2020</p>
+                    <p>Summary: </p>
+                    <div class="d-flex">
+                        <i class="bullet fas fa-circle pt-2"></i>
+                        <p class="projectSub">Statically built website using HTML, CSS, & Javascript techniques.</p>
+                    </div>
+                    <div class="d-flex">
+                        <i class="bullet fas fa-circle pt-2"></i>
+                        <p class="projectSub">Emphasized styling of content without API usage.</p>
+                    </div>
+                    <div class="d-flex">
+                        <i class="bullet fas fa-circle pt-2"></i>
+                        <p class="projectSub">Used conventional CSS containers and techniques for layouts.</p>
+                    </div>
+                    <div class="d-flex justify-content-evenly align-items-center mt-3 pb-3">
+                        <div class="d-flex flex-column justify-content-center align-items-center mt-2">
+                            <p>Static/ No Framework</p>
+                            <img id="static" src="https://img.icons8.com/office/80/000000/overview-pages-4.png"/>
+                        </div>
+                        <button class="gitI btn btn-outline-light shadow rounded-pill"><a href="https://github.com/heasleykr/theFashionPet"><i class="fab fa-github me-2"></i>Github Code</a></button>
+                    </div>
+                </div>
+            </div>
 
             <div id="topDiv" class="row d-flex flex-column justify-content-center align-items-center p-5">
                 <img id="portfolioLineBottom" class="mt-2 mb-5" src="../img/bottomLine3.png">
                 <a class="btn btn-outline-secondary mt-2 mb-2" type="button" id="portfolioTopBtn">Top</a>
             </div>
-            
         </div>
     </div>
     `;

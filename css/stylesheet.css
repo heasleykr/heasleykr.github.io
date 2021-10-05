@@ -710,12 +710,7 @@ a {
 /* Portfolio */
 .portfolio {
     width: 100%;
-    /* background-image: url(/img/portfolio.png), linear-gradient(to bottom, rgba(216, 208, 208, 0.4), rgb(255, 255, 255)); */
-    /* background-image: url(/img/portfolio.png), linear-gradient(to bottom, rgba(10, 10, 10, 0.4), rgb(15, 13, 13)); */
-    /* background-repeat: no-repeat, no-repeat;
-    background-position: top right, top;
-    background-attachment: fixed; */
-    background-color: black;
+    background-image: linear-gradient(to bottom, black, #292424, black);
     color: white;
     height: auto;
 }
@@ -748,12 +743,8 @@ a {
     color: #dca4b4;
 }
 
-
-
-.portfolioMain {
-    /* border-right: 1px solid #474646;
-    border-left: 1px solid #474646; */
-
+.gitI {
+    height: 70%;
 }
 
 #gitBtn a {
@@ -762,44 +753,37 @@ a {
     padding-bottom: 10rem;
 }
 
-.gitI {
+#gitBtn i,
+.gitI i {
     color: green;
 
 }
 
-.gitI:hover {
+.gitI a {
+    text-decoration: none;
+}
+
+#gitBtn a:hover,
+.gitI a:hover {
     color: black;
 }
 
-#gitBtn a:link {
+#gitBtn a:link,
+.gitI a:link {
     text-decoration: none;
 }
 
 #port_header {
     margin-top: 5rem;
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
 
 
 }
 
-.port_cards {
-    background-repeat: no-repeat;
-    background-position: top;
-    max-width: 900px;
-    height: 30rem;
-    margin-bottom: 5rem;
-    border: none;
-}
-
-.card1 {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgb(69, 196, 201));
-}
-
-#organicDiv,
-#fashionDiv,
-#topDiv {
+/* #organicDiv,
+#fashionDiv {
     background-color: #313030;
-}
+} */
 
 #organic,
 #fashion,
@@ -808,22 +792,31 @@ a {
     padding-top: 2rem;
 }
 
-.card4 {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgb(236, 186, 19));
-}
-
-.projectView {
-    /* width: 497px; */
-    background: transparent;
-}
 
 .projectImg {
     width: 400px;
     height: 400px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
-.projectContent {}
+.projectContent {
+    border-top: 3px solid white;
+}
+
+#django,
+#microsoft {
+    width: 96px;
+}
+
+#react {
+    width: 80px;
+
+}
+
+#static {
+    width: 40px;
+}
+
 
 .bullet {
     /* color: black; */
@@ -835,25 +828,27 @@ a {
 
 .projectSub {
     /* color: #dca4b4; */
-    color: white;
+    /* color: white; */
+    color: #afabab;
     /* font-family: 'Montserrat', sans-serif; */
 }
 
 .projectSubDate {
     color: #dca4b4;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Varela', sans-serif;
 }
 
 .projectTitle {
     /* font-family: 'Ultra', serif; */
     /* font-family: 'Questrial', sans-serif; */
-    font-family: 'Secular One';
-    margin-top: 1rem;
+    /* font-family: 'Secular One'; */
+    font-family: 'Varela', sans-serif;
+    /* margin-top: 1rem; */
     /* background-color: rgba(92, 95, 95, 0.2); */
     /* background-color: rgb(69, 196, 201); */
     object-fit: cover;
-    font-size: 1.2rem;
-    text-transform: uppercase;
+    font-size: 1.5rem;
+    /* text-transform: uppercase; */
     /* padding: .8rem; */
 }
 
@@ -869,7 +864,7 @@ a {
     margin-bottom: 0.7rem;
 }
 
-#portfolioGrid2,
+/* #portfolioGrid2,
 #portfolioGrid4 {
     background-image: linear-gradient(to bottom, black, #313030);
     overflow: hidden;
@@ -878,11 +873,13 @@ a {
 #portfolioGrid3 {
     background-image: linear-gradient(to bottom, #313030, black);
     overflow: hidden;
+} */
+
+.companySite {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 0.7rem;
 }
 
-#folioImg {
-    /* margin-bottom: -2rem; */
-}
 
 /* Contact Page */
 .contact {
