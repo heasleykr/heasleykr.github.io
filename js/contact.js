@@ -37,14 +37,13 @@ function cacheDom() {
 
     
 
-
-
 //Function to dynamically display Contact page content
 function contactLoad() {
 
-    //cach DOM
-    console.log('Conact.js loaded!');
+    
+    console.log('Conact Page');
 
+    //Cache DOM
     var UI = cacheDom();
 
     //update body background
@@ -52,8 +51,6 @@ function contactLoad() {
     UI.$top.classList.remove('shadow', 'navCustom');
     UI.$footer.classList.remove('mainFooter');
     UI.$contactMain.classList.remove('hide');
-    // document.getElementById('contactTest').classList.remove('hide');
-    
 
     UI.$main.classList.add('hide');
     UI.$body.classList.add('about');
@@ -62,16 +59,12 @@ function contactLoad() {
     UI.$homeBackground.classList.add('hide');
 
 
-
     //load content at top of page, hide until top is reached
     $('body').hide(0, function(){
         window.scrollTo(0,0);
     });
     $('body').show(2000);
 
-    //add html to DOM object
-    // UI.$main.innerHTML = contact;
-    console.log("Contact Page loaded");
 
 }
 
@@ -79,11 +72,11 @@ function contactLoad() {
 // Function to display success message on form submission
 function js_onSuccess() {
 
+    //Cache DOM
     var UI = cacheDom();
 
-    // var success = document.getElementById("success");
-    // success.classList.remove('hide');
-    console.log('success');
+    //Display console status
+    console.log('Http POST Request: success');
 
     //Update DOM
     UI.$formSubmit.disabled = false;
@@ -101,9 +94,9 @@ function js_onSuccess() {
 
 // Function to display error message on form submission
 function js_onError(error) {
-    // var errorLabel = document.getElementById("error");
-    // errorLabel.classList.remove('hide');
-    console.log(error);
+    
+    //Display error on Console
+    console.log("Http POST Request error :" + error);
 }
 
 
@@ -111,8 +104,8 @@ function js_onError(error) {
 // Displays 'success' or 'error' on submission
 function js_send() {
 
+    //Cache DOME
     var UI = cacheDom();
-
 
     //Update form btn
     UI.$formSubmit.value = "Sending...";
@@ -125,7 +118,7 @@ function js_send() {
         method = "POST",
         url = "https://postmail.invotes.com/send";
     
-    
+    //Open request
     request.open(method, url, true);
     request.onreadystatechange = function() {
         if(request.readyState === XMLHttpRequest.DONE) {
@@ -152,8 +145,6 @@ function js_send() {
     data_js['reply_to'] = reply_to;
     data_js['extra_name'] = extra_name;
 
-    console.log(data_js);
-
     //convert data to be sent
     var form_data = [];
     for ( var key in data_js ) {
@@ -162,16 +153,14 @@ function js_send() {
     var params = form_data.join("&");
 
 
-
     //Send post request
     request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     request.send(params);
 
-    console.log(params);
-
     return false;
 }
 
+//Prevent page refresh
 var js_form = document.getElementById('contact_form');
     js_form.addEventListener("submit", function (e) {
         e.preventDefault();

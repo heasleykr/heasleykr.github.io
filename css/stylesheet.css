@@ -975,3 +975,20 @@ a {
     color: #dca4b4;
 
 }
+
+.logoName2 {
+    width: 105%;
+    border-top: 2px solid #5c5656;
+    border-bottom: 2px solid #5c5656;
+    padding-top: 1rem;
+    overflow: hidden;
+}
+
+.logoNameFirst2 {
+    /* color: white;
+    color: #6b2643; */
+    margin-left: -3rem;
+    color: #5c5656;
+    font-family: 'Rajdhani', sans-serif;
+    text-transform: uppercase;
+}
