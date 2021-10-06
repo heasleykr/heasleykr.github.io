@@ -1,5 +1,4 @@
 
-
 // Global variables
 var showIcon = `<i class="fas fa-bars"></i>`;
 var hideIcon = `<i class="fas fa-angle-double-right"></i>`;
@@ -10,6 +9,7 @@ var visible = false;
 //Function to dynamically display Home page content
 function homeLoad(){
 
+
     //update body background
     UI.$homeBackground.classList.remove('hide');
     UI.$body.classList.remove('portfolio', 'main', 'about');
@@ -17,10 +17,12 @@ function homeLoad(){
     UI.$top.classList.remove('resumeNav');
     UI.$body.classList.remove('contact');
     UI.$footer.classList.remove('contactFooter');
+    UI.$main.classList.remove('hide');
 
     UI.$body.classList.add('home');
     UI.$top.classList.add('shadow', 'navCustom');
     UI.$footer.classList.add('mainFooter');
+    UI.$contactMain.classList.add('hide');
     
 
     //content to be displayed
@@ -42,7 +44,7 @@ function homeLoad(){
                 </div>
                 <div class="d-flex flex-row">
                     <h3 class="homeSub pe-2">& future</h3>
-                    <h3 class="homeFocus">Frontend Developer</h3>
+                    <h3 class="homeFocus">Front-end Developer</h3>
                 </div>
                 <div>
                     <p class="homeMiniFocus d-flex justify-content-center align-self-center mt-3 pt-3 pb-3">I'm currently seeking employment</p>
@@ -56,10 +58,10 @@ function homeLoad(){
     `;
     
     //load content at top of page, hide until top is reached
-    // $('body').hide(0, function(){
-    //     window.scrollTo(0,0);
-    // });
-    // $('body').show(2000);
+    $('body').hide(0, function(){
+        window.scrollTo(0,0);
+    });
+    $('body').show(2000);
 
     //add html to DOM object
     UI.$main.innerHTML = home;
@@ -80,21 +82,23 @@ function aboutLoad(){
     UI.$body.classList.remove('contact');
     UI.$body.classList.remove('home');
     UI.$footer.classList.remove('contactFooter');
+    UI.$main.classList.remove('hide');
 
     UI.$body.classList.add('about');
     UI.$homeBackground.classList.add('hide');
     UI.$main.classList.add('bg-white');
     UI.$top.classList.add('shadow', 'navCustom');
     UI.$footer.classList.add('mainFooter');
+    UI.$contactMain.classList.add('hide');
 
     //content to be displayed
     var about = `
-    <div id="aboutCard" class="ps-5">
+    <div id="aboutWrap" class="ps-5">
         <div class="p-3 about_border">
             <div class="row py-5 about_row1">
                 <div class="col vertical_l text-uppercase"><p>Katelynn Heasley</p></div>
                 <div class="col-6 pb-5"><h2 id="about_head">About</h2></div> 
-                <div class="col vertical_r text-uppercase"><p>Web Designer</p></div>
+                <div class="col vertical_r text-uppercase"><p>Prospective Developer</p></div>
             </div>
             <div class="row py-5">
                 <div class="col"></div>
@@ -111,10 +115,10 @@ function aboutLoad(){
     `;
 
     //load content at top of page, hide until top is reached
-    // $('body').hide(0, function(){
-    //     window.scrollTo(0,0);
-    // });
-    // $('body').show(2000);
+    $('body').hide(0, function(){
+        window.scrollTo(0,0);
+    });
+    $('body').show(2000);
 
     //add html to DOM object
     UI.$main.innerHTML = about;
@@ -128,11 +132,13 @@ function resumeLoad(){
     UI.$body.classList.remove('portfolio', 'main', 'about', 'contact', 'home');
     UI.$top.classList.remove('shadow', 'navCustom');
     UI.$footer.classList.remove('contactFooter');
+    UI.$main.classList.remove('hide');
 
     UI.$body.classList.add('resume');
     UI.$homeBackground.classList.add('hide');
     UI.$top.classList.add('resumeNav');
     UI.$footer.classList.add('mainFooter');
+    UI.$contactMain.classList.add('hide');
 
 
     //content to be displayed
@@ -148,8 +154,8 @@ function resumeLoad(){
                 <img class="folioLines mt-5 mb-5" src="../img/folioLine2.png">
             </div>
             <div class="profile d-flex justify-content-start mt-5 mb-5 ms-5 p-3">
-            <h3 id="resumeSubTitle">Profile: </h3>
-            <h4 class="ms-3">Current Computer Science student, Veteran, & former Professional Musican with a BA in Music Performance. Passionately driven towards front-end development and a rewarding career in the tech industry.</h4>
+                <h3 id="resumeSubTitle">Profile: </h3>
+                <h4 class="ms-3">Current Computer Science student, Veteran, & former Professional Musican with a BA in Music Performance. Passionately driven towards front-end development and a rewarding career in the tech industry.</h4>
             </div>
         </div>
         <div id="resumeContent" class="mt-5">
@@ -164,23 +170,27 @@ function resumeLoad(){
                     </div>
                 </div>
                 <div id="rightSkillsSide" class="ps-2 pb-5">
-                    <div>
-                        <div class="rightHeads d-flex">
-                            <h4 id="certification">Certifications</h4>
-                            <i class="fas fa-award mainIcons mt-4 ps-3"></i>
-                        </div>
+                    <div class="rightHeads d-flex flex-row justify-content-start">
                         <div>
-                            <div class="row pt-2 ps-3">
-                                <div class="col-2">
-                                    <p>January 2021</p>
-                                </div>
-                                <div class="col">
-                                    <div class="d-flex justify-content-start">
-                                        <p class="me-2 fw-bold">PSM I: </p>
-                                        <p>The Professional Scrum Master Level I (PSM I)</p>
+                            <div class="d-flex">
+                                <h4 id="certification">Certifications</h4>
+                            </div>
+                            <div>
+                                <div class="row pt-2 ps-3">
+                                    <div class="col-2">
+                                        <p>January 2021</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="d-flex justify-content-start">
+                                            <p class="me-2 fw-bold">PSM I: </p>
+                                            <p>The Professional Scrum Master Level I (PSM I)</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="d-flex pt-5 ms-5">
+                            <img id="scrum" src="./img/psmI.svg">
                         </div>
                     </div>
                     <div class="mt-5">
@@ -487,10 +497,10 @@ function resumeLoad(){
     `;
 
     //load content at top of page, hide until top is reached
-    // $('body').hide(0, function(){
-    //     window.scrollTo(0,0);
-    // });
-    // $('body').show(2000);
+    $('body').hide(0, function(){
+        window.scrollTo(0,0);
+    });
+    $('body').show(2000);
 
 
     //add html to DOM object
@@ -521,6 +531,8 @@ function folioLoad(){
     UI.$main.classList.remove('bg-white');
     UI.$top.classList.remove('shadow', 'navCustom');
     UI.$footer.classList.remove('contactFooter');
+    UI.$contactMain.classList.add('hide');
+    UI.$main.classList.remove('hide');
 
 
     //content to be displayed
@@ -683,10 +695,10 @@ function folioLoad(){
     `;
 
     //load content at top of page, hide until top is reached
-    // $('body').hide(0, function(){
-    //     window.scrollTo(0,0);
-    // });
-    // $('body').show(2000);
+    $('body').hide(0, function(){
+        window.scrollTo(0,0);
+    });
+    $('body').show(2000);
 
 
     //add html to DOM object
@@ -701,190 +713,6 @@ function folioLoad(){
     });
 }
 
-//Function to dynamically display Contact page content
-function contactLoad(){
-
-    //update body background
-    UI.$body.classList.remove('portfolio', 'main', 'home', 'resume');
-    UI.$top.classList.remove('shadow', 'navCustom');
-    UI.$footer.classList.remove('mainFooter');
-    
-    UI.$body.classList.add('about');
-    UI.$footer.classList.add('contactFooter');
-    UI.$top.classList.add('resumeNav');
-    UI.$homeBackground.classList.add('hide');
-
-    //content to be displayed
-    var contact = `
-        <div id="contactGraphicDiv" class="d-flex flex-column align-items-center">
-            <div class="row">
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-                <div class="col">
-                    <i class="folioIcons far fa-circle"></i>
-                </div>
-            </div>
-        </div>
-        <div class="d-flex justify-content-center mt-5">
-            <p id="contact_header">Contact</p>
-        </div>
-        <div id="contactContent" class="bg-transparent d-flex flex-row justify-content-center">
-            <div>
-                <img class="" src="/img/contact4.jpg" alt="headshot">
-            </div>
-            <div id="contactInfo">
-                <div class="d-flex flex-column p-3">
-                    <h2 class="contactGreeting ps-5">Reach out,</h2>
-                    <h2 class="contactGreetingSub ps-5">I'd love to connect!</h2>
-                    <div class="contactTrial d-flex flex-column justify-content-end ps-5 pe-5">
-                        <p class="">Feel free to contact me using any communication tool, or platform, of your preference. I'm seeking entry-level, junior front-end developer employment. Any communication is welcome.</p>
-                        <p class="me-5 pe-5 align-self-end"> -Katelynn</p>
-                    </div>
-                    
-                    <div class="contactMain mt-5">
-                        <div class="directContact d-flex flex-row justify-content-evenly align-items-center">
-                            <div class="d-flex flex-row justify-content-center">
-                                <i class="contactIcons fas fa-phone"></i>
-                                <p class="ps-3">(619) 317-4334</p>
-                            </div>
-                            <div class="d-flex flex-row justify-content-center">
-                                <i class="contactIcons far fa-envelope"></i>
-                                <p class="ps-3">heasleykr@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="d-flex flex-row justify-content-center">
-                            <p><a href="https://github.com/heasleykr"><i class="contactSubIcons fab fa-github"></i></a></p>
-                            <p><a href="https://www.linkedin.com/in/katelynn-heasley-13933435/"><i class="contactSubIcons fab fa-linkedin-in"></i></a></p>
-                            <p><a href="https://www.facebook.com/katelynn.heasley/"><i class="contactSubIcons fab fa-facebook"></i></a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex flex-column align-items-center">
-                    <i class="subIcon2 fas fa-globe"></i>
-                    <p class="pt-2">www.katelynnheasley.com</p>
-                </div>
-            </div>
-            
-        </div>
-    `;
-
-    //load content at top of page, hide until top is reached
-    $('body').hide(0, function(){
-        window.scrollTo(0,0);
-    });
-    $('body').show(2000);
-
-    //add html to DOM object
-    UI.$main.innerHTML = contact;
-    console.log("Contact Page");
-}
 
 // Function to show/hide side navigational panel
 function showDetails(){
@@ -920,18 +748,6 @@ function showDetails(){
     }
 }
 
-/************************  TODO: *************************
- * 
- *  1. Add slidding functionality to each page (MyCalendar)
- *        - buttons change on click
- *        - Main left Tab can be closed
- * 
- *  2. Add all CSS stylings
- * 
- *  3. Sizing for all devices
- * 
- *  4. Add 'inspect page'/console tidbits for programmers
-*/
 
 
 function init(){
@@ -952,35 +768,35 @@ function init(){
         $aboutBtn: document.getElementById('aboutBtn'),
         $resBtn: document.getElementById('resumeBtn'),
         $folioBtn: document.getElementById('folioBtn'),
-        $contactBtn: document.getElementById('contactBtn'),
         $homeNav: document.getElementById('homeNav'),
         $aboutNav: document.getElementById('aboutNav'),
         $resNav: document.getElementById('resumeNav'),
         $folioNav: document.getElementById('folioNav'),
-        $contactNav: document.getElementById('contactNav'),
         $resFtBtn: document.getElementById('footerResume'),
-        $contactFtBtn: document.getElementById('footerContact'),
         $homeBackground: document.getElementById('homeGraphicDiv'),
+        $contactMain: document.getElementById('contactDiv'),
     };
 
     //load main content
     homeLoad();
+
+   
 
     //catch click events on side-nav & top-nav panel
     UI.$homeBtn.onclick = homeLoad;
     UI.$aboutBtn.onclick = aboutLoad;
     UI.$resBtn.onclick = resumeLoad;
     UI.$folioBtn.onclick = folioLoad;
-    UI.$contactBtn.onclick = contactLoad;
     UI.$homeNav.onclick = homeLoad;
     UI.$aboutNav.onclick = aboutLoad;
     UI.$resNav.onclick = resumeLoad;
     UI.$folioNav.onclick = folioLoad;
-    UI.$contactNav.onclick = contactLoad;
     UI.$resFtBtn.onclick = resumeLoad;
-    UI.$contactFtBtn.onclick = contactLoad;
     UI.$btnHide.onclick = showDetails;
     UI.$btnShow.onclick = showDetails;
+
+    
+
 
 }
 

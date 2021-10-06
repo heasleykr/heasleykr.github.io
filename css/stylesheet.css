@@ -311,7 +311,7 @@ a {
     background-color: rgba(44, 42, 42, 1);
 }
 
-#aboutCard {
+#aboutWrap {
     width: 100%;
     height: auto;
     margin-top: -1rem;
@@ -330,9 +330,11 @@ a {
     margin-top: 10rem;
 }
 
-#about_head {
+#about_head,
+#contact_header {
     font-family: 'Playfair Display', serif;
     font-size: 4rem;
+    color: white;
     border-bottom: 2rem solid #6b2643;
     padding-bottom: 10rem;
 }
@@ -353,49 +355,19 @@ a {
 /* Resume View */
 .resume {
     width: 100%;
-    /* background-image: url(/img/water4.jpg); */
-    /* background-color: #353232; */
     background-color: black;
-
-    /* background-image: linear-gradient(to bottom, black, rgba(255, 255, 255, 0.15)); */
-    /* background-repeat: no-repeat;
-    background-position: top;
-    background-attachment: fixed; */
-    /* object-fit: cover; */
-    /* border-top: 1.5rem solid white;
-    border-left: 1.5rem solid white;
-    border-right: 1.5rem solid white; */
-
-    /* height: 4000px; */
     height: auto;
 
 }
-
-/* #resumeTop {
-    margin-top: 6rem;
-    background-color: black;
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .5), rgba(0, 0, 0, 1));
-} */
 
 .topGrids {
     overflow: hidden;
 }
 
 #resumeContent {
-    /* background-color: white; */
-    /* border-left: 1.5rem solid #353232;
-    border-right: 1.5rem solid #353232; */
-    /* margin-top: 9rem; */
-    /* box-shadow: 0 3rem 5rem rgba(255, 255, 255, 0.15); */
-    /* height: 3000px; */
     margin-top: 10em;
     margin-left: 1rem;
     height: auto;
-    /* border-top: 4px solid white; */
-    /* border-top: 4px solid #dca4b4; */
-
-
-
 }
 
 .resumeNav {
@@ -404,29 +376,17 @@ a {
 }
 
 #boxGraphic3 {
-    /* position: -webkit-sticky;
-    position: absolute;
-    top: 35%;
-    left: 30%; */
     margin-bottom: 2rem;
     margin-right: -50rem;
     overflow: hidden;
 }
 
 #boxGraphic2 {
-    /* position: -webkit-sticky;
-    position: absolute;
-    top: 35%;
-    left: 30%; */
-    /* margin-left: -5rem; */
     overflow: hidden;
 
 }
 
 #resumeGrid {
-    /* margin-top: -2rem; */
-    /* margin-bottom: -2rem; */
-    /* background-image: linear-gradient(to bottom, black, rgba(255, 255, 255, 0.15)); */
     background-image: linear-gradient(to bottom, black, #313030);
     overflow: hidden;
 }
@@ -449,16 +409,12 @@ a {
 }
 
 .profile {
-    /* background-color: white; */
-    background-color: rgba(255, 255, 255, 0.6);
+    /* background-color: rgb(61, 59, 59); */
     color: #dca4b4;
-    color: white;
-    color: black;
-    font-size: 0.5rem;
-    /* font-family: 'Montserrat', sans-serif; */
-    font-family: 'Varela', sans-serif;
-    border: 2px solid white;
-    /* color: #524f4f; */
+    color: rgb(131, 127, 127);
+    /* color: black; */
+    /* font-family: 'Varela', sans-serif; */
+    /* border: 2px solid white; */
 }
 
 #resumeSubTitle {
@@ -477,11 +433,10 @@ a {
 #darkHead {
     background-image: url(/img/dark_main.jpg);
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
     background-position: center;
     width: 450px;
     height: 740px;
-    /* box-shadow: 0 3rem 5rem rgba(255, 255, 255, 0.15); */
+
 }
 
 .firstName {
@@ -522,15 +477,11 @@ a {
     font-size: 1rem;
 }
 
-.h_title {
-    /* background-color: rgba(255, 255, 255, 0.15); */
-}
 
 .h_title2 {
     color: white;
     font-size: 1rem;
     padding: .5rem;
-    /* background-color: rgba(255, 255, 255, 0.05); */
     border-top: 1px solid #dca4b4;
 }
 
@@ -557,39 +508,21 @@ a {
 
 #resumeBody {
     background-color: #313030;
-    /* background-color: #312e2e; */
-    /* background-color: #2d2e2e; */
-    /* background-color: #2c2e2e; */
 }
 
 #rightSkillsSide {
-    /* margin-top: -0.8rem; */
     background-color: black;
 }
 
 #rightSkillsSide,
 #resumeBody {
-    /* color: #6b2643; */
     color: #afabab;
     font-size: 1rem;
-    /* background-color: #1f1d1d; */
-    /* background-color: rgb(92, 83, 83); */
-    /* background-image: linear-gradient(to right, rgba(44, 42, 42, 1), rgba(14, 13, 13, .4)), url(/img/main_headshot_sm.jpg);
-    background-repeat: no-repeat, no-repeat;
-    background-position: top, top right; */
-    /* overflow-y: scroll; */
-    /* position: relative;
-    overflow-y: scroll; */
-    /* height: 1500px; */
-    /* height: auto; */
-
 }
 
 #resumeBody h4,
 #resumeBody h5 {
     color: white;
-    /* margin-top: 2rem; */
-    /* background-color: black; */
 }
 
 #rightSkillsSide h4,
@@ -597,26 +530,24 @@ a {
     color: white;
     margin-top: 1rem;
     padding: .5rem;
-    /* background-color: rgba(255, 255, 255, 0.15); */
-    /* background-color: rgba(255, 255, 255, 0.05); */
 
 }
 
 .rightHeads {
-    /* border-top: 1px solid rgba(255, 255, 255, 0.10);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.10); */
-    /* border-bottom: 1px solid #dca4b4; */
     border-top: 3px solid white;
-    /* background-color: rgba(87, 80, 85, 0.2); */
 }
 
 #certification {
     margin-top: none;
 }
 
+#scrum {
+    width: 80px;
+    height: auto;
+}
+
 #experienceHead {
     font-size: 2rem;
-    /* margin-top: 3rem; */
     margin-bottom: 3rem;
     background-color: transparent;
     color: white;
@@ -641,25 +572,9 @@ a {
 }
 
 .hardSkills {
-    /* background-color: rgba(189, 136, 177, 0.4); */
     margin-top: 2rem;
 }
 
-
-
-.highLight {
-    /* background-color: #dca4b4; */
-    /* opacity: 0.70; */
-    /* border-radius: 25% 10%; */
-    /* background-color: linear-gradient(to bottom, rgba(216, 208, 208, 0.4), #dca4b4); */
-    /* background-color: #afabab; */
-    /* background: linear-gradient(#141313, #dca4b4); */
-    /* color: #dca4b4; */
-    /* border-right: .1rem solid #dca4b4; */
-    /* border-bottom: .1rem solid #dca4b4; */
-
-
-}
 
 
 .resumeDate {
@@ -669,13 +584,6 @@ a {
 
 }
 
-.resumeTitles {
-    /* background-color: #353232; */
-    /* margin: 0;
-    width: 100%; */
-    /* text-decoration: solid overline #dca4b4 1px; */
-    /* border-top: .1rem solid #dca4b4; */
-}
 
 #education {
     background-color: #252424;
@@ -864,16 +772,12 @@ a {
     margin-bottom: 0.7rem;
 }
 
-/* #portfolioGrid2,
+#portfolioGrid2,
+#portfolioGrid3,
 #portfolioGrid4 {
-    background-image: linear-gradient(to bottom, black, #313030);
     overflow: hidden;
 }
 
-#portfolioGrid3 {
-    background-image: linear-gradient(to bottom, #313030, black);
-    overflow: hidden;
-} */
 
 .companySite {
     color: rgba(255, 255, 255, 0.4);
@@ -900,24 +804,17 @@ a {
 
 }
 
-#contact_header {
-    /* margin-top: 5rem; */
-    /* margin-bottom: 5rem; */
-    /* color: #dca4b4; */
+#contactWrap {
+    width: 100%;
+    height: auto;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+    background-image: linear-gradient(to left, rgba(44, 42, 42, 1), rgba(14, 13, 13, .4)), url(/img/contact4.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, top left;
     color: white;
-    color: #dca4b4;
-    /* color: #dca4b4; */
-    /* font-size: 3rem; */
-    /* position: absolute;
-    top: 15%;
-    left: 41%; */
-    font-family: 'Playfair Display', serif;
-    font-family: 'Varela', sans-serif;
-    /* font-size: 4rem; */
-    font-size: 3rem;
-    /* border-bottom: 2rem solid #6b2643; */
-    padding-bottom: 5rem;
 }
+
 
 #contactContent {
     width: 100%;
@@ -939,25 +836,28 @@ a {
 }
 
 #contactInfo {
-    background-color: #dca4b4;
+    /* background-color: #dca4b4;
     background-color: #313030;
-    background-color: white;
+    background-color: white; */
     /* background-color: #b9b7b7; */
-    background-color: rgba(255, 255, 255, .6);
-    width: 620px;
-    height: 688px;
-    margin-top: 5rem;
-    margin-left: -2rem;
+    /* background-color: rgba(255, 255, 255, .4); */
+    /* width: 620px;
+    height: 688px; */
+    margin-top: -3rem;
+    margin-left: -3rem;
 }
 
 .contactGreeting {
     /* font-family: 'Ultra', serif;
     font-size: 3rem; */
     font-family: 'Playfair Display', serif;
-    font-size: 4rem;
+    font-size: 2rem;
     color: #313030;
+    color: #817e7e;
+    color: white;
     /* color: white; */
-    margin-top: 3rem;
+    /* color: white; */
+    /* margin-top: 3rem; */
     margin-bottom: .5rem;
 
 
@@ -966,11 +866,13 @@ a {
 .contactGreetingSub {
     /* font-family: 'Ultra', serif;
     font-size: 3rem; */
-    font-family: 'Playfair Display', serif;
+    /* font-family: 'Playfair Display', serif;
     font-size: 3rem;
     color: #313030;
+    color: white; */
+    color: #969292;
     /* margin-top: 5rem; */
-    margin-bottom: 3rem;
+    /* margin-bottom: 3rem; */
 
 
 }
@@ -986,17 +888,21 @@ a {
 .contactIcons {
     color: #474646;
     color: #dca4b4;
-    color: white;
+    /* color: white; */
     font-size: 1.7rem;
 }
 
 .contactSubIcons {
     font-size: 1.5rem;
-    color: #474646;
+    color: #5f5d5d;
     padding: 3rem 3rem 1rem 3rem;
 
     /* border-top: 1px solid #474646; */
 
+}
+
+.contactSubIcons:hover {
+    color: #dca4b4;
 }
 
 .subIcon2 {
@@ -1008,11 +914,29 @@ a {
 .directContact {
     width: auto;
     font-size: 1.2rem;
-    color: white;
+    color: rgb(141, 137, 137);
 
 }
 
+#contact_form {
+    width: 105%;
+}
 
+#extra_name,
+#reply_to,
+#subject,
+#message {
+    color: white;
+}
+
+#postmail {
+    color: rgb(150, 146, 146);
+    font-size: .8rem;
+}
+
+#postmail a {
+    color: rgba(255, 255, 255, 0.4)
+}
 
 /* Footer */
 .mainFooter {
