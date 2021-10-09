@@ -36,7 +36,7 @@ a {
 #topBar {
     height: 6rem;
     font-family: 'Bebas Neue', cursive;
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: white;
     margin-bottom: 3rem;
 }
@@ -48,6 +48,7 @@ a {
 
 .navCustom {
     background-color: #1f1e1e;
+    justify-content: start;
 }
 
 #homeNav {
@@ -55,6 +56,7 @@ a {
     font-family: 'Rajdhani', sans-serif;
     color: #dca4b4;
     text-transform: uppercase;
+    margin-top: 0.5rem;
 }
 
 
@@ -77,11 +79,16 @@ a {
 
     #homeNav {
         font-size: 1.8rem;
+        margin-top: 0rem;
     }
 
     #logo {
         width: 69px;
         height: 50px;
+    }
+
+    .navCustom {
+        justify-content: space-between;
     }
 }
 
@@ -236,7 +243,6 @@ a {
 }
 
 #homeGraphicDiv {
-    /* width: 30%; */
     margin-top: 8rem;
     margin-left: 5rem;
     outline: 8000px solid rgba(255, 255, 255, 0.1) !important;
@@ -255,18 +261,7 @@ a {
     color: white;
     color: #dca4b4;
     color: black;
-
-    /* margin-right: 30rem; */
-
     padding-top: 4rem;
-    /* position: -webkit-sticky;
-    position: sticky;
-    top: 5rem; */
-    /* left: rem; */
-    /* position: absolute;
-    top: 15%;
-    left: 25%; */
-    /* background: linear-gradient(to right, rgba(255, 255, 255, 0.164), rgba(255, 255, 255, 0.8)); */
 
 
 }
@@ -279,17 +274,8 @@ a {
 }
 
 .homeSub {
-    /* font-family: 'Playfair Display', serif; */
-    /* font-family: 'Ultra', serif;
-    font-family: 'Bebas Neue', cursive; */
-    /* font-family: 'Playfair Display', serif; */
     font-family: 'Varela', sans-serif;
     font-size: 2rem;
-    /* color: white; */
-    /* background: linear-gradient(to right, rgba(207, 40, 40, 0.5), rgba(14, 13, 13, 0.4));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-    /* color: white; */
 }
 
 .homeMiniFocus {
@@ -302,34 +288,85 @@ a {
     color: white;
 }
 
+.home {
+    width: 100%;
+    background-color: #353232;
+    background-image: url(/img/cover1.jpg);
+    background-position: top 12% left -120%;
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+/* Larger view Home styling */
+@media(min-width:768px) {
+    .home {
+        width: 100%;
+        background-position: top 12% left 100%;
+    }
+
+    #homePage {
+        width: 100%;
+        height: auto;
+    }
+
+    #homeGraphicDiv {
+        outline: 8000px solid rgba(0, 0, 0, 0.5) !important;
+        outline-offset: -3000px;
+    }
+
+    .homeGreeting {
+        color: #dca4b4;
+        padding-top: 7rem;
+    }
+
+    .homeFocus {
+        font-family: 'Varela', sans-serif;
+        font-size: 3rem;
+        color: #dca4b4;
+        color: white;
+    }
+
+    .homeSub {
+        font-family: 'Varela', sans-serif;
+        font-size: 3rem;
+    }
+}
+
+
 /* About View */
 .about {
     background-color: rgba(44, 42, 42, 1);
 }
 
+
+
 #aboutWrap {
     width: 100%;
     height: auto;
-    margin-top: -1rem;
+    margin-top: -3rem;
     margin-bottom: -1rem;
+    /* margin-left: -2rem; */
     background-image: linear-gradient(to right, rgba(44, 42, 42, 1), rgba(14, 13, 13, .4)), url(/img/headshot2_tiny.jpg);
     background-repeat: no-repeat, no-repeat;
-    background-position: top, top right;
+    background-position: top, top;
+    overflow: hidden;
     color: white;
 }
 
+
+
 .about_border {
-    border: 1.5rem solid white;
+    border: 0.7rem solid white;
 }
 
 .about_row1 {
-    margin-top: 10rem;
+    margin-top: 2rem;
 }
 
 #about_head,
 #contact_header {
     font-family: 'Playfair Display', serif;
-    font-size: 4rem;
+    font-size: 3rem;
     color: white;
     border-bottom: 2rem solid #6b2643;
     padding-bottom: 10rem;
@@ -338,13 +375,70 @@ a {
 .vertical_l {
     writing-mode: vertical-lr;
     text-orientation: mixed;
+    font-size: 0.5rem;
 
 }
 
 .vertical_r {
     writing-mode: vertical-rl;
     text-orientation: mixed;
+    font-size: 0.5rem;
 
+}
+
+#aboutContent {
+    font-size: 0.8rem;
+    margin-left: -5rem;
+    margin-right: -5rem;
+}
+
+/* Larger view About styling */
+@media(min-width:768px) {
+    #aboutWrap {
+        width: 100%;
+        margin-top: -1rem;
+        margin-left: 0rem;
+        background-image: linear-gradient(to right, rgba(44, 42, 42, 1), rgba(14, 13, 13, .4)), url(/img/headshot2_tiny.jpg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: top, top right;
+
+    }
+
+    .about_border {
+        border: 1.5rem solid white;
+    }
+
+    .about_row1 {
+        margin-top: 10rem;
+    }
+
+    #about_head,
+    #contact_header {
+        font-family: 'Playfair Display', serif;
+        font-size: 4rem;
+        color: white;
+        border-bottom: 2rem solid #6b2643;
+        padding-bottom: 10rem;
+    }
+
+    .vertical_l {
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+        font-size: inherit;
+
+    }
+
+    .vertical_r {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        font-size: inherit;
+    }
+
+    #aboutContent {
+        font-size: inherit;
+        margin-left: 0rem;
+        margin-right: 0rem;
+    }
 }
 
 
