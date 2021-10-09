@@ -50,7 +50,7 @@ function homeLoad(){
                     <p class="homeMiniFocus d-flex justify-content-center align-self-center mt-3 pt-3 pb-3">I'm currently seeking employment</p>
                 </div>
                 <div>
-                    <a class="btn btn-warning mt-2" type="button" id="starterBtn">See my resume</a>
+                    <a class="btn btn-warning mt-2" href="#" id="starterBtn">See my resume</a>
                 </div>
             </div>
         </div>
@@ -489,7 +489,7 @@ function resumeLoad(){
                     </div>
                     <div class="d-flex flex-column justify-content-center align-items-center p-5">
                         <img id="resumeLineBottom" class="mt-2 mb-5" src="../img/bottomLine3.png">
-                        <a class="btn btn-outline-secondary mt-2 mb-2" type="button" id="resumeTopBtn">Top</a>
+                        <a class="btn btn-outline-secondary mt-2 mb-2" href="#" id="resumeTopBtn">Top</a>
                     </div>
                 </div>
             </div>
@@ -688,7 +688,7 @@ function folioLoad(){
 
             <div id="topDiv" class="row d-flex flex-column justify-content-center align-items-center p-5">
                 <img id="portfolioLineBottom" class="mt-2 mb-5" src="../img/bottomLine3.png">
-                <a class="btn btn-outline-secondary mt-2 mb-2" type="button" id="portfolioTopBtn">Top</a>
+                <a class="btn btn-outline-secondary mt-2 mb-2" href="#" id="portfolioTopBtn">Top</a>
             </div>
         </div>
     </div>
