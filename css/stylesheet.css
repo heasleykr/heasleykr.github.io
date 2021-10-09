@@ -36,7 +36,7 @@ a {
 #topBar {
     height: 6rem;
     font-family: 'Bebas Neue', cursive;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: white;
     margin-bottom: 3rem;
 }
@@ -46,8 +46,12 @@ a {
     border-bottom: 2px solid #dca4b4;
 }
 
+.navCustom {
+    background-color: #1f1e1e;
+}
+
 #homeNav {
-    font-size: 1.8rem;
+    font-size: 1rem;
     font-family: 'Rajdhani', sans-serif;
     color: #dca4b4;
     text-transform: uppercase;
@@ -61,8 +65,24 @@ a {
 }
 
 #logo {
-    width: 69px;
-    height: 50px;
+    width: 39px;
+    height: 30px;
+}
+
+/* Desktop Display */
+@media(min-width:768px) {
+    #topBar {
+        font-size: 1.2rem;
+    }
+
+    #homeNav {
+        font-size: 1.8rem;
+    }
+
+    #logo {
+        width: 69px;
+        height: 50px;
+    }
 }
 
 /* Lrg Sidebar */
@@ -156,59 +176,62 @@ a {
     width: 100%;
     background-color: #353232;
     background-image: url(/img/cover1.jpg);
-    /* background-image: url(/img/cover1.jpg); */
-    background-position: top 12% left 100%;
+    background-position: top 12% left -120%;
     background-repeat: no-repeat;
-    /* object-fit: cover; */
-    /* top: 15%;
-    left: 80%; */
-    /* background-position: top; */
-    /* object-fit: cover; */
     height: auto;
 }
 
+/* Larger view styling */
+@media(min-width:768px) {
+    .home {
+        width: 100%;
+        background-position: top 12% left 100%;
+    }
+
+    #homePage {
+        width: 100%;
+        height: auto;
+    }
+
+    #homeGraphicDiv {
+        outline: 8000px solid rgba(0, 0, 0, 0.5) !important;
+        outline-offset: -3000px;
+    }
+
+    .homeGreeting {
+        color: #dca4b4;
+        padding-top: 7rem;
+    }
+
+    .homeFocus {
+        font-family: 'Varela', sans-serif;
+        font-size: 3rem;
+        color: #dca4b4;
+        color: white;
+    }
+
+    .homeSub {
+        font-family: 'Varela', sans-serif;
+        font-size: 3rem;
+    }
+}
 
 #homeView {
     margin: 0;
     width: 100%;
-    /* background-repeat: no-repeat; */
-
-    /* background-attachment: fixed; */
-    /* background-position: center; */
-    /* background-image: url(/img/beachwood.png);*/
-    /* height: 1500px; */
     margin-top: 10rem;
-
-    /* background-attachment: fixed; */
-
-
-}
-
-.navCustom {
-    background-color: #1f1e1e;
-    /* background-color: none; */
 }
 
 #mainLoad {
     height: 100%;
     width: 100%;
-    /* margin-left: 2rem; */
-    /* bg-white */
+
 }
 
 /* Index View */
 #homePage {
-    /* width: 65rem; */
-    /* margin-top: 5rem; */
-    width: 100%;
+    width: 80%;
     height: auto;
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    /* height: 55rem;  */
-    /* background-image: url(/img/cover.JPG);
-    background-repeat: no-repeat;
-    background-position: right; */
-    /* background-color: blue; */
-
 
 }
 
@@ -216,46 +239,26 @@ a {
     /* width: 30%; */
     margin-top: 8rem;
     margin-left: 5rem;
-    outline: 8000px solid rgba(0, 0, 0, 0.5) !important;
+    outline: 8000px solid rgba(255, 255, 255, 0.1) !important;
     outline-offset: -3000px;
 }
 
 .homeIcons {
     color: white;
-    /* color: green; */
     font-size: .6rem;
     padding: 2rem;
     margin-bottom: 9rem;
 }
 
 
-
-#homePhoto {
-    /* overflow-x: visible; */
-    /* margin-right: -10rem; */
-    /* filter: opacity(60%); */
-    /* background: rgba(0, 0, 0, 0.4); */
-
-}
-
-#indexName {
-    /* color: #6b2643; */
-    /* color: black; */
-    /* font-family: 'Kaushan Script', cursive;
-    font-family: 'Playfair Display', serif;
-    font-size: 5rem;
-    margin-bottom: 5rem;
-    background: linear-gradient(to right, rgba(78, 196, 131, 0.8), rgba(7, 174, 216, 0.8), rgba(168, 46, 152, 0.8));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
-}
-
 .homeGreeting {
     color: white;
     color: #dca4b4;
+    color: black;
+
     /* margin-right: 30rem; */
 
-    padding-top: 7rem;
+    padding-top: 4rem;
     /* position: -webkit-sticky;
     position: sticky;
     top: 5rem; */
@@ -269,17 +272,10 @@ a {
 }
 
 .homeFocus {
-    /* font-family: 'Ultra', serif;
-    font-family: 'Bebas Neue', cursive; */
-    /* font-family: 'Playfair Display', serif; */
     font-family: 'Varela', sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     color: #dca4b4;
     color: white;
-    /* color: white; */
-    /* background: linear-gradient(to right, rgba(78, 168, 196, 0.8), rgba(168, 46, 152, 0.8));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
 }
 
 .homeSub {
@@ -288,7 +284,7 @@ a {
     font-family: 'Bebas Neue', cursive; */
     /* font-family: 'Playfair Display', serif; */
     font-family: 'Varela', sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     /* color: white; */
     /* background: linear-gradient(to right, rgba(207, 40, 40, 0.5), rgba(14, 13, 13, 0.4));
     -webkit-background-clip: text;
