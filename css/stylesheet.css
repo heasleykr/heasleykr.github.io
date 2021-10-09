@@ -15,6 +15,7 @@ https://getbootstrap.com/docs/5.1/layout/breakpoints/
 
 /* Global */
 .main {
+    width: inherit;
     background-color: #353232;
     background-repeat: no-repeat;
     background-position: top;
@@ -76,6 +77,10 @@ a {
     margin-left: -0.5rem;
 }
 
+.mainWrapper {
+    width: inherit;
+}
+
 /* Desktop Display */
 @media(min-width:768px) {
     #topBar {
@@ -95,6 +100,14 @@ a {
 
     .navLogo {
         justify-content: start;
+    }
+
+    .mainWraper {
+        width: 100%;
+    }
+
+    .main {
+        width: 100%;
     }
 }
 
@@ -195,6 +208,12 @@ a {
     height: auto;
 }
 
+#homeView {
+    margin: 0;
+    width: inherit;
+    margin-top: 10rem;
+}
+
 /* Larger view Home styling */
 @media(min-width:768px) {
     .home {
@@ -238,13 +257,13 @@ a {
         left: 0%;
         visibility: visible;
     }
+
+    #homeView {
+        width: 100%;
+    }
 }
 
-#homeView {
-    margin: 0;
-    width: 100%;
-    margin-top: 10rem;
-}
+
 
 #mainLoad {
     height: 100%;
@@ -942,11 +961,11 @@ a {
 
 #contactDiv {
     /* max-width: fit-content; */
-    width: 130%;
+    width: inherit;
 }
 
 #contactWrap {
-    width: 100%;
+    width: inherit;
     overflow: hidden;
     height: auto;
     margin-top: -1rem;
