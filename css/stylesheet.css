@@ -34,9 +34,9 @@ a {
 
 /* NavBar */
 #topBar {
-    height: 6rem;
+    height: 7rem;
     font-family: 'Bebas Neue', cursive;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     color: white;
     margin-bottom: 3rem;
 }
@@ -48,15 +48,15 @@ a {
 
 .navCustom {
     background-color: #1f1e1e;
-    justify-content: start;
+    justify-content: center;
 }
 
 #homeNav {
-    font-size: 1rem;
+    font-size: 1.4rem;
     font-family: 'Rajdhani', sans-serif;
     color: #dca4b4;
     text-transform: uppercase;
-    margin-top: 0.5rem;
+    /* margin-top: 0.5rem; */
 }
 
 
@@ -69,6 +69,11 @@ a {
 #logo {
     width: 39px;
     height: 30px;
+}
+
+.navLogo {
+    justify-content: center;
+    margin-left: -0.5rem;
 }
 
 /* Desktop Display */
@@ -89,6 +94,10 @@ a {
 
     .navCustom {
         justify-content: space-between;
+    }
+
+    .navLogo {
+        justify-content: start;
     }
 }
 
