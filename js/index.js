@@ -93,22 +93,20 @@ function aboutLoad(){
 
     //content to be displayed
     var about = `
-    <div id="aboutWrap" class="p-3 ms-3 about_border">
+    <div id="aboutWrap" class="p-3 about_border">
         <div class="">
             <div class="row py-5 about_row1">
                 <div class="col vertical_l text-uppercase"><p>Katelynn Heasley</p></div>
                 <div class="col-6 pb-5"><h2 id="about_head">About</h2></div> 
                 <div class="col vertical_r text-uppercase"><p>Prospective Developer</p></div>
             </div>
-            <div class="row py-5">
-                <div class="col"></div>
-                <div class="col-6">
-                    <p id="aboutContent">I am a driven and creative individual who is currently completing both a second bachelors in Computer Science and a Full-Stack Coding Program to fully immerse myself in learning the art of software development. Two years ago, I made the decision to make a career change into software development from the classical music industry. Since then, I am working to educate myself to become the best developer I can. I seek junior-level employment within a creative team environment that attains to develop, design, and bring innovative devices and services through the use of cutting-edge software development. With over 9 years of working in healthcare, music, and the United States Marine Corps, I am committed to quality work and to joining a team that is on the forefront of technology innovation. Please contact me for any inquries, interest, or opportunites you may have.
+            <div class="row d-flex justify-content-center">
+                <div class="aboutCol2">
+                    <p id="aboutContent">Hi! I'm Katelynn. I'm driven and creative, and currently completing both a second bachelors in Computer Science and a Full-Stack Coding Program to fully immerse myself in learning the art of software development. Two years ago, I made the decision to make a career change into software development from the classical music industry. Since then, I am working to educate myself to become the best developer I can. I seek junior-level employment within a creative team environment that attains to develop, design, and bring innovative devices and services through the use of cutting-edge software development. With over 9 years of working in healthcare, music, and the United States Marine Corps, I am committed to quality work and to joining a team that is on the forefront of technology innovation. Please contact me for any inquries, interest, or opportunites you may have.
                     <div class="d-flex justify-content-end">
-                        <p> - Katelynn </p>
+                        <p class="me-5">- Katelynn</p>
                     </div>
                 </div>
-                <div class="col"></div>
             </div>
         </div>
     </div>
@@ -776,6 +774,7 @@ function init(){
         $homeBackground: document.getElementById('homeGraphicDiv'),
         $contactMain: document.getElementById('contactDiv'),
     };
+
 
     //load main content
     homeLoad();

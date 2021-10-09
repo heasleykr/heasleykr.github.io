@@ -61,7 +61,7 @@
     </div>
 
     <!-- Small Side Panel Div -->
-    <div id="sidebarSm" class="sideBarsm d-flex flex-column justify-content-end align-items-center fixed-top">
+    <div id="sidebarSm" class="d-flex flex-column justify-content-end align-items-center fixed-top">
         <img src="./img/smBar.png" class="pb-3">
         <!-- Icons -->
         <p><a href="https://github.com/heasleykr"><i class="fab fa-github"></i></a></p>
@@ -112,8 +112,8 @@
 
             <!-- Contact page, hidden on Load -->
             <div id="contactDiv" class="hide">
-                <div id="contactWrap" class="ms-4">
-                    <div class="p-3 about_border">
+                <div id="contactWrap">
+                    <div class="about_border">
                         <div class="row py-5 about_row1">
                             <div class="col vertical_l text-uppercase">
                                 <p>Katelynn Heasley</p>
@@ -125,19 +125,17 @@
                                 <p>Prospective Developer</p>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col"></div>
-                            <div id="contactInfo" class="col">
-                                <div class="d-flex flex-column p-3">
-                                    <h2 class="contactGreeting ps-3">I would love to hear from you.</h2>
-                                    <div class="contactGreetingSub d-flex flex-column justify-content-end ps-3 pe-5">
-                                        <p>Contact me using any communication tool or platform of your choice! I'm seeking entry-level, junior front-end developer employment. Any communication is welcome.</p>
-                                        <p class="me-5 pe-5 align-self-end"> -Katelynn</p>
-                                    </div>
+                        <div class="row d-flex justify-content-end align-items-end" id="contactInfo">
+                            <div class=""></div>
+                            <div class="infoDiv d-flex flex-column p-3 justify-content-start">
+                                <h2 class="contactGreeting ps-3">I would love to hear from you!</h2>
+                                <div class="contactGreetingSub d-flex flex-column justify-content-center ps-3">
+                                    <p>Contact me using any communication tool or platform of your choice! I'm seeking entry-level, junior front-end developer employment. Any communication is welcome.</p>
+                                    <p class="me-5 pe-5 align-self-end"> -Katelynn</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="row d-flex justify-content-evenly">
+                        <div class="row contactLastRow d-flex">
                             <div class="col">           
                                 <div class="contactMain">
                                     <div class="directContact d-flex flex-column justify-content-evenly align-items-center mt-5">
@@ -179,7 +177,7 @@
                                         <label for="message" class="col visually-hidden">Message</label> 
                                         <textarea id="message" name="text" cols="40" rows="8" required="required" class="form-control bg-transparent" placeholder="Message"></textarea>
                                     </div>
-                                    <div class="form-group d-flex col-8 mb-3">
+                                    <div class="contactBtn form-group d-flex col-8 mb-3">
                                         <button type="submit" id="js_send" value="Send" class="btn btn-warning">Submit</button>
                                         <p id="postmail" class="pt-2 ms-2 bg-transparent">Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p>
                                     </div>
@@ -192,7 +190,7 @@
         </div>
     </div>
     <div>
-        <footer id="footer" class="mainFooter ms-3">
+        <footer id="footer" class="mainFooter">
             <div class="d-flex justify-content-center mb-5">
                 <img class="folioLines mt-5" src="../img/folioLinePink.png">
             </div>
@@ -205,9 +203,11 @@
                 <p><a href="#" id="footerResume">Resume</a></p>
                 <p><a href="#" id="footerContact">Contact</a></p>
             </div>
-            <div class="logoName2 mt-5 mb-5 ms-2 d-flex flex-row justify-content-center">
-                <h3 class="logoNameFirst2">Katelynn</h3>
-                <h3 class="logoNameLast ps-2">Heasley</h3>
+            <div class="logoName2 mt-5 mb-5">
+                <div class="d-flex flex-row justify-content-center">
+                    <h3 class="logoNameFirst2">Katelynn</h3>
+                    <h3 class="logoNameLast ps-2">Heasley</h3>
+                </div>
             </div>
         </footer>
     </div>

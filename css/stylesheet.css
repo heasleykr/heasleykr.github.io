@@ -39,6 +39,7 @@ a {
     font-size: 1.2rem;
     color: white;
     margin-bottom: 3rem;
+    justify-content: center;
 }
 
 #topBar a:hover {
@@ -48,7 +49,6 @@ a {
 
 .navCustom {
     background-color: #1f1e1e;
-    justify-content: center;
 }
 
 #homeNav {
@@ -80,6 +80,7 @@ a {
 @media(min-width:768px) {
     #topBar {
         font-size: 1.2rem;
+        justify-content: space-between;
     }
 
     #homeNav {
@@ -90,10 +91,6 @@ a {
     #logo {
         width: 69px;
         height: 50px;
-    }
-
-    .navCustom {
-        justify-content: space-between;
     }
 
     .navLogo {
@@ -174,6 +171,7 @@ a {
     background-color: #3b3737;
     position: fixed;
     left: 0%;
+    visibility: hidden;
 }
 
 #sidebarSm a {
@@ -197,7 +195,7 @@ a {
     height: auto;
 }
 
-/* Larger view styling */
+/* Larger view Home styling */
 @media(min-width:768px) {
     .home {
         width: 100%;
@@ -229,6 +227,16 @@ a {
     .homeSub {
         font-family: 'Varela', sans-serif;
         font-size: 3rem;
+    }
+
+    #sidebarSm {
+        width: 40px;
+        height: 100%;
+        color: white;
+        background-color: #3b3737;
+        position: fixed;
+        left: 0%;
+        visibility: visible;
     }
 }
 
@@ -350,9 +358,9 @@ a {
 
 
 #aboutWrap {
-    width: 100%;
+    width: 105%;
     height: auto;
-    margin-top: -3rem;
+    margin-top: -2rem;
     margin-bottom: -1rem;
     /* margin-left: -2rem; */
     background-image: linear-gradient(to right, rgba(44, 42, 42, 1), rgba(14, 13, 13, .4)), url(/img/headshot2_tiny.jpg);
@@ -372,8 +380,7 @@ a {
     margin-top: 2rem;
 }
 
-#about_head,
-#contact_header {
+#about_head {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
     color: white;
@@ -397,14 +404,30 @@ a {
 
 #aboutContent {
     font-size: 0.8rem;
-    margin-left: -5rem;
-    margin-right: -5rem;
+    text-indent: 10%;
+    padding-bottom: 2rem;
+}
+
+.aboutCol1 {
+    /* flex-shrink: 10%; */
+    column-width: 0rem;
+}
+
+.aboutCol2 {
+    /* flex-grow: inherit; */
+    /* column-width: 100%;
+    column-span: all; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
 }
 
 /* Larger view About styling */
 @media(min-width:768px) {
     #aboutWrap {
         width: 100%;
+        margin-left: 4rem;
         margin-top: -1rem;
         margin-left: 0rem;
         background-image: linear-gradient(to right, rgba(44, 42, 42, 1), rgba(14, 13, 13, .4)), url(/img/headshot2_tiny.jpg);
@@ -421,8 +444,7 @@ a {
         margin-top: 10rem;
     }
 
-    #about_head,
-    #contact_header {
+    #about_head {
         font-family: 'Playfair Display', serif;
         font-size: 4rem;
         color: white;
@@ -447,6 +469,21 @@ a {
         font-size: inherit;
         margin-left: 0rem;
         margin-right: 0rem;
+    }
+
+    .aboutCol1 {
+        /* column-width: 2rem; */
+    }
+
+    .aboutCol2 {
+        /* column-span: none; */
+        /* columns: 3
+        column-width: 6rem; */
+
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
@@ -908,7 +945,8 @@ a {
     height: auto;
     margin-top: -1rem;
     margin-bottom: -1rem;
-    background-image: linear-gradient(to left, rgba(44, 42, 42, 1), rgba(14, 13, 13, .4)), url(/img/contact4.jpg);
+    margin-left: none;
+    background-image: linear-gradient(to top, rgba(44, 42, 42, 1), rgba(14, 13, 13, .4)), url(/img/contact4.jpg);
     background-repeat: no-repeat, no-repeat;
     background-position: top, top left;
     color: white;
@@ -934,6 +972,16 @@ a {
     /* margin-top: 10rem; */
 }
 
+#contact_header {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    color: white;
+    justify-content: center;
+    /* margin-left: -20rem; */
+    /* border-bottom: 2rem solid #6b2643; */
+    padding-bottom: 10rem;
+}
+
 #contactInfo {
     /* background-color: #dca4b4;
     background-color: #313030;
@@ -943,45 +991,45 @@ a {
     /* width: 620px;
     height: 688px; */
     margin-top: -3rem;
-    margin-left: -3rem;
+    columns: 1 auto;
+    margin-bottom: 3rem;
+    /* width: 50%; */
+    /* left: 50%; */
+    /* margin-left: -3rem; */
+}
+
+.infoDiv {
+    width: 100%;
+    column-span: all;
+    column-width: 100%;
 }
 
 .contactGreeting {
-    /* font-family: 'Ultra', serif;
-    font-size: 3rem; */
     font-family: 'Playfair Display', serif;
-    font-size: 2rem;
-    color: #313030;
-    color: #817e7e;
+    font-size: 1.6rem;
     color: white;
-    /* color: white; */
-    /* color: white; */
-    /* margin-top: 3rem; */
-    margin-bottom: .5rem;
-
-
+    margin-bottom: 1.7rem;
 }
 
 .contactGreetingSub {
-    /* font-family: 'Ultra', serif;
-    font-size: 3rem; */
-    /* font-family: 'Playfair Display', serif;
-    font-size: 3rem;
-    color: #313030;
-    color: white; */
     color: #969292;
-    /* margin-top: 5rem; */
-    /* margin-bottom: 3rem; */
+    color: white;
 
+}
 
+.contactLastRow {
+    flex-direction: column-reverse;
+    justify-content: center;
+    margin-top: 5rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    border-top: 2rem solid #6b2643;
+    /* padding-top: 10rem; */
 }
 
 .contactMain {
     color: white;
     color: #313030;
-    /* margin-top: 2rem; */
-    /* background-color: rgba(44, 42, 42, .1);
-    background-color: rgb(255, 255, 255, .2) */
 }
 
 .contactIcons {
@@ -1019,6 +1067,7 @@ a {
 
 #contact_form {
     width: 105%;
+    margin-bottom: 4rem;
 }
 
 #extra_name,
@@ -1035,6 +1084,61 @@ a {
 
 #postmail a {
     color: rgba(255, 255, 255, 0.4)
+}
+
+.contactBtn {
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Larger view Contact styling */
+@media(min-width:768px) {
+    #contactWrap {
+        margin-left: 2rem;
+    }
+
+    #contact_header {
+        justify-content: end;
+        font-size: 4rem;
+        border-bottom: 2rem solid #6b2643;
+        padding-bottom: 10rem;
+    }
+
+    #contactInfo {
+        margin-top: -3rem;
+        margin-bottom: 0rem;
+        columns: 2 auto;
+    }
+
+    .infoDiv {
+        width: 50%;
+        /* column-span: all;
+        column-width: 100%; */
+    }
+
+    .contactGreeting {
+        font-size: 2rem;
+        color: white;
+        margin-bottom: .5rem;
+    }
+
+    .contactGreetingSub {
+        color: #969292;
+    }
+
+    .contactLastRow {
+        flex-direction: row;
+        justify-content: evenly;
+        padding-top: 0rem;
+        border-top: none;
+        margin-top: 2rem;
+    }
+
+    .contactBtn {
+        flex-direction: row;
+        justify-content: start;
+    }
+
 }
 
 /* Footer */
@@ -1076,18 +1180,22 @@ a {
 }
 
 .logoName2 {
-    width: 105%;
-    border-top: 2px solid #5c5656;
-    border-bottom: 2px solid #5c5656;
+    width: 100%;
+    border: 2px solid #5c5656;
     padding-top: 1rem;
     overflow: hidden;
 }
 
 .logoNameFirst2 {
-    /* color: white;
-    color: #6b2643; */
-    margin-left: -3rem;
     color: #5c5656;
     font-family: 'Rajdhani', sans-serif;
     text-transform: uppercase;
+}
+
+/* Larger View Footer */
+@media(min-width:768px) {
+    #footer {
+        margin-left: 3rem;
+    }
+
 }
