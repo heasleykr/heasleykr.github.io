@@ -940,10 +940,13 @@ a {
 
 }
 
-
+#contactDiv {
+    /* max-width: fit-content; */
+    /* width: 120%; */
+}
 
 #contactWrap {
-    width: 100%;
+    width: 120%;
     height: auto;
     margin-top: -1rem;
     margin-bottom: -1rem;
@@ -1044,7 +1047,7 @@ a {
 .contactSubIcons {
     font-size: 1.5rem;
     color: #5f5d5d;
-    padding: 3rem 3rem 1rem 3rem;
+    padding: 3rem 2rem 1rem 2rem;
 
     /* border-top: 1px solid #474646; */
 
@@ -1121,8 +1124,6 @@ a {
 
     .infoDiv {
         width: 50%;
-        /* column-span: all;
-        column-width: 100%; */
     }
 
     .contactGreeting {
@@ -1148,6 +1149,9 @@ a {
         justify-content: start;
     }
 
+    .contactSubIcons {
+        padding: 3rem 3rem 1rem 3rem;
+    }
 }
 
 /* Footer */
