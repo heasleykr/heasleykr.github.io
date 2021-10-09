@@ -111,78 +111,76 @@
             </div>
 
             <!-- Contact page, hidden on Load -->
-            <div id="contactDiv" class="hide">
-                <div id="contactWrap">
-                    <div class="about_border">
-                        <div class="row py-5 about_row1">
-                            <div class="col vertical_l text-uppercase">
-                                <p>Katelynn Heasley</p>
-                            </div>
-                            <div class="col-6 pb-5 d-flex justify-content-end">
-                                <h2 id="contact_header">Contact</h2>
-                            </div> 
-                            <div class="col vertical_r text-uppercase">
-                                <p>Prospective Developer</p>
+            <div id="contactDiv" class="hide container-fluid">
+                <div id="contactWrap" class="about_border container-fluid">
+                    <div class="row py-5 about_row1">
+                        <div class="col vertical_l text-uppercase">
+                            <p>Katelynn Heasley</p>
+                        </div>
+                        <div class="col-6 pb-5 d-flex justify-content-end">
+                            <h2 id="contact_header">Contact</h2>
+                        </div> 
+                        <div class="col vertical_r text-uppercase">
+                            <p>Prospective Developer</p>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-end align-items-end" id="contactInfo">
+                        <div class=""></div>
+                        <div class="infoDiv d-flex flex-column p-3 justify-content-start">
+                            <h2 class="contactGreeting ps-3">I would love to hear from you!</h2>
+                            <div class="contactGreetingSub d-flex flex-column justify-content-center ps-3">
+                                <p>Contact me using any communication tool or platform of your choice! I'm seeking entry-level, junior front-end developer employment. Any communication is welcome.</p>
+                                <p class="me-5 pe-5 align-self-end"> -Katelynn</p>
                             </div>
                         </div>
-                        <div class="row d-flex justify-content-end align-items-end" id="contactInfo">
-                            <div class=""></div>
-                            <div class="infoDiv d-flex flex-column p-3 justify-content-start">
-                                <h2 class="contactGreeting ps-3">I would love to hear from you!</h2>
-                                <div class="contactGreetingSub d-flex flex-column justify-content-center ps-3">
-                                    <p>Contact me using any communication tool or platform of your choice! I'm seeking entry-level, junior front-end developer employment. Any communication is welcome.</p>
-                                    <p class="me-5 pe-5 align-self-end"> -Katelynn</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row contactLastRow d-flex">
-                            <div class="col">           
-                                <div class="contactMain">
-                                    <div class="directContact d-flex flex-column justify-content-evenly align-items-center mt-5">
-                                        <div class="d-flex flex-row justify-content-center">
-                                            <i class="contactIcons fas fa-phone"></i>
-                                            <p class="ps-3">(619) 317-4334</p>
-                                        </div>
-                                        <div class="d-flex flex-row justify-content-center">
-                                            <i class="contactIcons far fa-envelope"></i>
-                                            <p class="ps-3">heasleykr@gmail.com</p>
-                                        </div>
+                    </div>
+                    <div class="row contactLastRow d-flex">
+                        <div class="col">           
+                            <div class="contactMain">
+                                <div class="directContact d-flex flex-column justify-content-evenly align-items-center mt-5">
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <i class="contactIcons fas fa-phone"></i>
+                                        <p class="ps-3">(619) 317-4334</p>
                                     </div>
                                     <div class="d-flex flex-row justify-content-center">
-                                        <p><a href="https://github.com/heasleykr"><i class="contactSubIcons fab fa-github"></i></a></p>
-                                        <p><a href="https://www.linkedin.com/in/katelynn-heasley-13933435/"><i class="contactSubIcons fab fa-linkedin-in"></i></a></p>
-                                        <p><a href="https://www.facebook.com/katelynn.heasley/"><i class="contactSubIcons fab fa-facebook"></i></a></p>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center align-items-center mt-5">
-                                        <i class="subIcon2 fas fa-globe"></i>
-                                        <p class="pt-2">www.katelynnheasley.com</p>
+                                        <i class="contactIcons far fa-envelope"></i>
+                                        <p class="ps-3">heasleykr@gmail.com</p>
                                     </div>
                                 </div>
+                                <div class="d-flex flex-row justify-content-center">
+                                    <p><a href="https://github.com/heasleykr"><i class="contactSubIcons fab fa-github"></i></a></p>
+                                    <p><a href="https://www.linkedin.com/in/katelynn-heasley-13933435/"><i class="contactSubIcons fab fa-linkedin-in"></i></a></p>
+                                    <p><a href="https://www.facebook.com/katelynn.heasley/"><i class="contactSubIcons fab fa-facebook"></i></a></p>
+                                </div>
+                                <div class="d-flex flex-column justify-content-center align-items-center mt-5">
+                                    <i class="subIcon2 fas fa-globe"></i>
+                                    <p class="pt-2">www.katelynnheasley.com</p>
+                                </div>
                             </div>
-                            <div class="col">
-                                <form id="contact_form" class="d-flex flex-column justify-content-center ms-5">
-                                    <div class="form-group col-8 mb-3">
-                                        <label for="extra_name" class="col visually-hidden">Name</label> 
-                                        <input id="extra_name" name="extra_name" placeholder="Full name *" type="text" class="form-control bg-transparent" required="required">
-                                    </div>
-                                    <div class="form-group col-8 mb-3">
-                                        <label for="reply_to" class="col visually-hidden">Email</label> 
-                                        <input id="reply_to" name="reply_to" placeholder="Email *" type="email" class="form-control bg-transparent" required="required">
-                                    </div>
-                                    <div class="form-group col-8 mb-3">
-                                        <label for="subject" class="col visually-hidden">Subject</label> 
-                                        <input id="subject" name="subject" placeholder="Subject *" type="text" required="required" class="form-control bg-transparent">
-                                    </div>
-                                    <div class="form-group col-8 mb-3">
-                                        <label for="message" class="col visually-hidden">Message</label> 
-                                        <textarea id="message" name="text" cols="40" rows="8" required="required" class="form-control bg-transparent" placeholder="Message"></textarea>
-                                    </div>
-                                    <div class="contactBtn form-group d-flex col-8 mb-3">
-                                        <button type="submit" id="js_send" value="Send" class="btn btn-warning">Submit</button>
-                                        <p id="postmail" class="pt-2 ms-2 bg-transparent">Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p>
-                                    </div>
-                                </form>
-                            </div>
+                        </div>
+                        <div class="col">
+                            <form id="contact_form" class="d-flex flex-column justify-content-center ms-5">
+                                <div class="form-group col-8 mb-3">
+                                    <label for="extra_name" class="col visually-hidden">Name</label> 
+                                    <input id="extra_name" name="extra_name" placeholder="Full name *" type="text" class="form-control bg-transparent" required="required">
+                                </div>
+                                <div class="form-group col-8 mb-3">
+                                    <label for="reply_to" class="col visually-hidden">Email</label> 
+                                    <input id="reply_to" name="reply_to" placeholder="Email *" type="email" class="form-control bg-transparent" required="required">
+                                </div>
+                                <div class="form-group col-8 mb-3">
+                                    <label for="subject" class="col visually-hidden">Subject</label> 
+                                    <input id="subject" name="subject" placeholder="Subject *" type="text" required="required" class="form-control bg-transparent">
+                                </div>
+                                <div class="form-group col-8 mb-3">
+                                    <label for="message" class="col visually-hidden">Message</label> 
+                                    <textarea id="message" name="text" cols="40" rows="8" required="required" class="form-control bg-transparent" placeholder="Message"></textarea>
+                                </div>
+                                <div class="contactBtn form-group d-flex col-8 mb-3">
+                                    <button type="submit" id="js_send" value="Send" class="btn btn-warning">Submit</button>
+                                    <p id="postmail" class="pt-2 ms-2 bg-transparent">Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></p>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
