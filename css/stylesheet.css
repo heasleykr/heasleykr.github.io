@@ -940,13 +940,15 @@ a {
 
 }
 
+
+
 #contactWrap {
     width: 100%;
     height: auto;
     margin-top: -1rem;
     margin-bottom: -1rem;
     margin-left: none;
-    background-image: linear-gradient(to top, rgba(44, 42, 42, 1), rgba(14, 13, 13, .4)), url(/img/contact4.jpg);
+    background-image: linear-gradient(to top, rgba(44, 42, 42, 1), rgba(14, 13, 13, .4)), url(/img/contact5.jpg);
     background-repeat: no-repeat, no-repeat;
     background-position: top, top left;
     color: white;
@@ -1093,7 +1095,14 @@ a {
 
 /* Larger view Contact styling */
 @media(min-width:768px) {
+    #contactDiv {
+        width: 100%;
+    }
+
     #contactWrap {
+        background-image: linear-gradient(to top, rgba(44, 42, 42, 1), rgba(14, 13, 13, .4)), url(/img/contact4.jpg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: top, top left;
         margin-left: 2rem;
     }
 
