@@ -427,7 +427,6 @@ a {
         margin-left: 3rem;
         margin-top: -1rem;
         margin-right: 4rem;
-        /* padding: 2rem; */
         background-image: linear-gradient(to right, rgba(44, 42, 42, 1), rgba(14, 13, 13, .4)), url(/img/headshot2_tiny.jpg);
         background-repeat: no-repeat, no-repeat;
         background-position: top, top right;
@@ -488,12 +487,18 @@ a {
 
 .topGrids {
     overflow: hidden;
+    margin-top: -7rem;
+    margin-left: 1rem;
+}
+
+.headingSection {
+    flex-direction: column;
 }
 
 #resumeContent {
     margin-top: 10em;
-    margin-left: 1rem;
     height: auto;
+    /* width: 95%; */
 }
 
 .resumeNav {
@@ -523,7 +528,7 @@ a {
 
 
 #resumeHeader {
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 #resumeTitle {
@@ -535,18 +540,18 @@ a {
 }
 
 .profile {
-    /* background-color: rgb(61, 59, 59); */
-    color: #dca4b4;
     color: rgb(131, 127, 127);
-    /* color: black; */
-    /* font-family: 'Varela', sans-serif; */
-    /* border: 2px solid white; */
+    width: 95%;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+
 }
 
 #resumeSubTitle {
-    color: #313030;
-    color: white;
+    color: #dca4b4;
     font-family: 'Varela', sans-serif;
+    margin-left: 1rem;
 }
 
 
@@ -557,22 +562,27 @@ a {
 }
 
 #darkHead {
-    background-image: url(/img/dark_main.jpg);
+    background-image: url(/img/dark_mainSm.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    width: 450px;
-    height: 740px;
+    width: 180px;
+    height: 270px;
+    font-size: 0.5rem;
+    margin-top: -1rem;
+
 
 }
 
 .firstName {
     color: white;
     font-family: 'Rajdhani', sans-serif;
+    font-size: 1rem;
 }
 
 .lastName {
     font-family: 'Bebas Neue', cursive;
     color: white;
+    font-size: 1rem;
 }
 
 
@@ -591,18 +601,19 @@ a {
     color: white;
 }
 
-
-
 .p_info {
     margin-bottom: -0.2rem;
 }
 
-.h_title,
+.h_title {
+    color: white;
+    font-size: 0.8rem;
+}
+
 .h_titleSub {
     color: white;
     font-size: 1rem;
 }
-
 
 .h_title2 {
     color: white;
@@ -616,7 +627,6 @@ a {
     font-size: 1rem;
     margin-bottom: 3rem;
     padding-left: .5rem;
-    border-left: .5rem dotted #313030;
     border-left: .5rem dotted #dca4b4;
 
 
@@ -636,14 +646,17 @@ a {
     background-color: #313030;
 }
 
-#rightSkillsSide {
-    background-color: black;
-}
+
 
 #rightSkillsSide,
 #resumeBody {
     color: #afabab;
     font-size: 1rem;
+}
+
+#rightSkillsSide {
+    background-color: black;
+    font-size: 0.6rem;
 }
 
 #resumeBody h4,
@@ -654,22 +667,37 @@ a {
 #rightSkillsSide h4,
 #rightSkillsSide h5 {
     color: white;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     padding: .5rem;
+    font-size: 0.8rem;
 
 }
 
 .rightHeads {
     border-top: 3px solid white;
+    margin-bottom: 1rem;
+}
+
+.rightHeads2 {
+    border-top: 3px solid white;
+    /* margin-bottom: 1rem; */
 }
 
 #certification {
     margin-top: none;
 }
 
+.scrumDiv {
+    /* flex-direction: column; */
+}
+
 #scrum {
-    width: 80px;
+    width: 70px;
+    width: 20px;
     height: auto;
+    padding-top: 1.2rem;
+    padding-left: -0.6rem;
+    padding-right: 0.5rem;
 }
 
 #experienceHead {
@@ -684,10 +712,21 @@ a {
     font-size: 2rem;
 }
 
-.subIcons {
+.mainIconsR {
     color: #dca4b4;
+    font-size: 0.8rem;
+    margin-top: 1.2rem;
+}
+
+.subIcons {
     color: #313030;
     font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.subIconsR {
+    color: #313030;
+    font-size: 0.8rem;
     margin-bottom: 1.5rem;
 }
 
@@ -698,18 +737,13 @@ a {
 }
 
 .hardSkills {
-    margin-top: 2rem;
+    margin-top: -0.5rem;
 }
-
-
 
 .resumeDate {
     color: #dca4b4;
     font-size: 1rem;
-
-
 }
-
 
 #education {
     background-color: #252424;
@@ -718,7 +752,6 @@ a {
 .resumeLine {
     height: 17px;
     overflow: hidden;
-    /* padding-top: .5rem; */
 }
 
 .educationBullets {
@@ -739,6 +772,111 @@ a {
 #portfolioTopBtn {
     color: #dca4b4;
     width: 20%;
+}
+
+/* Larger view Resume styling */
+@media(min-width:768px) {
+    #resumeContent {
+        width: 95%;
+        margin-left: 3rem;
+    }
+
+    .topGrids {
+        margin-top: 0rem;
+        margin-left: 0rem;
+    }
+
+    #resumeHeader {
+        margin-top: 5rem;
+    }
+
+    .profile {
+        margin-left: 4rem;
+        padding: 3rem;
+
+        /* flex-direction: row;
+        justify-content: start;
+        align-items: start; */
+    }
+
+    #darkHead {
+        background-image: url(/img/dark_main.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 450px;
+        height: 740px;
+        font-size: 1.4rem;
+
+    }
+
+    .firstName {
+        font-size: 2.4rem;
+    }
+
+    .lastName {
+        font-size: 2.4rem;
+    }
+
+    #rightSkillsSide {
+        font-size: 1rem;
+    }
+
+    #rightSkillsSide h4,
+    #rightSkillsSide h5 {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    #scrum {
+        width: 80px;
+        margin-left: 2rem;
+        padding-top: 2rem;
+
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    .mainIconsR {
+        font-size: 2rem;
+        margin-top: 1.5rem;
+    }
+
+    .subIconsR {
+        font-size: 1.4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .rightHeads,
+    .rightHeads2 {
+        margin-bottom: 5rem;
+    }
+
+    .hardSkills {
+        margin-top: 2rem;
+    }
+
+    .h_title2 {
+        color: white;
+        font-size: 1rem;
+        padding: .5rem;
+        border-top: 1px solid #dca4b4;
+    }
+
+    .h_title {
+        color: white;
+        font-size: 1rem;
+    }
+
+    .headingSection {
+        flex-direction: row;
+    }
+
+    .h_body {
+        font-size: 1rem;
+        margin-bottom: 3rem;
+        padding-left: .5rem;
+        border-left: .5rem dotted #dca4b4;
+    }
 }
 
 /* Portfolio */

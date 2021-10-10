@@ -149,20 +149,20 @@ function resumeLoad(){
                 </button>
                 <img class="folioLines mt-5 mb-5" src="../img/folioLine2.png">
             </div>
-            <div class="profile d-flex justify-content-start mt-5 mb-5 ms-5 p-3">
+            <div class="profile d-flex mt-5 mb-5">
                 <h3 id="resumeSubTitle">Profile: </h3>
                 <h4 class="ms-3">Current Computer Science student, Veteran, & former Professional Musican with a BA in Music Performance. Passionately driven towards front-end development and a rewarding career in the tech industry.</h4>
             </div>
         </div>
         <div id="resumeContent" class="mt-5">
-            <div class="d-flex">
+            <div class="headingSection d-flex">
                 <div id="leftSide" class="pb-5">
                     <div id="darkHead" class="p-3">
                         <div class="d-flex justify-content-center">
                             <h1 class="firstName pe-2">KATELYNN</h1>
                             <h1 class="lastName">Heasley</h1>
                         </div>
-                        <p class="d-flex justify-content-center">Web Designer</p>
+                        <p class="d-flex justify-content-center">Prospective Developer</p>
                     </div>
                 </div>
                 <div id="rightSkillsSide" class="ps-2 pb-5">
@@ -177,7 +177,7 @@ function resumeLoad(){
                                         <p>January 2021</p>
                                     </div>
                                     <div class="col">
-                                        <div class="d-flex justify-content-start">
+                                        <div class="scrumDiv d-flex justify-content-start">
                                             <p class="me-2 fw-bold">PSM I: </p>
                                             <p>The Professional Scrum Master Level I (PSM I)</p>
                                         </div>
@@ -185,14 +185,14 @@ function resumeLoad(){
                                 </div>
                             </div>
                         </div>
-                        <div class="d-flex pt-5 ms-5">
+                        <div class="d-flex">
                             <img id="scrum" src="./img/psmI.svg">
                         </div>
                     </div>
-                    <div class="mt-5">
-                        <div class="rightHeads d-flex"> 
+                    <div>
+                        <div class="rightHeads2 d-flex"> 
                             <h4>Hard Skills</h4>
-                            <i class="fas fa-code mainIcons mt-4 ps-3"></i>
+                            <i class="fas fa-code mainIconsR ps-3"></i>
                         </div>
                         <div class="hardSkills p-3">
                             <div class="row">
@@ -201,7 +201,7 @@ function resumeLoad(){
                                         <p class="">Coding Language Exposure:</p>
                                     </div>
                                     <div class="h_body">
-                                        <i class="subIcons fas fa-laptop-code"></i>
+                                        <i class="subIconsR fas fa-laptop-code"></i>
                                         <p class="">Java, C#, C++, Python, Javascript, Html, CSS, Assembly, SQL</p>
                                     </div>
                                 </div>
@@ -210,7 +210,7 @@ function resumeLoad(){
                                         <p class="">Framework Exposure:</p>
                                     </div>
                                     <div class="h_body">
-                                        <i class="subIcons fas fa-shapes"></i>
+                                        <i class="subIconsR fas fa-shapes"></i>
                                         <p class="">React, Django, Flask, ASP.Net Core/Entity Framework</p>
                                     </div>
                                 </div>
@@ -221,7 +221,7 @@ function resumeLoad(){
                                         <p class="">Virtual Environment Exposure:</p>
                                     </div>
                                     <div class="h_body">
-                                        <i class="subIcons fas fa-cloud"></i>
+                                        <i class="subIconsR fas fa-cloud"></i>
                                         <p class="">Amazon AWS EC2 Instances</p>
                                     </div>
                                 </div>
@@ -230,7 +230,7 @@ function resumeLoad(){
                                         <p class="">Development Environment Exposure:</p>
                                     </div>
                                     <div class="h_body">
-                                        <i class="subIcons fas fa-hammer"></i>
+                                        <i class="subIconsR fas fa-hammer"></i>
                                         <p class="">Visual Studio Code IDE, JetBrains IntelliJ IDE, NetBeans IDE, Dr. Java JDK</p>
                                     </div>
                                 </div>
