@@ -11,7 +11,7 @@ function homeLoad(){
 
 
     //update body background
-    UI.$homeBackground.classList.remove('hide');
+    // UI.$homeBackground.classList.remove('hide');
     UI.$body.classList.remove('portfolio', 'main', 'about');
     UI.$body.classList.remove('resume');
     UI.$top.classList.remove('resumeNav');
@@ -31,18 +31,17 @@ function homeLoad(){
         <div class="homeGreeting">
             <div class="d-flex flex-column justify-content-start"> 
                 <div>
-                    <img class="homeLines mb-3" src="/img/linesHeader3.png">
-                    <h3 class="homeSub">Hi there!</h3>
+                    <img class="homeLines mb-3" src="/img/linesHeader4.png">
+                    <h3 class="homeSub">Hi there! I'm</h3>
                 </div>
                 <div class="d-flex flex-row">
-                    <h3 class="homeSub pe-2">I'm</h3>
                     <h3 class="homeFocus" id="indexName">Katelynn Heasley</h3>
                 </div>
                 <div class="d-flex flex-row">
                     <h3 class="homeSub pe-2">Computer Science</h3>
                     <h3 class="homeSub">student,</h3>
                 </div>
-                <div class="d-flex flex-row">
+                <div class="d-flex flex-row align-items-center">
                     <h3 class="homeSub pe-2">& future</h3>
                     <h3 class="homeFocus">Front-end Developer</h3>
                 </div>
