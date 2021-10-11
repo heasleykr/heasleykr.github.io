@@ -496,7 +496,7 @@ a {
 }
 
 #resumeContent {
-    margin-top: 10em;
+    margin-top: 1rem;
     height: auto;
     /* width: 95%; */
 }
@@ -523,7 +523,8 @@ a {
 }
 
 #gridImg {
-    margin-bottom: -2rem;
+    margin-top: -7rem;
+    margin-bottom: -4rem;
 }
 
 
@@ -540,24 +541,50 @@ a {
 }
 
 .profile {
+    display: none;
     color: rgb(131, 127, 127);
     width: 95%;
     flex-direction: column;
     justify-content: start;
     align-items: flex-start;
+}
+
+#profileSm {
+    display: inline-flex;
+    flex-direction: column;
+    font-size: 0.6rem;
+    padding: 0 0.5rem 0 0.5rem;
 
 }
 
-#resumeSubTitle {
+#resumeSubTitle,
+#resumeSubTitle2 {
     color: #dca4b4;
     font-family: 'Varela', sans-serif;
     margin-left: 1rem;
+}
+
+#profileP,
+#resumeSubTitle {
+    display: none;
+}
+
+#resumeSubTitle2 {
+    font-size: 0.8rem;
+}
+
+#profileP2 {
+    font-size: 0.6rem;
 }
 
 
 #leftSide {
     background-color: black;
     color: white;
+    display: flex;
+    flex-direction: flex-row;
+    justify-content: start;
+    margin-left: 0.5rem;
 
 }
 
@@ -612,33 +639,24 @@ a {
 
 .h_titleSub {
     color: white;
-    font-size: 1rem;
+    font-size: 0.7rem;
+    margin-left: 0.5rem;
 }
 
 .h_title2 {
     color: white;
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding: .5rem;
     border-top: 1px solid #dca4b4;
 }
 
 .h_body {
     color: #afabab;
-    font-size: 1rem;
-    margin-bottom: 3rem;
+    font-size: 0.6rem;
+    margin-bottom: 0.8rem;
     padding-left: .5rem;
-    border-left: .5rem dotted #dca4b4;
+    border-left: .3rem dotted #dca4b4;
 
-
-}
-
-.h2_info {
-    color: #3f1627;
-    margin-bottom: 1rem;
-}
-
-.leftHeaders {
-    background-color: #3f1627;
 
 }
 
@@ -651,7 +669,7 @@ a {
 #rightSkillsSide,
 #resumeBody {
     color: #afabab;
-    font-size: 1rem;
+    font-size: 0.7rem;
 }
 
 #rightSkillsSide {
@@ -662,6 +680,7 @@ a {
 #resumeBody h4,
 #resumeBody h5 {
     color: white;
+    font-size: 0.8rem;
 }
 
 #rightSkillsSide h4,
@@ -701,15 +720,15 @@ a {
 }
 
 #experienceHead {
-    font-size: 2rem;
-    margin-bottom: 3rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
     background-color: transparent;
     color: white;
 }
 
 .mainIcons {
     color: #dca4b4;
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
 .mainIconsR {
@@ -742,11 +761,16 @@ a {
 
 .resumeDate {
     color: #dca4b4;
-    font-size: 1rem;
+    font-size: 0.7rem;
 }
 
 #education {
     background-color: #252424;
+    padding-left: 1rem;
+}
+
+.resumeLine1 {
+    display: none;
 }
 
 .resumeLine {
@@ -755,11 +779,12 @@ a {
 }
 
 .educationBullets {
-    border-left: .5rem dotted #dca4b4;
+    border-left: .2rem dotted #dca4b4;
 }
 
 #keyClasses {
     border-right: 1px solid #524e4e;
+    padding-left: 2rem;
 }
 
 #resumeLineBottom,
@@ -778,6 +803,7 @@ a {
 @media(min-width:768px) {
     #resumeContent {
         width: 95%;
+        margin-top: 5rem;
         margin-left: 3rem;
     }
 
@@ -791,12 +817,24 @@ a {
     }
 
     .profile {
+        display: inline;
         margin-left: 4rem;
         padding: 3rem;
+    }
 
-        /* flex-direction: row;
-        justify-content: start;
-        align-items: start; */
+    #resumeSubTitle,
+    #profileP {
+        display: inline;
+    }
+
+    #profileSm,
+    #resumeSubTitle2,
+    #profileP2 {
+        display: none;
+    }
+
+    #leftSide {
+        margin-left: 0;
     }
 
     #darkHead {
@@ -817,7 +855,10 @@ a {
         font-size: 2.4rem;
     }
 
-    #rightSkillsSide {
+    #rightSkillsSide,
+    #resumeBody,
+    .h_titleSub,
+    .resumeDate {
         font-size: 1rem;
     }
 
@@ -856,10 +897,8 @@ a {
     }
 
     .h_title2 {
-        color: white;
         font-size: 1rem;
         padding: .5rem;
-        border-top: 1px solid #dca4b4;
     }
 
     .h_title {
@@ -877,6 +916,49 @@ a {
         padding-left: .5rem;
         border-left: .5rem dotted #dca4b4;
     }
+
+    .h_body {
+        font-size: 1rem;
+        margin-bottom: 3rem;
+        border-left: .5rem dotted #dca4b4;
+    }
+
+    #experienceHead {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+        margin-right: 3rem;
+
+    }
+
+    .mainIcons {
+        font-size: 2rem;
+    }
+
+    #gridImg {
+        margin-bottom: -2rem;
+        margin-top: 0rem;
+    }
+
+    #resumeBody h4,
+    #resumeBody h5 {
+        font-size: 1.5rem;
+    }
+
+    #education,
+    #keyClasses {
+        padding-left: 4rem;
+    }
+
+    .educationBullets {
+        border-left: .5rem dotted #dca4b4;
+    }
+
+    .resumeLine1 {
+        height: 17px;
+        overflow: hidden;
+        display: inline;
+    }
+
 }
 
 /* Portfolio */

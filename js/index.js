@@ -151,10 +151,10 @@ function resumeLoad(){
             </div>
             <div class="profile d-flex mt-5 mb-5">
                 <h3 id="resumeSubTitle">Profile: </h3>
-                <h4 class="ms-3">Current Computer Science student, Veteran, & former Professional Musican with a BA in Music Performance. Passionately driven towards front-end development and a rewarding career in the tech industry.</h4>
+                <h4 id="profileP" class="ms-3">Current Computer Science student, Veteran, & former Professional Musican with a BA in Music Performance. Passionately driven towards front-end development and a rewarding career in the tech industry.</h4>
             </div>
         </div>
-        <div id="resumeContent" class="mt-5">
+        <div id="resumeContent">
             <div class="headingSection d-flex">
                 <div id="leftSide" class="pb-5">
                     <div id="darkHead" class="p-3">
@@ -163,6 +163,10 @@ function resumeLoad(){
                             <h1 class="lastName">Heasley</h1>
                         </div>
                         <p class="d-flex justify-content-center">Prospective Developer</p>
+                    </div>
+                    <div id="profileSm" class="d-flex mb-5">
+                        <h3 id="resumeSubTitle2">Profile: </h3>
+                        <h4 id="profileP2" class="ms-3">Current Computer Science student, Veteran, & former Professional Musican with a BA in Music Performance. Passionately driven towards front-end development and a rewarding career in the tech industry.</h4>
                     </div>
                 </div>
                 <div id="rightSkillsSide" class="ps-2 pb-5">
@@ -241,9 +245,9 @@ function resumeLoad(){
             </div>
             <div id="resumeGrid" class="ps-3">
                 <img id="gridImg" src="/img/circleDripSm2.png">
-                <div class="d-flex flex-row mb-3 ps-3">   
-                    <h4 id="experienceHead" class="me-3">Experience</h4>
-                    <i class="mainIcons fas fa-glasses ms-5"></i>
+                <div class="d-flex flex-row mb-3">   
+                    <h4 id="experienceHead">Experience</h4>
+                    <i class="mainIcons fas fa-glasses ms-4"></i>
                 </div>
             </div>
             <div id="resumeBody">
@@ -381,12 +385,12 @@ function resumeLoad(){
                     </div>
                 </div>
                 <div class="container-fluid">
-                    <div id="education" class="row ps-5 pt-5 mb-3">
+                    <div id="education" class="row pt-5 mb-3">
                         <div class="col">
                             <div class="d-flex">
                                 <h4 class="resumeTitles pe-3">Education</h4>
                                 <i class="fas fa-graduation-cap mainIcons"></i>
-                                <img class="resumeLine ps-5 mt-2"src="../img/resumeLine3.png">
+                                <img class="resumeLine1 ps-5 mt-2"src="../img/resumeLine3.png">
                             </div>
                             <div class="educationBullets mt-5 mb-5 container">
                                 <div class="row">
@@ -435,7 +439,7 @@ function resumeLoad(){
                             </div>
                         </div>
                     </div>
-                    <div class="row pt-5 pb-5 ps-5">
+                    <div class="row pt-5 pb-5">
                         <div id="keyClasses" class="col">
                             <h4 class="resumeTitles">Key classes completed</h4> 
                             <h4>towards B.S. in Computer Science</h4>
