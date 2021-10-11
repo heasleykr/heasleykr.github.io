@@ -156,7 +156,7 @@ function resumeLoad(){
         </div>
         <div id="resumeContent">
             <div class="headingSection d-flex">
-                <div id="leftSide" class="pb-5">
+                <div id="leftSide">
                     <div id="darkHead" class="p-3">
                         <div class="d-flex justify-content-center">
                             <h1 class="firstName pe-2">KATELYNN</h1>
@@ -165,12 +165,30 @@ function resumeLoad(){
                         <p class="d-flex justify-content-center">Prospective Developer</p>
                     </div>
                     <div id="profileSm" class="d-flex mb-5">
-                        <h3 id="resumeSubTitle2">Profile: </h3>
+                        <h3 id="resumeSubTitle2">Profile </h3>
                         <h4 id="profileP2" class="ms-3">Current Computer Science student, Veteran, & former Professional Musican with a BA in Music Performance. Passionately driven towards front-end development and a rewarding career in the tech industry.</h4>
+                        <div id="certSm" class="d-flex flex-column justify-content-start">
+                            <div class="d-flex">
+                                <h4 id="certificationSm">Certifications</h4>
+                            </div>
+                            <div>
+                                <div class="scrumSmContent row pt-2 ps-3">
+                                    <div class="scrumSmContent col-2">
+                                        <p class="scrumSmContent">January 2021</p>
+                                    </div>
+                                    <div class="scrumSmContent col">
+                                        <p id="scrumDesSm" class="scrumSmContent">Professional Scrum Master, Level I (PSM I)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ms-3">
+                                <img id="scrumSm" src="./img/psmI.svg">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div id="rightSkillsSide" class="ps-2 pb-5">
-                    <div class="rightHeads d-flex flex-row justify-content-start">
+                    <div id="certLg" class="rightHeads d-flex flex-row justify-content-start">
                         <div>
                             <div class="d-flex">
                                 <h4 id="certification">Certifications</h4>
@@ -178,12 +196,12 @@ function resumeLoad(){
                             <div>
                                 <div class="row pt-2 ps-3">
                                     <div class="col-2">
-                                        <p>January 2021</p>
+                                        <p class="scrumLgContent">January 2021</p>
                                     </div>
                                     <div class="col">
-                                        <div class="scrumDiv d-flex justify-content-start">
-                                            <p class="me-2 fw-bold">PSM I: </p>
-                                            <p>The Professional Scrum Master Level I (PSM I)</p>
+                                        <div class="scrumLgContent d-flex justify-content-start">
+                                            <p class="scrumLgContent me-2 fw-bold">PSM I: </p>
+                                            <p class="scrumLgContent">Professional Scrum Master, Level I (PSM I)</p>
                                         </div>
                                     </div>
                                 </div>

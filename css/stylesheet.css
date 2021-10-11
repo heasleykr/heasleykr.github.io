@@ -304,7 +304,7 @@ a {
     #homePage {
         width: inherit;
         height: auto;
-        background-image: none;
+        /* background-image: none; */
     }
 
     #homeGraphicDiv {
@@ -312,7 +312,6 @@ a {
         margin-left: 5rem;
         outline: 8000px solid rgba(0, 0, 0, 0.5) !important;
         outline-offset: -3000px;
-        display: inline;
 
     }
 
@@ -501,7 +500,6 @@ a {
 #resumeContent {
     margin-top: 1rem;
     height: auto;
-    /* width: 95%; */
 }
 
 .resumeNav {
@@ -561,7 +559,8 @@ a {
 }
 
 #resumeSubTitle,
-#resumeSubTitle2 {
+#resumeSubTitle2,
+#certificationSm {
     color: #dca4b4;
     font-family: 'Varela', sans-serif;
     margin-left: 1rem;
@@ -572,13 +571,21 @@ a {
     display: none;
 }
 
-#resumeSubTitle2 {
+#resumeSubTitle2,
+#certificationSm {
     font-size: 0.8rem;
 }
 
-#profileP2 {
+#profileP2,
+#scrumSmContent {
     font-size: 0.6rem;
 }
+
+#scrumDesSm {
+    color: #afabab;
+    padding-left: 1rem;
+}
+
 
 
 #leftSide {
@@ -709,17 +716,20 @@ a {
     margin-top: none;
 }
 
-.scrumDiv {
-    /* flex-direction: column; */
+#scrum,
+#certLg,
+#certification,
+.scrumLgContent {
+    display: none;
 }
 
-#scrum {
-    width: 70px;
-    width: 20px;
+#scrumSm {
+    width: 40px;
+    /* width: 20px; */
     height: auto;
-    padding-top: 1.2rem;
+    /* padding-top: 1.2rem;
     padding-left: -0.6rem;
-    padding-right: 0.5rem;
+    padding-right: 0.5rem; */
 }
 
 #experienceHead {
@@ -826,7 +836,9 @@ a {
     }
 
     #resumeSubTitle,
-    #profileP {
+    #profileP,
+    #certification,
+    .scrumLgContent {
         display: inline;
     }
 
@@ -838,6 +850,7 @@ a {
 
     #leftSide {
         margin-left: 0;
+        padding-bottom: 5rem;
     }
 
     #darkHead {
@@ -872,12 +885,19 @@ a {
     }
 
     #scrum {
+        display: inline;
         width: 80px;
         margin-left: 2rem;
         padding-top: 2rem;
-
         padding-left: 0rem;
         padding-right: 0rem;
+    }
+
+    #scrumSm,
+    #certSm,
+    #certificationSm,
+    .scrumSmContent {
+        display: none;
     }
 
     .mainIconsR {
