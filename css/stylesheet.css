@@ -196,8 +196,8 @@ a {
 .home {
     width: 100%;
     background-color: #353232;
-    background-image: url(/img/cover1.jpg);
-    background-position: top 12% left -120%;
+    background-image: url(/img/coverSm.jpg);
+    background-position: top 12% left 120%;
     background-repeat: no-repeat;
     height: auto;
 }
@@ -208,54 +208,6 @@ a {
     margin-top: 10rem;
 }
 
-/* Larger view Home styling */
-@media(min-width:768px) {
-    .home {
-        width: 100%;
-        background-position: top 12% left 100%;
-    }
-
-    #homePage {
-        width: 100%;
-        height: auto;
-    }
-
-    #homeGraphicDiv {
-        outline: 8000px solid rgba(0, 0, 0, 0.5) !important;
-        outline-offset: -3000px;
-    }
-
-    .homeGreeting {
-        color: #dca4b4;
-        padding-top: 7rem;
-    }
-
-    .homeFocus {
-        font-family: 'Varela', sans-serif;
-        font-size: 3rem;
-        color: #dca4b4;
-        color: white;
-    }
-
-    .homeSub {
-        font-family: 'Varela', sans-serif;
-        font-size: 3rem;
-    }
-
-    #sidebarSm {
-        width: 40px;
-        height: 100%;
-        color: white;
-        background-color: #3b3737;
-        position: fixed;
-        left: 0%;
-        visibility: visible;
-    }
-
-    #homeView {
-        width: inherit;
-    }
-}
 
 #mainLoad {
     height: 100%;
@@ -265,16 +217,19 @@ a {
 
 /* Index View */
 #homePage {
-    width: 80%;
+    width: 95%;
     height: auto;
+    background-image: url(../img/gridHome.png);
 
 }
 
 #homeGraphicDiv {
-    margin-top: 8rem;
-    margin-left: 5rem;
-    outline: 8000px solid rgba(255, 255, 255, 0.1) !important;
-    outline-offset: -3000px;
+    margin-top: -12rem;
+    padding-left: -5rem;
+    /* width: 50%; */
+    outline: 8000px solid rgba(0, 0, 0, 0.5) !important;
+    outline-offset: -8000px;
+    display: none;
 }
 
 .homeIcons {
@@ -288,22 +243,22 @@ a {
 .homeGreeting {
     color: white;
     color: #dca4b4;
-    color: black;
     padding-top: 4rem;
+    margin-left: 1rem;
 
 
 }
 
 .homeFocus {
     font-family: 'Varela', sans-serif;
-    font-size: 2rem;
+    font-size: 0.9rem;
     color: #dca4b4;
     color: white;
 }
 
 .homeSub {
     font-family: 'Varela', sans-serif;
-    font-size: 2rem;
+    font-size: 0.9rem;
 }
 
 .homeMiniFocus {
@@ -316,35 +271,37 @@ a {
     color: white;
 }
 
-.home {
-    width: 100%;
-    background-color: #353232;
-    background-image: url(/img/cover1.jpg);
-    background-position: top 12% left -120%;
-    background-repeat: no-repeat;
-    height: auto;
-}
 
 /* Larger view Home styling */
 @media(min-width:768px) {
     .home {
         width: 100%;
-        background-position: top 12% left 100%;
-    }
-
-    #homePage {
-        width: 100%;
+        background-color: #353232;
+        background-image: url(/img/cover1.jpg);
+        background-position: top 17% left 100%;
+        background-repeat: no-repeat;
         height: auto;
     }
 
+    #homePage {
+        width: inherit;
+        height: auto;
+        background-image: none;
+    }
+
     #homeGraphicDiv {
+        margin-top: 8rem;
+        margin-left: 5rem;
         outline: 8000px solid rgba(0, 0, 0, 0.5) !important;
         outline-offset: -3000px;
+        display: inline;
+
     }
 
     .homeGreeting {
         color: #dca4b4;
         padding-top: 7rem;
+        margin-left: 1.5rem;
     }
 
     .homeFocus {
@@ -358,8 +315,22 @@ a {
         font-family: 'Varela', sans-serif;
         font-size: 3rem;
     }
-}
 
+    #homeView {
+        width: inherit;
+    }
+
+    #sidebarSm {
+        width: 40px;
+        height: 100%;
+        color: white;
+        background-color: #3b3737;
+        position: fixed;
+        left: 0%;
+        visibility: visible;
+    }
+
+}
 
 /* About View */
 .about {

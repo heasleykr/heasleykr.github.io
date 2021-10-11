@@ -27,7 +27,7 @@ function homeLoad(){
 
     //content to be displayed
     var home = `
-    <div id="homePage" class="container-fluid">
+    <div id="homePage">
         <div class="homeGreeting">
             <div class="d-flex flex-column justify-content-start"> 
                 <div>
