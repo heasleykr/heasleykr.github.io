@@ -166,7 +166,7 @@ function resumeLoad(){
                     <div id="profileSm" class="d-flex mb-5">
                         <h3 id="resumeSubTitle2">Profile </h3>
                         <h4 id="profileP2" class="ms-3">Current Computer Science student, Veteran, & former Professional Musican with a BA in Music Performance. Passionately driven towards front-end development and a rewarding career in the tech industry.</h4>
-                        <div id="certSm" class="d-flex flex-column justify-content-start">
+                        <div id="certSm" class="d-flex flex-column justify-content-start mt-4">
                             <div class="d-flex">
                                 <h4 id="certificationSm">Certifications</h4>
                             </div>
