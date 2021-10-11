@@ -196,14 +196,10 @@ a {
 .home {
     width: 100%;
     background-color: #353232;
-    /* background-color: rgba(0, 0, 0, 1); */
-    background-image: url(/img/cover2.jpg);
-    /* background-position: top 18% left 0%; */
-    background-repeat: no-repeat;
     height: auto;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/cover2.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/coverCell.jpg);
     background-repeat: no-repeat, no-repeat;
-    background-position: top, top left;
+    background-position: top, top 9% left 0%;
 
 }
 
@@ -224,21 +220,12 @@ a {
 #homePage {
     width: 95%;
     height: auto;
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    /* background-image: url(../img/gridHome.png);
-    background-position: top % left 60%;
-    background-repeat: no-repeat; */
 
 }
 
 #homeGraphicDiv {
     margin-top: -13rem;
     padding-left: -5rem;
-    /* width: 50%; */
-    /* outline: 8000px solid rgba(0, 0, 0, 0.5) !important;
-    outline-offset: -8000px; */
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    /* display: none; */
 }
 
 .homeIcons {
@@ -251,26 +238,18 @@ a {
 
 .homeGreeting {
     color: white;
-    /* color: #dca4b4; */
     color: #dca4b4;
     color: white;
     font-family: 'Playfair Display', serif;
-    /* padding-top: 0.5rem; */
     margin-top: 4rem;
     margin-left: 2rem;
     font-size: 2rem;
     margin-bottom: 20rem;
-    /* background-color: rgba(0, 0, 0, .2); */
-    /* padding: 5rem 5rem 10rem 0rem; */
-
-
-
 }
 
 .homeFocus {
     font-family: 'Varela', sans-serif;
     font-family: 'Playfair Display', serif;
-    /* background-color: rgba(0, 0, 0, .2); */
     font-size: 1.5rem;
     color: #dca4b4;
     color: white;
@@ -288,8 +267,8 @@ a {
 .homeMiniFocus {
     background-color: rgba(0, 0, 0, .7);
     color: white;
-    font-size: 0.5rem;
-    /* width: 50%; */
+    font-size: 0.8rem;
+    width: 70%;
 
 }
 
@@ -302,12 +281,10 @@ a {
 /* Larger view Home styling */
 @media(min-width:768px) {
     .home {
-        width: 100%;
-        background-color: #353232;
-        background-image: url(/img/cover1.jpg);
-        background-position: top 17% left 100%;
-        background-repeat: no-repeat;
-        height: auto;
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/coverSm.jpg);
+        background-repeat: no-repeat, no-repeat;
+        background-position: top, top 5% left 30rem;
+        ;
     }
 
     #homePage {
@@ -326,22 +303,27 @@ a {
 
     .homeGreeting {
         color: #dca4b4;
-        padding-top: 7rem;
-        margin-left: 1.5rem;
+        padding-top: 4rem;
+        margin-left: 7rem;
         font-size: 1.2rem;
+        padding-bottom: 10rem;
     }
 
     .homeFocus {
         font-family: 'Varela', sans-serif;
+        font-family: 'Playfair Display', serif;
+
         font-size: 3rem;
         color: #dca4b4;
         color: white;
     }
 
     .homeSub {
-        font-family: 'Varela', sans-serif;
+        /* font-family: 'Varela', sans-serif; */
         font-size: 3rem;
-        color: #dca4b4;
+        /* color: #dca4b4; */
+        font-family: 'Playfair Display', serif;
+        color: #f8ad0b;
     }
 
     #homeView {
