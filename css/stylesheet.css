@@ -196,10 +196,15 @@ a {
 .home {
     width: 100%;
     background-color: #353232;
-    background-image: url(/img/coverSm.jpg);
-    background-position: top 18% left 0%;
+    /* background-color: rgba(0, 0, 0, 1); */
+    /* background-image: url(/img/coverSm.jpg); */
+    /* background-position: top 18% left 0%; */
     background-repeat: no-repeat;
     height: auto;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/coverSm.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, top 18% left 0%;
+
 }
 
 #homeView {
@@ -219,6 +224,7 @@ a {
 #homePage {
     width: 95%;
     height: auto;
+    /* background-color: rgba(0, 0, 0, 0.5); */
     /* background-image: url(../img/gridHome.png);
     background-position: top % left 60%;
     background-repeat: no-repeat; */
@@ -229,8 +235,9 @@ a {
     margin-top: -13rem;
     padding-left: -5rem;
     /* width: 50%; */
-    outline: 8000px solid rgba(0, 0, 0, 0.5) !important;
-    outline-offset: -8000px;
+    /* outline: 8000px solid rgba(0, 0, 0, 0.5) !important;
+    outline-offset: -8000px; */
+    /* background-color: rgba(0, 0, 0, 0.5); */
     /* display: none; */
 }
 
@@ -244,10 +251,13 @@ a {
 
 .homeGreeting {
     color: white;
+    /* color: #dca4b4; */
     color: #dca4b4;
-    padding-top: 0.5rem;
+
+    /* padding-top: 0.5rem; */
     margin-left: -40%;
     font-size: 0.7rem;
+    /* padding: 5rem 5rem 10rem 0rem; */
 
 
 }
