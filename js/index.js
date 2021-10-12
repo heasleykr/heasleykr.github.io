@@ -804,11 +804,11 @@ function init(){
     UI.$homeBtn.onclick = homeLoad;
     UI.$aboutBtn.onclick = aboutLoad;
     UI.$resBtn.onclick = resumeLoad;
-    UI.$folioBtn.onclick = folioLoad;
+    // UI.$folioBtn.onclick = folioLoad;
     UI.$homeNav.onclick = homeLoad;
     UI.$aboutNav.onclick = aboutLoad;
     UI.$resNav.onclick = resumeLoad;
-    UI.$folioNav.onclick = folioLoad;
+    // UI.$folioNav.onclick = folioLoad;
     UI.$resFtBtn.onclick = resumeLoad;
     UI.$btnHide.onclick = showDetails;
     UI.$btnShow.onclick = showDetails;

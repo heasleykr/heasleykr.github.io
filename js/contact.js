@@ -1,8 +1,9 @@
-//Form variables
+//Form dictionary to be sent
 var data_js = {
     "access_token": "fq4yotycku3m9w3u2a6u0lbo"
 };
 
+// cache DOM
 var UI = cacheDom();
 
 

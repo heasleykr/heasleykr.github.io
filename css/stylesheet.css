@@ -997,15 +997,12 @@ a {
     color: #dca4b4;
 }
 
-
-
 .gitI {
     height: 70%;
 }
 
 #gitBtn a {
     color: white;
-    /* padding-bottom: 10rem; */
 }
 
 #gitBtn i,
@@ -1028,9 +1025,6 @@ a {
     text-decoration: none;
 }
 
-
-
-
 #organic,
 #fashion,
 #property {
@@ -1038,11 +1032,14 @@ a {
     padding-top: 2rem;
 }
 
-
 .projectImg {
     width: 400px;
     height: 400px;
-    /* overflow: hidden; */
+}
+
+.projectView {
+    display: flex;
+    flex-direction: column;
 }
 
 .projectContent {
@@ -1065,18 +1062,13 @@ a {
 
 
 .bullet {
-    /* color: black; */
     color: #dca4b4;
-    /* color: white; */
     font-size: 0.5rem;
     margin-right: 1rem;
 }
 
 .projectSub {
-    /* color: #dca4b4; */
-    /* color: white; */
     color: #afabab;
-    /* font-family: 'Montserrat', sans-serif; */
 }
 
 .projectSubDate {
@@ -1085,17 +1077,9 @@ a {
 }
 
 .projectTitle {
-    /* font-family: 'Ultra', serif; */
-    /* font-family: 'Questrial', sans-serif; */
-    /* font-family: 'Secular One'; */
     font-family: 'Varela', sans-serif;
-    /* margin-top: 1rem; */
-    /* background-color: rgba(92, 95, 95, 0.2); */
-    /* background-color: rgb(69, 196, 201); */
     object-fit: cover;
     font-size: 1.5rem;
-    /* text-transform: uppercase; */
-    /* padding: .8rem; */
 }
 
 
@@ -1110,16 +1094,27 @@ a {
     margin-bottom: 0.7rem;
 }
 
-#portfolioGrid2,
-#portfolioGrid3,
-#portfolioGrid4 {
+#portfolioGrid1 {
     overflow: hidden;
 }
-
 
 .companySite {
     color: rgba(255, 255, 255, 0.4);
     font-size: 0.7rem;
+}
+
+#portfolioLineBottom {
+    display: none;
+}
+
+#carouselBtns {
+    position: relative;
+    left: 3%;
+}
+
+#indicators {
+    position: relative;
+    top: 0%;
 }
 
 /* Larger view Portfolio styling */
@@ -1140,6 +1135,26 @@ a {
         margin-bottom: 2.6rem;
         width: 15%;
         font-size: 1rem;
+    }
+
+    .projectView {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #portfolioLineBottom {
+        display: inline;
+    }
+
+    #carouselBtns {
+        position: relative;
+        left: 3%;
+    }
+
+    #indicators {
+        position: relative;
+        top: 0%;
     }
 }
 
