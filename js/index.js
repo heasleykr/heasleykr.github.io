@@ -561,8 +561,8 @@ function folioLoad(){
         <div>
             <div id="port_header" class="d-flex flex-column justify-content-center align-items-center">
                 <h2 id="port_head" class="m-3">Portfolio</h2>
-                <h3 id="portSubHead" class="mb-5">My recent works and their source code</h3>
-                <button id="gitBtn" class="btn btn-outline-light rounded-pill mb-5"><a href="https://github.com/heasleykr"><i class="gitI fab fa-github me-2"></i>Github</a>
+                <h3 id="portSubHead">My recent works and their source code</h3>
+                <button id="gitBtn" class="btn btn-outline-light rounded-pill"><a href="https://github.com/heasleykr"><i class="gitI fab fa-github me-2"></i>Github</a>
                 </button>
                 <img class="folioLines mt-5" src="../img/folioLine2.png">
             </div>

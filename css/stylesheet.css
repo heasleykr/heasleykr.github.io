@@ -1,18 +1,3 @@
-/* 
-@media (min-width: 576px) { ... }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-https://getbootstrap.com/docs/5.1/layout/breakpoints/
-
-*/
-
-
-
 /* Global */
 .main {
     width: inherit;
@@ -325,9 +310,7 @@ a {
     }
 
     .homeSub {
-        /* font-family: 'Varela', sans-serif; */
         font-size: 3rem;
-        /* color: #dca4b4; */
         font-family: 'Playfair Display', serif;
         color: #f8ad0b;
     }
@@ -481,7 +464,6 @@ a {
     width: 100%;
     background-color: black;
     height: auto;
-
 }
 
 .topGrids {
@@ -997,7 +979,10 @@ a {
     color: white;
 }
 
-
+#port_header {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
 
 #port_head {
     font-family: 'Varela', sans-serif;
@@ -1006,11 +991,13 @@ a {
 }
 
 #portSubHead {
-    /* font-family: 'Questrial', sans-serif; */
     font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
     color: #dca4b4;
 }
+
+
 
 .gitI {
     height: 70%;
@@ -1018,8 +1005,7 @@ a {
 
 #gitBtn a {
     color: white;
-    /* border-bottom: 2rem solid #6b2643; */
-    padding-bottom: 10rem;
+    /* padding-bottom: 10rem; */
 }
 
 #gitBtn i,
@@ -1042,17 +1028,8 @@ a {
     text-decoration: none;
 }
 
-#port_header {
-    margin-top: 5rem;
-    margin-bottom: 10rem;
 
 
-}
-
-/* #organicDiv,
-#fashionDiv {
-    background-color: #313030;
-} */
 
 #organic,
 #fashion,
@@ -1143,6 +1120,27 @@ a {
 .companySite {
     color: rgba(255, 255, 255, 0.4);
     font-size: 0.7rem;
+}
+
+/* Larger view Portfolio styling */
+@media(min-width:768px) {
+
+    #port_header {
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+
+    }
+
+    #portSubHead {
+        font-size: 3rem;
+        margin-bottom: 4rem;
+    }
+
+    #gitBtn {
+        margin-bottom: 2.6rem;
+        width: 15%;
+        font-size: 1rem;
+    }
 }
 
 
