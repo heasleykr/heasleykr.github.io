@@ -80,8 +80,6 @@ function folioLoad(){
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-
-            
         </div>
 
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -100,7 +98,7 @@ function folioLoad(){
                         <div class="col projectContent p-3 me-2">
                             <div class="d-flex">
                                 <h3 class="projectTitle pe-3">ParkingLots App</h3>
-                                <i class="mainIcons fas fa-car"></i>
+                                <i class="mainIconsP fas fa-car"></i>
                             </div>
                             <p class="projectSubDate">March 2021</p>
                             <p>Summary: </p>
@@ -138,7 +136,7 @@ function folioLoad(){
                         <div class="col projectContent p-3">
                             <div class="d-flex">
                                 <h3 class="projectTitle pe-3">OrganicBeans App</h3>
-                                <i class="mainIcons fas fa-shopping-cart"></i>
+                                <i class="mainIconsP fas fa-shopping-cart"></i>
                             </div>
                             <p class="projectSubDate">January 2021</p>
                             <p>Summary: </p>
@@ -176,7 +174,7 @@ function folioLoad(){
                         <div class="col projectContent p-3 me-2">
                             <div class="d-flex">
                                 <h3 class="projectTitle pe-3">Property Rental App</h3>
-                                <i class="mainIcons fas fa-home"></i>
+                                <i class="mainIconsP fas fa-home"></i>
                             </div>
                             <p class="projectSubDate">November 2020</p>
                             <p>Summary: </p>
@@ -214,7 +212,7 @@ function folioLoad(){
                         <div class="col projectContent p-3 me-2">
                             <div class="d-flex">
                                 <h3 class="projectTitle pe-3">The Fashion Pet</h3>
-                                <i class="mainIcons fas fa-dog"></i>
+                                <i class="mainIconsP fas fa-dog"></i>
                             </div>
                             <p class="projectSubDate">September 2020</p>
                             <p>Summary: </p>

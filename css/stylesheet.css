@@ -1088,6 +1088,12 @@ a {
     object-position: right;
 }
 
+.mainIconsP {
+    color: #dca4b4;
+    font-size: 1.2rem;
+    margin-top: 0.4rem;
+}
+
 .port_cards p {
     font-size: 1rem;
     margin-bottom: 0.7rem;
@@ -1128,13 +1134,11 @@ a {
     font-size: 0.8rem;
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
     justify-content: center;
     margin-bottom: -3rem;
 }
 
 #swipe {
-    /* background-color: rgb(141, 137, 137); */
     font-size: 1rem;
     color: #f8ad0b;
     display: flex;
@@ -1181,6 +1185,11 @@ a {
     #indicators {
         position: relative;
         top: 0%;
+    }
+
+    .mainIconsP {
+        font-size: 2rem;
+        margin-top: 0rem;
     }
 
     #swipe,

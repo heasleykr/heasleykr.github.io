@@ -586,11 +586,9 @@ function init(){
         $homeBtn: document.getElementById('homeBtn'),
         $aboutBtn: document.getElementById('aboutBtn'),
         $resBtn: document.getElementById('resumeBtn'),
-        $folioBtn: document.getElementById('folioBtn'),
         $homeNav: document.getElementById('homeNav'),
         $aboutNav: document.getElementById('aboutNav'),
         $resNav: document.getElementById('resumeNav'),
-        $folioNav: document.getElementById('folioNav'),
         $resFtBtn: document.getElementById('footerResume'),
         $homeBackground: document.getElementById('homeGraphicDiv'),
         $contactMain: document.getElementById('contactDiv'),
@@ -606,11 +604,9 @@ function init(){
     UI.$homeBtn.onclick = homeLoad;
     UI.$aboutBtn.onclick = aboutLoad;
     UI.$resBtn.onclick = resumeLoad;
-    // UI.$folioBtn.onclick = folioLoad;
     UI.$homeNav.onclick = homeLoad;
     UI.$aboutNav.onclick = aboutLoad;
     UI.$resNav.onclick = resumeLoad;
-    // UI.$folioNav.onclick = folioLoad;
     UI.$resFtBtn.onclick = resumeLoad;
     UI.$btnHide.onclick = showDetails;
     UI.$btnShow.onclick = showDetails;
