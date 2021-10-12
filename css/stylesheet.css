@@ -183,6 +183,7 @@ a {
     color: #dca4b4;
     color: white;
     text-decoration: underline #f8ad0b;
+    -webkit-text-decoration: underline #f8ad0b;
     /* color: black; */
 }
 
