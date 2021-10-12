@@ -140,7 +140,7 @@ function resumeLoad(){
         <div class="bg-transparent">
             <div id="resumeHeader" class="d-flex flex-column align-items-center bg-transparent mb-4">
                 <h2 id="resumeTitle" class="m-3">Resume</h2>
-                <button id="downloadBtn" class="btn btn-outline-success rounded-pill mb-2"><a href="/img/KHeasley_Resume.pdf"><i class="fas fa-arrow-circle-down me-2"></i>download resume</a>
+                <button id="downloadBtn" class="btn btn-outline-success rounded-pill mb-2"><a href="/img/KHeasley_Resume2021.pdf"><i class="fas fa-arrow-circle-down me-2"></i>download resume</a>
                 </button>
                 <img class="folioLines mt-5 mb-5" src="../img/folioLine2.png">
             </div>
