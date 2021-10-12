@@ -100,68 +100,7 @@ a {
     }
 }
 
-/* Lrg Sidebar */
-#sidebarLg {
-    width: 25%;
-    height: inherit;
-    padding-top: .5rem;
-    color: #6b2643;
-    text-transform: uppercase;
-    background-color: green;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-}
-
-#sidebarLg a {
-    padding: 1.5rem;
-    font-size: 1.2rem;
-}
-
-#sidebarLg a:hover {
-    padding: 1.5rem;
-    font-size: 1.2rem;
-    color: black;
-}
-
-#sidebarLg ul {
-    list-style-type: none;
-    color: white;
-}
-
-#sidebarLg li {
-    width: 11rem;
-    height: 4.5rem;
-    background-color: #6b2643;
-    margin-top: .7rem;
-    margin-bottom: .7rem;
-}
-
-#sidebarLg li:hover {
-    width: 11rem;
-    height: 4.5rem;
-    background-color: black;
-    margin-top: .7rem;
-    margin-bottom: .7rem;
-}
-
-.logoName {
-    border: 2px solid #5c5656;
-    padding-top: 1rem;
-}
-
-.logoNameFirst {
-    color: #5c5656;
-    font-family: 'Rajdhani', sans-serif;
-    text-transform: uppercase;
-}
-
-.logoNameLast {
-    font-family: 'Bebas Neue', cursive;
-    color: #5c5656;
-}
-
-/* Sm Sidebar */
+/* Sidebar */
 #sidebarSm {
     width: 40px;
     height: 100%;
@@ -1450,10 +1389,16 @@ a {
     text-transform: uppercase;
 }
 
+.logoNameLast {
+    font-family: 'Bebas Neue', cursive;
+    color: #5c5656;
+
+}
+
 /* Larger View Footer */
 @media(min-width:768px) {
     #footer {
-        margin-left: 3rem;
+        margin-left: 2.4rem;
     }
 
 }

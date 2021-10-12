@@ -1,10 +1,6 @@
 
-// Global variables
-var showIcon = `<i class="fas fa-bars"></i>`;
-var hideIcon = `<i class="fas fa-angle-double-right"></i>`;
-var visible = false;
-      //cache DOM
-      var UI = {};
+//cache DOM
+var UI = {};
 
 //Function to dynamically display Home page content
 function homeLoad(){
@@ -533,42 +529,6 @@ function resumeLoad(){
 
 }
 
-// Function to show/hide side navigational panel
-function showDetails(){
-
-
-    // Show Side Large Panel & Hide Small
-    if(!visible){
-        //Show Large side bar
-        UI.$sideL.classList.remove('hide');
-
-        //Hide nav bar
-        UI.$top.classList.add('hide');
-
-        //Hide small side bar
-        UI.$sideSm.classList.add('hide');
-
-        // change boolean
-        visible = true;
-    }
-    //Hide Side Large Panel & Show small
-    else{ 
-        //Hide Large side bar
-        UI.$sideL.classList.add('hide');
-
-        //Show nav bar
-        UI.$top.classList.remove('hide');
-
-        //Show small side bar
-        UI.$sideSm.classList.remove('hide');
-
-        // change boolean
-        visible = false;
-    }
-}
-
-
-
 function init(){
 
     console.log("Welcome to Katelynn Heasley's website!");
@@ -577,15 +537,9 @@ function init(){
     UI = {
         $body: document.getElementById('main'),
         $main: document.getElementById('mainLoad'),
-        $sideL: document.getElementById('sidebarLg'),
         $sideSm: document.getElementById('sidebarSm'),
         $top: document.getElementById('topBar'),
         $footer: document.getElementById('footer'),
-        $btnShow: document.getElementById('btnShow'),
-        $btnHide: document.getElementById('btnHide'),
-        $homeBtn: document.getElementById('homeBtn'),
-        $aboutBtn: document.getElementById('aboutBtn'),
-        $resBtn: document.getElementById('resumeBtn'),
         $homeNav: document.getElementById('homeNav'),
         $aboutNav: document.getElementById('aboutNav'),
         $resNav: document.getElementById('resumeNav'),
@@ -600,10 +554,7 @@ function init(){
 
    
 
-    //catch click events on side-nav & top-nav panel
-    UI.$homeBtn.onclick = homeLoad;
-    UI.$aboutBtn.onclick = aboutLoad;
-    UI.$resBtn.onclick = resumeLoad;
+    //catch click events on footer & top-nav panel
     UI.$homeNav.onclick = homeLoad;
     UI.$aboutNav.onclick = aboutLoad;
     UI.$resNav.onclick = resumeLoad;

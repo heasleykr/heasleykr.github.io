@@ -9,7 +9,6 @@ var UI = cacheDom();
 
 //Add contact button function calls
 UI.$contactNav.onclick = contactLoad;
-UI.$contactBtn.onclick = contactLoad;
 UI.$contactFtBtn.onclick = contactLoad;
 UI.$formSubmit.onclick = js_send;
 

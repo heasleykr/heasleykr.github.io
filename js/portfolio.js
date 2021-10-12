@@ -3,7 +3,6 @@ var UI = cacheDom();
 
 //Add Portfolio button function calls
 UI.$folioNav.onclick = folioLoad;
-UI.$folioBtn.onclick = folioLoad;
 
 
 // Function to Cache Dom
