@@ -49,7 +49,6 @@ a {
     text-transform: uppercase;
 }
 
-
 #btnShow {
     color: #dca4b4;
     margin-top: .6rem;
@@ -127,7 +126,7 @@ a {
     width: 100%;
     background-color: #353232;
     height: auto;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(/img/coverCell.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/coverCell.jpg);
     background-repeat: no-repeat, no-repeat;
     background-position: top, top 9% left 0%;
 
@@ -183,6 +182,7 @@ a {
     font-size: 1.5rem;
     color: #dca4b4;
     color: white;
+    text-decoration: underline #f8ad0b;
     /* color: black; */
 }
 
@@ -190,7 +190,11 @@ a {
     font-family: 'Varela', sans-serif;
     font-family: 'Playfair Display', serif;
     color: #f8ad0b;
+    color: #f79412;
+    color: white;
     font-size: 1.2rem;
+    /* text-shadow: 1px 1px 1px rgb(53, 51, 51); */
+    /* text-decoration: s; */
     /* color: black; */
 }
 
