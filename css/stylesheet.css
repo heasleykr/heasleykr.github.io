@@ -23,6 +23,12 @@ https://getbootstrap.com/docs/5.1/layout/breakpoints/
     height: auto;
 }
 
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 a {
     color: white;
 }
