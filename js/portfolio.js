@@ -168,7 +168,7 @@ function folioLoad(){
                 <div class="carousel-item" data-bs-interval="10000">
                     <div class="row pb-5 pt-5 projectView" id="property">
                         <div class="col d-flex justify-content-center">
-                            <img class="img-fluid rounded-end projectImg" src="../img/organic.png" alt="Organic Beans">
+                            <img class="img-fluid rounded-end projectImg" src="../img/property.png" alt="Organic Beans">
                         </div>
                         <div class="col projectContent p-3 me-2">
                             <div class="d-flex">
@@ -191,7 +191,7 @@ function folioLoad(){
                             </div>
                             <div class="d-flex justify-content-evenly align-items-center mt-3 pb-3">
                                 <img id="microsoft" src="https://img.icons8.com/color/96/000000/microsoft.png"/>
-                                <button class="gitI btn btn-outline-light shadow rounded-pill"><a href="https://github.com/heasleykr/Property-Rental-Web-Application"><i class="fab fa-github me-2"></i>Github Code</a></button>
+                                <button class="gitI btn btn-outline-light shadow rounded-pill"><a href="https://github.com/heasleykr/dotNetPropertyRental"><i class="fab fa-github me-2"></i>Github Code</a></button>
                             </div>
                             <a class="companySite" href="https://icons8.com/icon/22989/microsoft">Microsoft icon by Icons8</a>
                         </div>
