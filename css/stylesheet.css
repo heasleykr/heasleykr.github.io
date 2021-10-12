@@ -967,7 +967,6 @@ a {
 }
 
 #folioGraphicDiv,
-#contactGraphicDiv,
 #resumeGraphicDiv {
     margin-top: -3rem;
     width: auto;
@@ -1117,6 +1116,33 @@ a {
     top: 0%;
 }
 
+#swipe,
+.cellProgress,
+.cellProgress i {
+    display: inline;
+}
+
+.cellProgress {
+    color: rgb(131, 127, 127);
+    color: #f8ad0b;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    margin-bottom: -3rem;
+}
+
+#swipe {
+    /* background-color: rgb(141, 137, 137); */
+    font-size: 1rem;
+    color: #f8ad0b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 /* Larger view Portfolio styling */
 @media(min-width:768px) {
 
@@ -1155,6 +1181,12 @@ a {
     #indicators {
         position: relative;
         top: 0%;
+    }
+
+    #swipe,
+    .cellProgress,
+    .cellProgress i {
+        display: none;
     }
 }
 

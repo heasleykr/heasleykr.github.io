@@ -122,6 +122,12 @@ function folioLoad(){
                             </div>
                             <a class="companySite" href="https://icons8.com/icon/qV-JzWYl9dzP/django">Django icon by Icons8</a>
                         </div>
+                        <div class="cellProgress mt-5">
+                            <i class="p-3 fas fa-circle"></i>
+                            <i class="p-3 far fa-circle"></i>
+                            <i class="p-3 far fa-circle"></i>
+                            <i class="p-3 far fa-circle"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="10000">
@@ -154,6 +160,12 @@ function folioLoad(){
                             </div>
                             <a class="companySite" href="https://icons8.com/icon/wPohyHO_qO1a/react">React icon by Icons8</a>   
                         </div>
+                        <div class="cellProgress mt-5">
+                            <i class="p-3 far fa-circle"></i>
+                            <i class="p-3 fas fa-circle"></i>
+                            <i class="p-3 far fa-circle"></i>
+                            <i class="p-3 far fa-circle"></i>
+                        </div>
                     </div>
                 </div>
                 <div class="carousel-item" data-bs-interval="10000">
@@ -185,6 +197,12 @@ function folioLoad(){
                                 <button class="gitI btn btn-outline-light shadow rounded-pill"><a href="https://github.com/heasleykr/Property-Rental-Web-Application"><i class="fab fa-github me-2"></i>Github Code</a></button>
                             </div>
                             <a class="companySite" href="https://icons8.com/icon/22989/microsoft">Microsoft icon by Icons8</a>
+                        </div>
+                        <div class="cellProgress mt-5">
+                            <i class="p-3 far fa-circle"></i>
+                            <i class="p-3 far fa-circle"></i>
+                            <i class="p-3 fas fa-circle"></i>
+                            <i class="p-3 far fa-circle"></i>
                         </div>
                     </div>
                 </div>
@@ -219,10 +237,19 @@ function folioLoad(){
                                 </div>
                                 <button class="gitI btn btn-outline-light shadow rounded-pill"><a href="https://github.com/heasleykr/theFashionPet"><i class="fab fa-github me-2"></i>Github Code</a></button>
                             </div>
+                            <div class="cellProgress mt-5">
+                                <i class="p-3 far fa-circle"></i>
+                                <i class="p-3 far fa-circle"></i>
+                                <i class="p-3 far fa-circle"></i>
+                                <i class="p-3 fas fa-circle"></i>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="mb-5">
+            <p id="swipe"><i class="me-4 fas fa-chevron-left"></i>Swipe <i class="ms-2 far fa-hand-point-up"></i><i class="ms-4 fas fa-chevron-right"></i></p>
         </div>
         
         <div id="portfolioGrid1">
@@ -237,10 +264,10 @@ function folioLoad(){
     `;
 
     //load content at top of page, hide until top is reached
-    // $('body').hide(0, function(){
-    //     window.scrollTo(0,0);
-    // });
-    // $('body').show(2000);
+    $('body').hide(0, function(){
+        window.scrollTo(0,0);
+    });
+    $('body').show(2000);
 
 
     //add html to DOM object
