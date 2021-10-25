@@ -1398,6 +1398,19 @@ a {
 
 }
 
+#websiteGit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5c5656;
+}
+
+#websiteGit a {
+    color: green;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
 /* Larger View Footer */
 @media(min-width:768px) {
     #footer {

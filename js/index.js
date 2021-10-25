@@ -39,7 +39,7 @@ function homeLoad(){
                 </div>
                 <div class="d-flex flex-row align-items-center">
                     <h3 class="homeSub pe-2">& future</h3>
-                    <h3 class="homeFocus">Front-end Developer</h3>
+                    <h3 class="homeFocus">Software Developer</h3>
                 </div>
                 <div>
                     <p class="homeMiniFocus d-flex justify-content-center align-self-center mt-3 pt-3 pb-3">I'm currently seeking employment</p>
